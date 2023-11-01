@@ -1,0 +1,57 @@
+.clonephone .text {position:relative;}
+.clonephone_section1 {background:url('../img/clonephone/section1_bg.png-1611132.png')/*tpa=http://static01.coloros.com/www/public/img/clonephone/section1_bg.png?1611132*/ repeat-x bottom left;height:700px;color:#fff;}
+.clonephone_section1 .inner-wrapper {height:700px;}
+.clonephone_section1 .img {position:absolute;bottom:0px;left:50%;margin-left:-437px;height:450px;}
+.clonephone_section1 img {display:block;margin:auto;}
+.clonephone_section1 .text {margin-top:60px;color:#fff;text-align:center;}
+.clonephone_section1 .text h2,.clonephone_section1 .text p {color:#fff;}
+.clonephone_section1 .text h3 {color:#fff;font-size:24px;margin-bottom:25px;font-weight:bold;}
+.clonephone_section1 .text .tag {display:inline-block;border:1px solid #fff;border-radius:3px;padding:0px 10px;}
+.clonephone_section1 .text .tagline {display:inline-block;font-size:14px;}
+.clonephone_section1b .item_split{background:#d9d8d8;height:55px;width:1px;float:left;margin-top:58px;box-shadow:0px 0px 0px #ccc;}
+.clonephone_section1b .item {float:left;width:300px;height:215px;text-align:center;}
+.clonephone_section1b .item .link {font-size:16px;font-family:'zhunhei';color:#585859;}
+.clonephone_section1b .item.i1 {width:380px;}
+.clonephone_section1b .item.i3 {margin-left:100px;}
+.clonephone_section1b .item.i4 {float:right;margin-right:100px;}
+.clonephone_section1b .item .icon {background:url('/Home/coloros/image/section1b_icon.png-1611132.png') no-repeat left top;height:90px;width:90px;display:block;margin:40px auto 20px auto;border-radius:100%;-webkit-transition: background-color 0.2s ease-out;transition: background-color 0.2s ease-out;}
+.clonephone_section1b .item.i1 .icon {border:1px solid #20e7ba;background-position:30px top;}
+.clonephone_section1b .item.i1 .icon:hover {background-color:#20e7ba;background-position:30px bottom;}
+.clonephone_section1b .item.i2 .icon {border:1px solid #30e8e6;background-position:-60px top;}
+.clonephone_section1b .item.i2 .icon:hover {background-color:#30e8e6;background-position:-60px bottom;}
+.clonephone_section1b .item.i3 .icon {border:1px solid #f9c218;background-position:-149px top;}
+.clonephone_section1b .item.i3 .icon:hover {background-color:#f9c218;background-position:-149px bottom;}
+.clonephone_section1b .item.i4 .icon {border:1px solid #ff8b67;background-position:-234px top;}
+.clonephone_section1b .item.i4 .icon:hover {background-color:#ff8b67;background-position:-234px bottom;}
+.clonephone_section2 {height:740px;}
+.clonephone_section2 .text {float:left;margin-top:240px;width:50%;}
+.clonephone_section2 .img {float:right;margin-top:110px;margin-right:-30px;}
+.clonephone_section3 {background:#fafafa;height:740px;}
+.clonephone_section3 .text {float:right;margin-top:240px;width:50%;}
+.clonephone_section3 .img {float:left;margin-top:130px;margin-left:-50px;}
+.clonephone_section3 img {width:95%;}
+.clonephone_section4 {background:#fafafa;height:740px;}
+.clonephone_section4 .text {float:right;margin-top:290px;width:50%;}
+.clonephone_section4 .img {float:left;margin-top:150px;margin-right:-10px;}
+.clonephone_section5 {height:740px;}
+.clonephone_section5 .text {float:left;margin-top:240px;width:44%;}
+.clonephone_section5 .img {float:right;margin-top:200px;margin-right:-20px;}
+.clonephone .steplink {text-align:center;line-height:80px;display:block;margin:auto;width:350px;font-size:24px;color:#383838;}
+.clonephone .steplink:hover {text-decoration: underline;}
+.clonephone .remark {padding: 30px 10px 0px 10px;font-size: 14px;font-family: '微软雅黑';}
+
+.clonephonestep {margin-bottom:120px;}
+.clonephonestep .text {position:relative;text-align:center;}
+.clonephonestep .text h2 {margin:100px auto 70px auto;}
+.clonephonestep .text .step_count {border-radius:20px;width:100px;height:40px;line-height:40px;font-weight:bold;background:#5a5a5a;margin:0px auto 25px auto;font-size:22px;color:#fff;text-align:center;}
+.clonephonestep .text .step_count span {padding-right:8px;}
+.clonephonestep .text .step_count1 {width:160px;}
+.clonephonestep .img {margin:65px auto 0px auto;text-align:center;}
+
+.clone_download_dialog {position:fixed;left:50%;top:50%;width:600px;height:210px;margin-left:-250px;margin-top:-105px;z-index:99999;border-radius:15px;text-align:center;background:#fff;}
+.clone_download_dialog h3 {line-height:100px;margin-top:15px;font-size:24px;font-family:'xianhei';font-weight:normal;}
+.clone_download_dialog .link {margin-top:15px;}
+.clone_download_dialog .link div {display:inline-block;}
+.clone_download_dialog .link  a {display:block;width:260px;color:inherit;line-height:40px;border-radius:40px;border:1px solid #ccc;}
+.clone_download_dialog .link  a:hover {background:#8E8E8E;color:#fff;border-color:#8E8E8E;}
+.clone_download_dialog .link  a:active {}

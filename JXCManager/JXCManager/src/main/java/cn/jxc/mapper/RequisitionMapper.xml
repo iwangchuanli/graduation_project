@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.jxc.mapper.RequisitionMapper">
+
+	<resultMap type="Requisition" id="Requisitionlist" >
+		<!-- 调拨订单号 -->
+		<result property="requisitionId" column="Requisition_id" />
+		<!-- 申请时间 -->
+		<result property="requestTime" column="RequestTime" />
+		<!-- 审核时间 -->
+		<result property="reviewTime" column="ReviewTime" />
+		<!-- 审核备注 -->
+		<result property="reason" column="Reason"/>
+		<!-- 出库时间 -->
+		<result property="outboundStoreHouseTime" column="OutboundStoreHouseTime" />
+		<!-- 入库时间 -->
+		<result property="storageStoreHouseTime" column="StorageStoreHouseTime" />
+		<!-- 订单详情 -->
+		<result property="orderStatus" column="OrderStatus"
+			typeHandler="cn.jxc.util.OrderStatusTypeHandler" />
+		<!-- 调拨原因 -->
+		<result property="allocateReason" column="AllocateReason"/>
+		<!-- 审核人 -->
+		<association property="employeeByReviewEmp" javaType="Employee" column="reviewEmp">
+			<id column="reviewEmp" property="empLoginName"/>
+		</association>
+		<!-- 入库人 -->
+		<association property="employeeByStorageStoreHouseEmp" javaType="Employee" column="StoreHouseEmp">
+			<id column="StoreHouseEmp" property="empLoginName"/>
+		</association>
+		<!-- 申请人 -->
+		<association property="employeeByRequestEmp" javaType="Employee" column="requestEmp">
+			<id column="requestEmp" property="empLoginName"/>
+		</association>
+		<!-- 出库人 -->
+		<association property="employeeByOutboundEmp" javaType="Employee" column="OutboundEmp">
+			<id column="OutboundEmp" property="empLoginName"/>
+		</association>
+		<!-- 审核状态 -->
+		<association property="reviewstatus" javaType="ReviewStatus"
+			resultMap="cn.jxc.mapper.ReviewStatusMapper.ReviewStatusMap">
+		</association>
+		<!-- 出库仓库 -->
+		<association property="storehouseByOutboundStoreHouse" javaType="StoreHouse">
+			<id column="OutboundStoreHouseid" property="storeHouseId"/>
+			<result column="OutboundStoreHouse" property="shName"/>
+		</association>
+		<!-- 入库仓库 -->
+		<association property="storehouseByStorageStoreHouse" javaType="StoreHouse">
+			<id column="StorageStoreHouseid" property="storeHouseId"/>
+			<result column="StorageStoreHouse" property="shName"/>
+		</association>
+
+	</resultMap>
+	<!-- 根据条件迷糊查询 -->
+	<select id="getRequisition" resultMap="Requisitionlist">
+		SELECT  rs.Requisition_id,rs.requestTime,rs.ReviewTime,rs.OutboundStoreHouseTime,rs.StorageStoreHouseTime,rs.`AllocateReason`,
+		rs.OrderStatus,emp1.EmpLoginName AS requestEmp,emp2.EmpLoginName AS reviewEmp,
+		emp3.EmpLoginName AS OutboundEmp,emp4.EmpLoginName AS StoreHouseEmp,
+		r.RS_name,r.RS_id,
+		sto1.SH_Name AS OutboundStoreHouse,sto1.StoreHouse_id AS OutboundStoreHouseid,
+		sto2.SH_Name AS StorageStoreHouse,sto2.StoreHouse_id AS StorageStoreHouseid
+		FROM Requisition rs 
+		LEFT JOIN ReviewStatus r ON rs.reviewstatus=r.RS_id
+		LEFT JOIN `employee` emp1 ON emp1.EmpLoginName=rs.RequestEmp
+		LEFT JOIN `employee` emp2 ON emp2.EmpLoginName=rs.ReviewEmp
+		LEFT JOIN `employee` emp3 ON emp3.EmpLoginName=rs.OutboundEmp
+		LEFT JOIN `employee` emp4 ON emp4.EmpLoginName=rs.StorageStoreHouseEmp
+		LEFT JOIN `storehouse` sto1 ON sto1.StoreHouse_id=rs.OutboundStoreHouse
+		LEFT JOIN `storehouse` sto2 ON sto2.StoreHouse_id=rs.StorageStoreHouse
+		<where>
+			<if test="requisitionId != null and requisitionId != ''">
+				and rs.Requisition_id like CONCAT('%',#{requisitionId},'%')
+			</if>
+			<if test="shname != null and shname != ''">
+				and sto1.`SH_Name` LIKE CONCAT('%',#{shname},'%')
+			</if>
+			<if test="time1 != null and time1 != '' ">
+	            AND rs.requestTime <![CDATA[>]]>= STR_TO_DATE(#{time1},'%m/%d/%Y')
+			</if>
+			<if test="time2 != null and time2 != '' ">
+			    AND rs.requestTime <![CDATA[<]]>= STR_TO_DATE(#{time2},'%m/%d/%Y')
+			</if>
+		</where>
+		ORDER BY rs.`RequestTime` DESC
+	</select>
+	<!-- 根据调拨单号查询 -->
+	<select id="requisitionByid" resultMap="Requisitionlist">
+		SELECT  rs.Requisition_id,rs.requestTime,rs.ReviewTime,rs.OutboundStoreHouseTime,rs.StorageStoreHouseTime,rs.`Reason`,rs.`AllocateReason`,
+		emp1.EmpLoginName AS requestEmp,emp2.EmpLoginName AS reviewEmp,
+		emp3.EmpLoginName AS OutboundEmp,emp4.EmpLoginName AS StoreHouseEmp,
+		r.RS_name,r.RS_id,
+		sto1.SH_Name AS OutboundStoreHouse,sto1.StoreHouse_id AS OutboundStoreHouseid,
+		sto2.SH_Name AS StorageStoreHouse,sto2.StoreHouse_id AS StorageStoreHouseid
+		FROM Requisition rs 
+		LEFT JOIN ReviewStatus r ON rs.reviewstatus=r.RS_id
+		LEFT JOIN `employee` emp1 ON emp1.EmpLoginName=rs.RequestEmp
+		LEFT JOIN `employee` emp2 ON emp2.EmpLoginName=rs.ReviewEmp
+		LEFT JOIN `employee` emp3 ON emp3.EmpLoginName=rs.OutboundEmp
+		LEFT JOIN `employee` emp4 ON emp4.EmpLoginName=rs.StorageStoreHouseEmp
+		LEFT JOIN `storehouse` sto1 ON sto1.StoreHouse_id=rs.OutboundStoreHouse
+		LEFT JOIN `storehouse` sto2 ON sto2.StoreHouse_id=rs.StorageStoreHouse
+		where rs.Requisition_id=#{requisitionId}
+	</select>
+	<!-- 新增调拨 -->
+	<insert id="Requisitionadd">
+		INSERT INTO `requisition`(`Requisition_id`,`RequestEmp`,`RequestTime`,`ReviewStatus`,
+		`OutboundStoreHouse`,`StorageStoreHouse`,`AllocateReason`)
+		VALUES (#{rs.requisitionId},#{rs.employeeByRequestEmp.empLoginName},
+		#{rs.requestTime},1,#{rs.storehouseByOutboundStoreHouse.storeHouseId},
+		#{rs.storehouseByStorageStoreHouse.storeHouseId},#{rs.allocateReason})
+	</insert>
+	<!-- 修改调拨 -->
+	<update id="RequisitionUpdete">
+		UPDATE `requisition` SET `RequestTime` = #{rs.requestTime},
+		`AllocateReason` = #{rs.allocateReason}
+		WHERE `Requisition_id` = #{rs.requisitionId}
+	</update>
+	<!-- 删除调拨 -->
+	<delete id="RequisitionDelete">
+		DELETE
+		FROM `requisition`
+		WHERE `Requisition_id` = #{id}
+	</delete>
+	<!-- 审核状态操作 -->
+	<update id="updaterequisition">
+		UPDATE requisition SET 
+		ReviewEmp =#{reviewEmp},
+		ReviewTime=#{reviewTime},
+		ReviewStatus=#{status},
+		OrderStatus= #{order},
+		Reason=#{reason} 
+		WHERE Requisition_id= #{requisitionId}
+	</update>
+	<!-- 修改订单状态 -->
+	<update id="UpdateOrderStatus">
+		UPDATE `requisition` SET 
+		OrderStatus = #{OrderStatus}
+		WHERE Requisition_id= #{Requisition_id}
+		
+	</update>
+</mapper>

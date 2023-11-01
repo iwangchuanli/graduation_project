@@ -1,0 +1,244 @@
+/***********/
+/*reset开始*/
+/***********/
+body, button, input, textarea, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dt, dd, ul, ol, li, form, fieldset, legend, hr, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5 'Microsoft Yahei', tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif; color:#333; }
+button, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-size:100%; }
+button, input, select, textarea, label { vertical-align:middle; outline:none; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; }
+img { vertical-align:top; border:none; /*background:#F2F2F2 url(/images/common/nopic.png) center no-repeat*/; }
+ul, ol { list-style:none; }
+cite, em, i { font-style:normal; }
+a { text-decoration:none; color:#575757; vertical-align:baseline; cursor:pointer; }
+a:hover { color:#20b273; }
+table { border-collapse:collapse; border-spacing:0; }
+body { _height:100%; _background:url(about:blank) fixed; background-color:#fff; word-wrap:break-word; word-break:break-all; }
+/***********/
+/*reset结束*/
+/***********/
+
+/***********/
+/*原子类开始*/
+/***********/
+/*无边框*/
+.B0 { border:0 none; }
+.BB0 { border-bottom:0 none; }
+.BL0 { border-left:0 none; }
+.BR0 { border-right:0 none; }
+.BT0 { border-top:0 none; }
+/*无背景图*/
+.BIn { background-image:none; }
+/*背景色*/
+.BCf { background-color:#fff; }
+.BCf0f0f0 { background-color:#f0f0f0; }
+/*字体灰色*/
+.C3 { color:#333; }
+.C6 { color:#666; }
+.C9 { color:#999; }
+/*清浮*/
+.Cb { zoom:1; }
+.Cb:after { clear:both; content:""; display:table; }
+/*鼠标*/
+.Cd { cursor:default; }
+.Cp { cursor:pointer; }
+/*显示隐藏*/
+.Db { display:block; }
+.Di { display:inline; }
+.Dib { display:inline-block; }
+.Dn { display:none; }
+/*浮动*/
+.Fl { float:left; }
+.Fr { float:right; }
+.Fl, .Fr { _display:inline; }
+/*字体宋体*/
+.FFs { font-family:宋体; }
+.FFmy { font-family: Microsoft Yahei; }
+.FFa { font-family:arial; }
+/*字体大小*/
+.FS30 { font-size:30px; }
+.FS28 { font-size:28px; }
+.FS26 { font-size:26px; }
+.FS24 { font-size:24px; }
+.FS22 { font-size:22px; }
+.FS20 { font-size:20px; }
+.FS18 { font-size:18px; }
+.FS16 { font-size:16px; }
+.FS14 { font-size:14px; }
+.FS12 { font-size:12px; }
+/*字体风格*/
+.FSi { font-style:italic; }
+.FSn { font-style:normal; }
+/*字体加粗*/
+.FWb { font-weight:bold; }
+.FWn { font-weight:normal; }
+/*高*/
+.Ha { height:auto; }
+/*行高*/
+.LHn { line-height:normal; }
+.LH2 { line-height:2; }
+/*外边距*/
+.M0 { margin:0; }
+.MB0 { margin-bottom:0; }
+.ML0 { margin-left:0; }
+.MR0 { margin-right:0; }
+.MT0 { margin-top:0; }
+.MTB0 { margin-bottom:0; margin-top:0; }
+.MLR0 { margin-left:0; margin-right:0; }
+.M5 { margin:5px; }
+.MB5 { margin-bottom:5px; }
+.ML5 { margin-left:5px; }
+.MR5 { margin-right:5px; }
+.MT5 { margin-top:5px; }
+.MTB5 { margin-bottom:5px; margin-top:5px; }
+.MLR5 { margin-left:5px; margin-right:5px; }
+.M10 { margin:10px; }
+.MB10 { margin-bottom:10px; }
+.ML10 { margin-left:10px; }
+.MR10 { margin-right:10px; }
+.MT10 { margin-top:10px; }
+.MTB10 { margin-bottom:10px; margin-top:10px; }
+.MLR10 { margin-left:10px; margin-right:10px; }
+.M20 { margin:20px; }
+.MB20 { margin-bottom:20px; }
+.ML20 { margin-left:20px; }
+.MR20 { margin-right:20px; }
+.MT20 { margin-top:20px; }
+.MTB20 { margin-bottom:20px; margin-top:20px; }
+.MLR20 { margin-left:20px; margin-right:20px; }
+.Ma { margin:auto; }
+.MBa { margin-bottom:auto; }
+.MLa { margin-left:auto; }
+.MRa { margin-right:auto; }
+.MTa { margin-top:auto; }
+.MTBa { margin-bottom:auto; margin-top:auto; }
+.MLRa { margin-left:auto; margin-right:auto; }
+/*溢出*/
+.Oa { overflow:auto; }
+.Oh { overflow:hidden; }
+.Ov { overflow:visible; }
+.OXa { overflow-x:auto; }
+.OYa { overflow-y:auto; }
+/*内边距*/
+.P0 { padding:0; }
+.PB0 { padding-bottom:0; }
+.PL0 { padding-left:0; }
+.PR0 { padding-right:0; }
+.PT0 { padding-top:0; }
+.PTB0 { padding-bottom:0; padding-top:0; }
+.PLR0 { padding-left:0; padding-right:0; }
+.P10 { padding:10px; }
+.PB10 { padding-bottom:10px; }
+.PL10 { padding-left:10px; }
+.PR10 { padding-right:10px; }
+.PT10 { padding-top:10px; }
+.PTB10 { padding-bottom:10px; padding-top:10px; }
+.PLR10 { padding-left:10px; padding-right:10px; }
+.P20 { padding:20px; }
+.PB20 { padding-bottom:20px; }
+.PL20 { padding-left:20px; }
+.PR20 { padding-right:20px; }
+.PT20 { padding-top:20px; }
+.PTB20 { padding-bottom:20px; padding-top:20px; }
+.PLR20 { padding-left:20px; padding-right:20px; }
+/*定位*/
+.Pr { position:relative; }
+.Pa { position:absoulte; }
+/*水平*/
+.TAc { text-align:center; }
+.TAl { text-align:left; }
+.TAr { text-align:right; }
+/*下划线*/
+.TDn { text-decoration:none; }
+/*缩进*/
+.TI1 { text-indent:1em; }
+.TI2 { text-indent:2em; }
+.TI3 { text-indent:3em; }
+.TI4 { text-indent:4em; }
+.TI5 { text-indent:5em; }
+/*垂直*/
+.VAb { vertical-align:bottom; }
+.VAm { vertical-align:middle; }
+.VAt { vertical-align:top; }
+/*显示隐藏*/
+.Vh { visibility:hidden; }
+.Vv { visibility:visible; }
+/*宽*/
+.Wa { width:auto; }
+/*强制不换行*/
+.WSn { white-space:nowrap; }
+/*显示层级*/
+.ZI1 { z-index:1; }
+/***********/
+/*原子类结束*/
+/***********/
+
+
+/***********/
+/*common开始*/
+/***********/
+.Main { margin: 0 auto; width: 1000px; overflow: hidden; }
+.Main .Right { float:right; width: 250px; background: #f3f3f3; padding-bottom:30000px; margin-bottom:-30000px; }
+.Main .Left { float:left; width: 730px; }
+.Box { margin-top:30px; margin-bottom:30px; }
+.Box dt { height: 45px; line-height: 45px; border-bottom: 1px solid #47B185; padding:0 20px; }
+.Box dt h2 { font-size: 20px; font-weight:normal; }
+.Box dt h3 { font-size: 18px; font-weight:normal; color: #00925F; }
+.Box dd { padding:20px; }
+.Right .Box { margin-left:10px; background:#fff; border-bottom: 1px solid #D7D7D7; }
+.Btn1 { color: #20b273; border: 1px solid #20b273; background: #fff; border-radius: 4px; display: inline-block; vertical-align: middle; cursor:pointer; padding: 0px 15px; height: 26px; line-height: 26px; font-size: 12px; }
+.Btn1:hover, Btns { color:#fff; background:#20b273; }
+.Btnd { border-color: #8e8e8e; color: #878787 !important; background: #fff !important; cursor:default; }
+
+/*页头*/
+.Head .Top, .Foot { min-width: 1000px; _width: expression((document.documentElement.clientWidth||document.body.clientWidth)<1000?"1000px":"");
+}
+.Head .Top ul, .Head .Nav, .Foot ul { width:1000px; margin:0 auto; }
+.Head .Top { height: 30px; line-height: 30px; background: #000; }
+.Head .Top a, .Head .Top span { display: inline-block; vertical-align: top; color: #CACACA; }
+.Head .Top a:hover { color: #20b273; }
+.Head .Top .Fr a, .Head .Top .Fr span { padding-left: 10px; }
+.Head .Top .Fl a, .Head .Top .Fl span { margin-right: 30px; }
+.Head .Top .Vip { background: #FEC35F; padding: 0 10px; color: #fff !important; height: 22px; line-height: 22px; margin: 4px 0; }
+.Msg { width: 4px; height: 4px; overflow: hidden; background: #20b273; border-radius: 50%; position: absolute; right: -5px; top: 8px; }
+.Head .Nav {  }
+.Head .Nav p { margin: 0 210px 0 200px; height: 63px; overflow: hidden; }
+.Head .Nav p a { display: inline-block; vertical-align: top; height: 33px; line-height: 33px; padding-top: 30px; width:78px; text-align: center; font-size: 15px; color: #666666; margin: 0 1px; }
+.Head .Nav p a:hover, .Head .Nav p a.s { color: #fff; background: #13BF81; }
+.Head .Logo, #Search { height: 33px; margin: 30px 0; }
+.Head .Logo, #Search button { background: url('../../../../../../../www.oppo.cn/error-msg=404，您访问的页面不存在！')/*tpa=http://www.oppo.cn/template/oppo/images/base.png*/ no-repeat; _background: url('../../../../../../../www.oppo.cn/error-msg=404，您访问的页面不存在！')/*tpa=http://www.oppo.cn/template/oppo/images/base8.png*/ no-repeat; }
+.Head .Logo { background-position: 0 2px; width: 200px; }
+
+#Search label, #Search input, #Search button { vertical-align: top; }
+#Search input, #Search button { outline: none; border: 0 none; }
+#Search input { padding: 0 5px; width: 113px; height: 31px; border-top: #ddd solid 1px; border-bottom: #ddd solid 1px; *margin-top:-1px;
+}
+#Search button { width: 33px; height: 33px; cursor: pointer; background-color: #13C081; background-position: 7px -69px; }
+#Search label { width: 42px; height: 31px; line-height: 31px; padding-left: 10px; cursor: pointer; position: relative; display: inline-block; border: #ddd solid 1px; }
+#Search label s { text-decoration: none; color: #878787; }
+#Search label i { position: absolute; top: 13px; right: 7px; border: 4px dashed transparent; border-top: 6px solid #bbb; width: 0; height: 0; overflow: hidden; }
+#Search label:hover span, #Search label.hover span { display: block; }
+#Search label span { display: none; width: 52px; position: absolute; top: 31px; left: -1px; border: 1px solid #ddd; background: #fff; z-index: 1; }
+#Search label span a { display: block; padding-left: 10px; }
+
+.Bread { margin-bottom: 20px; color: #878787; }
+.Bread a { margin: 0 5px; }
+/*页脚*/
+.Foot { background: #2b2b2b; padding:10px 0; text-align:center; line-height:1.8; }
+.Foot, .Foot a { color:#D7D7D7; }
+.Foot .Top a, .Foot .Top span { display:inline-block; vertical-align: top; }
+/*小O助手*/
+#O_helper { background: url(../../../../../../../www.oppo.cn/error-msg=404，您访问的页面不存在！)/*tpa=http://www.oppo.cn/template/oppo/images/xiaoo.gif*/ no-repeat 20px; width: 52px; height: 154px; padding-right:70px; }
+#O_helper_top, #O_helper_fav, #O_helper_msg { background:#fff url(../../../../../../../www.oppo.cn/error-msg=404，您访问的页面不存在！)/*tpa=http://www.oppo.cn/template/oppo/images/scrolltop_new.png*/; display: block; width: 50px; height: 50px; border: 1px solid #c4c4c4; cursor: pointer; }
+#O_helper_top { background-position: 5px 4px; border-bottom:0 none; }
+#O_helper_top:hover { background-position: -44px 4px; }
+#O_helper_fav { background-position: 5px -45px; border-bottom:0 none; }
+#O_helper_fav:hover { background-position: -44px -45px; }
+#O_helper_msg { background-position: 5px -96px; }
+#O_helper_msg:hover { background-position: -44px -96px; }
+#O_helper_fav i, #O_helper_msg i { width: 4px; height: 4px; background: url(template/oppo/images/point_new.png)/*tpa=http://static.oppo.com/bbs/reserve/static/themes/oppo/css/template/oppo/images/point_new.png*/ no-repeat; position: absolute; left: 38px; bottom: 38px; display: block; }
+#O_helper_tip { display:none; position: absolute; width:161px; height: 111px; top:-171px; left:-30px; padding: 30px 15px; background:url(../../../../../../../www.oppo.cn/error-msg=404，您访问的页面不存在！)/*tpa=http://www.oppo.cn/static/image/help/xiaoo_info.png*/ top center no-repeat; _FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='static/image/help/xiaoo_info.png');
+_background:none; }
+#O_helper_close { width: 17px; height: 17px; position: absolute; right: 20px; top: 15px; }
+/***********/
+/*common结束*/
+/***********/

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.jxc.mapper.SalesOrderMapper">
+
+	<resultMap type="SalesOrder" id="SaleMapper">
+		<id property="soId" column="SO_id" />
+		<result property="salesTime" column="Sales_time" />
+		<result property="salesPrice" column="Sales_price" />
+		<result property="reviewDate" column="ReviewDate" />
+		<association property="customer" javaType="Customer">
+			<id property="customerId" column="Customer_id" />
+			<result property="cusName" column="Cus_name" />
+			<result property="cusAddress" column="Cus_address" />
+			<result property="cusPhone" column="Cus_phone" />
+			<result property="postalCode" column="PostalCode" />
+			<result property="cusContact" column="Cus_contact" />
+		</association>
+		<association property="employeeByEmployeeId"
+			javaType="Employee"
+			resultMap="cn.jxc.mapper.EmployeeMapper.employeeResultMap">
+		</association>
+		<association property="employeeByReviewEmpId"
+			javaType="Employee"
+			resultMap="cn.jxc.mapper.EmployeeMapper.employeeResultMap1">
+		</association>
+		<association property="reviewstatus"
+			javaType="ReviewStatus">
+			<id property="rsId" column="RS_id" />
+			<result property="rsName" column="RS_name" />
+		</association>
+	</resultMap>
+
+
+	<select id="getSaleByBlurry" resultMap="SaleMapper">
+		SELECT so.SO_id,emp1.EmpLoginName AS
+		eemploginname,cus.Cus_name,so.Sales_time,so.Sales_price,
+		emp2.EmploginName AS e1emploginname,so.ReviewDate,r.RS_name
+		FROM salesorder so
+		LEFT JOIN employee emp1 ON emp1.EmpLoginName=so.Employee_id
+		LEFT JOIN customer cus ON cus.Customer_id=so.Customer_id
+		LEFT JOIN employee emp2 ON emp2.EmpLoginName=so.ReviewEmp_id
+		LEFT JOIN Reviewstatus r ON so.ReviewStatus=r.RS_id
+		<where>
+			<if test="soId !=null and soId !=''">
+				and so.SO_id like concat('%',#{soId},'%')
+			</if>
+			<if test="empLoginName !=null and empLoginName !=''">
+				and emp1.EmpLoginName like concat('%',#{empLoginName},'%')
+			</if>
+		</where>
+	</select>
+	
+	<select id="searchEmpName" resultType="Employee">
+		SELECT * FROM employee
+	</select>
+	
+	<select id="searchCusName" resultMap="customerMapper">
+		SELECT Customer_id,Cus_Name FROM customer
+	</select>
+	
+	
+	<resultMap type="customer" id="customerMapper">
+			<id property="customerId" column="Customer_id" />
+			<result property="cusName" column="Cus_name" />
+			<result property="cusAddress" column="Cus_address" />
+			<result property="cusPhone" column="Cus_phone" />
+			<result property="postalCode" column="PostalCode" />
+			<result property="cusContact" column="Cus_contact" />
+	</resultMap>
+	
+	
+	
+	<select id="searchAllStockPile" resultMap="cn.jxc.mapper.StockPileMapper.stockPileMap">
+		SELECT * FROM stockpile
+	</select>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</mapper>

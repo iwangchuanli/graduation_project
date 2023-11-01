@@ -1,0 +1,683 @@
+html{color:#000; background:#fff;}
+body{}
+a{color:#999; text-decoration:none; cursor:pointer; outline: 0 none;}
+a:hover{color:#000; text-decoration:none;}
+a:focus{-moz-outline-style:none; border:0px;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0; padding:0;}
+ol,li,ul,dl,dt,dd{list-style:none;}
+fieldset,img{border:0;}
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:normal;}
+table{border-collapse:collapse; border-spacing:0;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input,textarea,select,button{font-family:inherit; font-size:inherit; font-weight:inherit; outline-style:none; outline-width:0; resize:none; padding: 0; margin: 0;}
+b,em,i{display:inline-block; vertical-align:middle; font-weight:normal; font-style:normal;}
+
+.cl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;} .cl{ zoom:1;}
+/*--z-reset--1*/
+
+/*--a-common--*/
+#header {
+  width: 100%;
+  position: fixed;
+  _position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 1000;
+  -webkit-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#header .y-header-container {
+	width: 1180px; 
+	margin: auto;
+  overflow: hidden;
+  zoom: 1;
+  
+}
+#header .y-header {
+  width: 1180px;
+  margin: 0 auto;
+  height: 55px;
+  position: relative;
+  background-color: #fff;
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+ 
+}
+#header .y-header .y-header-shadow {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background-color: rgba(7, 0, 2, 0.2);
+  background-color: transparent\9;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, startColorstr='#33070002',endColorstr='#33070002');
+  zoom: 1;
+}
+#header .logo {
+  width: 148px;
+  height: 50px;
+  margin-right: 16px;
+  float: left;
+}
+#header .logo a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  text-indent: -999em;
+  background: url("../images/logo-2.png")/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/logo-2.png*/ no-repeat;
+}
+.products{
+	padding-top: 17px;
+	float: left;
+	color: #7b7b7b;
+}
+.products a{
+	color: #7b7b7b;
+}
+.products a:hover{
+	color: #409f73;
+}
+#header .y-brand {
+  width: 77px;
+  height: 50px;
+  border-left: 1px solid #dcdcdc;
+  overflow: hidden;
+  text-indent: -999em;
+  background: url("../images/brand-n3.png")/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/brand-n3.png*/ no-repeat;
+}
+#header .y-header-container {
+  background-color: #fff;
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#header .y-logo-container {
+  padding-left: 16px;
+  float: left;
+}
+
+#header.header-in {
+  
+}
+
+#header.header-out {
+ 
+}
+
+
+#header.header-out .y-header-container {
+  padding: 0;
+  width: 1180px;
+  margin: auto;
+}
+
+#sticky-tabs {
+  height: 55px;
+  background: url("../images/product-tabs-bg.png")/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/product-tabs-bg.png*/ repeat-x;
+}
+
+.tabs {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.y-tabs{float: right;}
+
+#tabs {
+  height: 50px;
+}
+
+#tabs li {
+  float: left;
+  height: 50px;
+  padding: 0 21px 0 20px;
+  position: relative;
+  background: url("../images/menu-divide-bg.png")/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/menu-divide-bg.png*/ no-repeat 100% 50%;
+}
+
+#tabs li i {
+  width: 100%;
+  height: 4px;
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #409f73;
+}
+
+#tabs li.y-last {
+  background: none;
+}
+
+#tabs li a {
+  height: 18px;
+  margin-top: 16px;
+  float: left;
+  display: block;
+  color: #9b9da0;
+  line-height: 18px;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+
+#tabs li a:hover {
+  color: #409f73;
+}
+
+#tabs li.y-active a {
+  color: #409f73;
+}
+
+#tabs li.y-active i {
+  display: block;
+}
+
+.y-reminder {
+  float: right;
+}
+
+.y-reminder .y-btn {
+  width: 90px;
+  height: 50px;
+  display: block;
+  overflow: hidden;
+  background: #409f73;
+  text-align: center; line-height: 50px;
+  color: #fff;
+  font-size: 14px;
+/*   background: url("/cn/product/p/n3/images/booking-button-1.jpg") no-repeat; */
+}
+
+
+#n3-dt-wrap{width:100%; position: relative; overflow: hidden; z-index: 1; color:#000; background:#fff; font-family: "Microsoft YaHei","tahoma"; font-size:75%; -webkit-font-smoothing: antialiased; min-width: 1200px; font-size: 14px;}
+#n3-dt-wrap .fixp{padding-top: 75px;}
+#n3-dt-wrap .n3-dt-section{width:100%; position: relative; overflow: hidden; z-index: 1;}
+.n3-dt-section .n3-dt-box{width: 1000px; margin: auto; position: relative; height: 800px;}
+.n3-dt-section .n3-dt-title{text-align: center; position: relative; z-index: 2; margin: auto;}
+.n3-dt-section .n3-dt-title h2{color: #00925f; font-size: 36px; line-height: 1em;}
+.n3-dt-section .n3-dt-title p.n3-st{color: #00925f; font-size: 36px; padding-top: 10px; line-height: 1em;}
+.n3-dt-section .n3-dt-title .n3-des{color: #888; line-height: 1.5em; font-size: 15px; padding-top: 20px;}
+.n3-dt-section .n3-figure{position: relative; z-index: 1;}
+/*--z-common--*/
+
+
+/* sc1 */
+.n3-sc1{background: #fff;}
+.n3-sc1 .n3-dt-title{width: 700px; padding-top: 80px;}
+.n3-sc1 .n3-figure{width: 840px; height: 520px; position: absolute; left: 50%; bottom: -20px; margin-left: -420px; overflow: hidden;}
+.n3-sc1 .n3-figure i{width: 670px; height: 300px; overflow: hidden; position: absolute; top: 115px; left: 85px; background: url(../images/n3-sc1-figure-ant.jpg)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-sc1-figure-ant.jpg*/ no-repeat;}
+.n3-sc1 .n3-figure span.mask{width: 670px; height: 300px; overflow: hidden; position: absolute; top: 115px; left: 85px; background: url(../images/n3-sc1-figure-mask.png)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-sc1-figure-mask.png*/ no-repeat;}
+
+/* sc2 */
+.n3-sc2{background: #0f0f0f;}
+.n3-sc2 .n3-dt-title{width: 700px; position: absolute; left: 50%; bottom: 120px; margin-left: -350px;}
+.n3-sc2 .n3-figure{width: 1600px; height: 800px; position: absolute; left: 50%; top: 0; margin-left: -800px; overflow: hidden;}
+.n3-sc2 .n3-figure i{width: 100%; height: 210px; overflow: hidden; position: absolute; left: 0; top: 251px; background: url(../images/n3-sc2-figure-light.jpg)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-sc2-figure-light.jpg*/ no-repeat; opacity: 0;}
+/* fix */
+.nohtml5 .n3-sc2 .n3-figure i{display: none;}
+/* --- */
+.n3-sc2.play .n3-figure i{-webkit-animation: sc2-ligth-ant infinite 5s .5s ease-in-out; -moz-animation: sc2-ligth-ant infinite 5s .5s ease-in-out; -ms-animation: sc2-ligth-ant infinite 5s .5s ease-in-out; animation: sc2-ligth-ant infinite 5s .5s ease-in-out; }
+@-webkit-keyframes sc2-ligth-ant{ 40%{opacity: 0} 40%{opacity: 1} 90%{opacity: 0} }
+@-moz-keyframes sc2-ligth-ant{ 40%{opacity: 0} 40%{opacity: 1} 90%{opacity: 0} }
+@-ms-keyframes sc2-ligth-ant{ 40%{opacity: 0} 40%{opacity: 1} 90%{opacity: 0} }
+@keyframes sc2-ligth-ant{ 40%{opacity: 0} 40%{opacity: 1} 90%{opacity: 0} }
+
+/* sc3 */
+.n3-sc3{background: #fff;}
+.n3-sc3 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 90px; margin-left: -350px;}
+.n3-sc3 .n3-graphic-info{padding-top: 30px; text-align: center;}
+.n3-sc3 .n3-graphic-info .gi-item{width: 120px; display: inline-block; margin: 0 10px; color: #888;}
+.n3-sc3 .n3-graphic-info .gi-item span{width: 120px; height: 120px; line-height: 120px; display: block; border: 1px #878787 solid; color: #888; font-family: 'MyriadProziti'; font-size: 5em; font-weight: normal; white-space: nowrap; overflow: hidden;}
+.n3-sc3 .n3-graphic-info .gi-item p{padding-top: 5px; font-size: 14px;}
+.n3-sc3 .n3-figure{width: 1250px; height: 380px; position: absolute; left: 50%; bottom: -40px; margin-left: -625px; overflow: hidden;}
+
+/* sc4 */
+.n3-sc4{background: #f6f6f6;}
+.n3-sc4 .n3-dt-box{height: 1200px;}
+.n3-sc4 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 100px; margin-left: -350px;}
+.n3-sc4 .n3-figure{width: 1960px; height: 740px; position: absolute; left: 50%; bottom: 0; margin-left: -840px; overflow: hidden; background: url(../images/n3-sc4-figure.jpg)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-sc4-figure.jpg*/ no-repeat;}
+.n3-sc4 .n3-tech-ico{width: 185px; height: 185px; overflow: hidden; margin: auto; margin-top: 50px;}
+
+/* sc5 */
+.n3-sc5{background: #fff;}
+.n3-sc5 .n3-dt-box{height: 1000px;}
+.n3-sc5 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 100px; margin-left: -350px;}
+.n3-sc5 .n3-figure{width: 270px; height: 560px; position: absolute; top: 340px; right: 120px; overflow: hidden;}
+.n3-sc5 .n3-figure .mobile{width: 270px; height: 560px; position: absolute; top: 0; left: 0; overflow: hidden;}
+.n3-sc5 .n3-figure .screen{width: 235px; height: 412px; overflow: hidden; position: absolute; top: 75px; left: 18px; background: #000;}
+.n3-sc5 .n3-hands{width: 360px; height: 670px; overflow: hidden; position: absolute; left: 110px; bottom: 0;}
+
+/* sc6 */
+.n3-sc6{background: #f6f6f6;}
+.n3-sc6 .n3-dt-box{height: 1100px;}
+.n3-sc6 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 100px; margin-left: -350px;}
+.n3-sc6 .n3-figure{width: 940px; margin: auto; padding-top: 400px;}
+.n3-sc6 .n3-figure .n3-sc6-per{width: 460px; position: relative;}
+.n3-sc6 .n3-figure .n3-sc6-per i{width: 460px; height: 350px; display: block; position: relative;}
+.n3-sc6 .n3-figure .n3-sc6-per p{text-align: center; font-size: 14px; color: #888; padding-top: 20px; -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); opacity: 0; -webkit-transition: all 1.2s .5s cubic-bezier(.22,.73,.43,1.17); -moz-transition: all 1.2s .5s cubic-bezier(.22,.73,.43,1.17); -ms-transition: all 1.2s .5s cubic-bezier(.22,.73,.43,1.17); transition: all 1.2s .5s cubic-bezier(.22,.73,.43,1.17); }
+.n3-sc6 .n3-figure .sc6-normal{float: left;}
+.n3-sc6 .n3-figure .sc6-normal i{background: url(../images/n3-s6-pertable-nor.jpg)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-s6-pertable-nor.jpg*/ no-repeat;}
+.n3-sc6 .n3-figure .sc6-vooc{float: right;}
+.n3-sc6 .n3-figure .sc6-vooc i{background: url(../images/n3-s6-pertable-vooc.jpg)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-s6-pertable-vooc.jpg*/ no-repeat;}
+.n3-sc6 .n3-figure .sc6-vooc p{color: #00925f;}
+.n3-sc6 .n3-figure .sc6-per-ant{width: 298px; height: 300px; overflow: hidden; position: absolute; right: 95px; top: 21px; background: #f6f6f6; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -ms-transition-timing-function: ease-in-out; transition-timing-function: ease-in-out; }
+.n3-sc6 .n3-graphic-info{width: 100%; padding-top: 80px; text-align: center; position: relative;}
+.n3-sc6 .n3-graphic-info .gi-item{width: 120px; height: 146px; display: inline-block; margin: 0 30px; color: #888;}
+.n3-sc6 .n3-graphic-info .gi-item span{width: 120px; height: 120px; line-height: 120px; display: block; border: 1px #878787 solid; color: #888; font-family: 'MyriadProziti'; font-size: 5em; font-weight: normal; white-space: nowrap; overflow: hidden;}
+.n3-sc6 .n3-graphic-info .gi-item span strong{font-size: 0.5em;}
+.n3-sc6 .n3-graphic-info .gi-item p{padding-top: 5px; font-size: 14px;}
+/* --- */
+.n3-sc6.play .n3-figure .n3-sc6-per p{-webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); transform: scale(1); opacity: 1; }
+
+/* sc7 */
+.n3-sc7{background: #fff;}
+.n3-sc7 .n3-dt-box{height: 1000px;}
+.n3-sc7 .n3-dt-title{width: 700px; position: absolute; left: 50%; bottom: 80px; margin-left: -350px;}
+.n3-sc7 .n3-figure{width: 340px; height: 580px; position: absolute; left: 50%; top: 80px; margin-left: -170px; overflow: hidden;}
+.n3-sc7 .n3-figure .mobile{width: 340px; height: 580px; position: absolute; top: 0; left: 0; overflow: hidden; z-index: 5;}
+.n3-sc7 .n3-figure .screen{width: 240px; height: 424px; overflow: hidden; position: absolute; top: 72px; left: 28px; background: #000; z-index: 1;}
+.n3-sc7 .n3-figure .screen img{position: absolute; top: 0; left: 0;}
+.n3-sc7 .switch-box{width: 100%; text-align: center; position: absolute; bottom: 280px; left: 0;}
+.n3-sc7 .switch-box a{display: inline-block; margin: 0 35px; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out;  color: #7eb896}
+.n3-sc7 .switch-box a:hover,.n3-sc7 .switch-box a.current{color: #00925f;}
+
+/* sc8 */
+.n3-sc8{background: #f6f6f6;}
+.n3-sc8 .n3-dt-box{height: 900px;}
+.n3-sc8 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 100px; margin-left: -350px;}
+.n3-sc8 .n3-figure{width: 1580px; height: 480px; position: absolute; bottom: -110px; left: 50%; margin-left: -790px; overflow: hidden;}
+.n3-sc8 .n3-graphic-info{width: 100%; padding-top: 60px; text-align: center; position: relative;}
+.n3-sc8 .n3-graphic-info .gi-item{width: 120px; height: 146px; display: inline-block; margin: 0 10px; color: #888;}
+.n3-sc8 .n3-graphic-info .gi-item span{width: 120px; height: 120px; line-height: 120px; display: block; border: 1px #878787 solid; color: #888; font-family: 'MyriadProziti'; font-size: 5em; font-weight: normal; white-space: nowrap; overflow: hidden;}
+.n3-sc8 .n3-graphic-info .gi-item span.fix{font-size: 3.5em; line-height: .8em; padding-top: 30px; height: 90px;}
+.n3-sc8 .n3-graphic-info .gi-item span strong{font-size: 0.5em; position: relative; top: -2px;}
+.n3-sc8 .n3-graphic-info .gi-item p{padding-top: 5px; font-size: 14px;}
+
+/* sc9 */
+.n3-sc9{background: url(../images/n3-sc9-bg.jpg)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-sc9-bg.jpg*/ center center no-repeat; background-size: cover;}
+.n3-sc9 .n3-dt-box{height: 1000px;}
+.n3-sc9 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 100px; margin-left: -350px; color: #fff;}
+.n3-sc9 .n3-dt-title .n3-des{color: #fff;}
+.n3-sc9 p.n3-tips{color: #fff; padding-top: 20px; font-size: 14px;}
+.n3-sc9 .n3-figure{width: 1080px; height: 290px; position: absolute; bottom: 100px; left: 50%; margin-left: -540px; overflow: hidden;}
+.n3-sc9 .n3-graphic-info{width: 100%; padding-top: 60px; text-align: center; position: relative;}
+.n3-sc9 .n3-graphic-info .gi-item{width: 120px; height: 146px; display: inline-block; margin: 0 10px; color: #fff;}
+.n3-sc9 .n3-graphic-info .gi-item span{width: 120px; height: 120px; line-height: 120px; display: block; border: 1px #fff solid; color: #fff; font-family: 'MyriadProziti'; font-size: 5em; font-weight: normal; white-space: nowrap; overflow: hidden;}
+.n3-sc9 .n3-graphic-info .gi-item span strong{font-size: 0.5em; position: relative; top: -2px;}
+.n3-sc9 .n3-graphic-info .gi-item p{padding-top: 5px; font-size: 14px;}
+
+
+/* sc10 */
+.n3-sc10{background: #f6f6f6;}
+.n3-sc10 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 100px; margin-left: -350px;}
+.n3-sc10 .n3-figure{width: 700px; height: 310px; position: relative; top: 400px; margin: auto; overflow: hidden;}
+.n3-sc10 .n3-data-graphic{width: 700px; height: 310px; position: absolute; top: 0; left: 0; overflow: hidden; background: #f6f6f6; opacity: 0; -webkit-transition: opacity .5s .5s ease-in-out; -moz-transition: opacity .5s .5s ease-in-out; -ms-transition: opacity .5s .5s ease-in-out; transition: opacity .5s .5s ease-in-out; opacity: 0;}
+.n3-sc10 .n3-data-graphic i{width: 700px; height: 310px; position: absolute; top: 0; left: 0; background: url(../images/n3-circle-ele.png)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-circle-ele.png*/ no-repeat;}
+.n3-sc10 .n3-data-graphic strong{width: 300px; height: 300px; overflow: hidden; position: absolute; top: 0; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; border-radius: 100%;}
+.n3-sc10 .n3-data-graphic strong.lc{left: 0;}
+.n3-sc10 .n3-data-graphic strong.rc{right: 0;}
+.n3-sc10 .n3-data-graphic strong canvas{-webkit-animation-timing-function: ease-in-out; -moz-animation-timing-function: ease-in-out; -ms-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; }
+.n3-sc10 .n3-data-graphic .data-value span{display: block; text-align: center; opacity: 0;}
+.n3-sc10 .n3-data-graphic .data-value span.st{padding: 70px 0 30px 0; -webkit-transform: translate3d(0,-10%,0); -moz-transform: translate3d(0,-10%,0); -ms-transform: translate3d(0,-10%,0); transform: translate3d(0,-10%,0); }
+.n3-sc10 .n3-data-graphic .data-value span.sd{-webkit-transform: translate3d(0,-15%,0); -moz-transform: translate3d(0,-15%,0); -ms-transform: translate3d(0,-15%,0); transform: translate3d(0,-15%,0); }
+/* fix */
+.html5 .n3-sc10 .n3-figure img.low{display: none;}
+.nohtml5 .n3-sc10 .n3-data-graphic{display: none;}
+/* --- */
+.n3-sc10.play .n3-data-graphic{opacity: 1;}
+.n3-sc10.play .n3-data-graphic .data-value span.st{-webkit-transition: all .5s .7s ease-in-out; -moz-transition: all .5s .7s ease-in-out; -ms-transition: all .5s .7s ease-in-out; transition: all .5s .7s ease-in-out; opacity: 1; -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+.n3-sc10.play .n3-data-graphic .data-value span.sd{-webkit-transition: all .5s .8s ease-in-out; -moz-transition: all .5s .8s ease-in-out; -ms-transition: all .5s .8s ease-in-out; transition: all .5s .8s ease-in-out; opacity: 1; -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+
+/* sc11 */
+.n3-sc11{background: #fff;}
+.n3-sc11 .n3-dt-box{height: 1100px;}
+.n3-sc11 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 100px; margin-left: -350px;}
+.n3-sc11 .n3-figure{width: 700px; height: 600px; position: absolute; bottom: 100px; left: 50%; margin-left: -350px; overflow: hidden;}
+.n3-sc11 .next-feature{width: 200px;height: 56px;position: absolute;bottom: 17px;left: 50%;margin-left: -100px; overflow: hidden;text-align: center;border: 5px solid #00925F;cursor: pointer;}
+.n3-sc11 .next-feature a{display: inline-block;width: 200px;height: 56px;line-height: 56px;color: #00925F;font-size: 20px;font-weight: 700;}
+
+/* sc12 */
+.n3-sc12{background: #f6f6f6;}
+.n3-sc12 .n3-dt-box{height: 900px;}
+.n3-sc12 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 100px; margin-left: -350px;}
+.n3-sc12 .n3-figure{width: 908px; height: 350px; position: absolute; bottom: -10px; left: 50%; margin-left: -454px; overflow: hidden;}
+.n3-sc12 .n3-graphic-info{width: 100%; padding-top: 60px; text-align: center; position: relative;}
+.n3-sc12 .n3-graphic-info .gi-item{width: 120px; height: 146px; display: inline-block; margin: 0 10px; color: #888;}
+.n3-sc12 .n3-graphic-info .gi-item span{width: 120px; height: 120px; line-height: 120px; display: block; border: 1px #878787 solid; color: #888; font-family: 'MyriadProziti'; font-size: 3.8em; font-weight: normal; white-space: nowrap; overflow: hidden; letter-spacing: 0px; vertical-align: middle;}
+.n3-sc12 .n3-graphic-info .gi-item span strong{font-size: 0.5em; display: inline-block; position: relative; top: -20px;}
+.n3-sc12 .n3-graphic-info .gi-item p{padding-top: 5px; font-size: 14px;}
+
+/* sc13 */
+.n3-sc13{background: #fff;}
+.n3-sc13 .n3-dt-box{height: 900px;}
+.n3-sc13 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 100px; margin-left: -350px;}
+.n3-sc13 .n3-figure{width: 908px; height: 460px; position: absolute; bottom: 80px; left: 50%; margin-left: -454px; overflow: hidden;}
+
+/* sc14 */
+.n3-sc14{background: #fff;}
+.n3-sc14 .n3-sc14-landscape{width: 100%; height: 600px; position: relative; overflow: hidden; background: url(../images/n3-sc14-landscape.jpg)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-sc14-landscape.jpg*/ center center no-repeat; background-size: cover;  -webkit-transition-timing-function: ease-in-out;}
+.n3-sc14 h3{position:absolute; right: 40px; top: 550px; color: #fff; font-size: 14px;}
+.n3-sc14 .n3-dt-box{height: 400px;}
+.n3-sc14 .n3-dt-title{width: 700px; position: absolute; left: 50%; bottom: 80px; margin-left: -350px;}
+.n3-sc14 .n3-figure{width: 160px; height: 600px; position: absolute; top: 110px; left: 50%; margin-left: -80px;}
+.n3-sc14 .n3-figure i{width: 160px; height: 300px; overflow: hidden; position: absolute; top: 147px; left: 0; background: url(../images/n3-sc14-figure-ant.png)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-sc14-figure-ant.png*/ no-repeat;}
+
+/* sc15 */
+.n3-sc15{background: #f6f6f6;}
+.n3-sc15 .n3-dt-box{height: 1100px;}
+.n3-sc15 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 100px; margin-left: -350px;}
+.n3-sc15 .n3-sc15-slide{padding-top: 360px; position: relative;}
+.n3-sc15 .n3-sc15-slide .switch-box{width: 100%; padding-bottom: 30px; text-align: center;}
+.n3-sc15 .n3-sc15-slide .switch-box a{display: inline-block; margin: 0 15px; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out;  color: #7eb896}
+.n3-sc15 .n3-sc15-slide .switch-box a:hover,.n3-sc15 .n3-sc15-slide .switch-box a.current{color: #00925f;}
+.n3-sc15 .n3-sc15-slide .slide-box{width: 100%; height: 610px; position: relative;}
+.n3-sc15 .n3-sc15-slide .slide-box ul{display: block; height: 610px; position: relative; -webkit-transition-timing-function: cubic-bezier(0,.6,.41,1.27); -moz-transition-timing-function: cubic-bezier(0,.6,.41,1.27); -ms-transition-timing-function: cubic-bezier(0,.6,.41,1.27); transition-timing-function: cubic-bezier(0,.6,.41,1.27); }
+.n3-sc15 .n3-sc15-slide .slide-box ul li{width: 350px; height: 610px; overflow: hidden; position: relative; float: left; background-image: url('../images/n3-sc15-figure.jpg')/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-sc15-figure.jpg*/;  background-repeat: no-repeat; -webkit-transform: scale(.8); -moz-transform: scale(.8); -ms-transform: scale(.8); transform: scale(.8); -webkit-transition: -webkit-transform .5s ease-in-out; -moz-transition: -moz-transform .5s ease-in-out; -ms-transition: -ms-transform .5s ease-in-out; transition: transform .5s ease-in-out; }
+.n3-sc15 .n3-sc15-slide .slide-box ul li.u1{background-position: 0 0;}
+.n3-sc15 .n3-sc15-slide .slide-box ul li.u2{background-position: -350px 0;}
+.n3-sc15 .n3-sc15-slide .slide-box ul li.u3{background-position: -700px 0;}
+/* --- */
+.n3-sc15 .n3-sc15-slide .slide-box ul li.bigshow{-webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+
+/* sc16 */
+.n3-sc16{background: #fff;}
+.n3-sc16 .n3-dt-box{height: 900px;}
+.n3-sc16 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 100px; margin-left: -350px;}
+.n3-sc16 .n3-dt-title .n3-des{color: #fff;}
+.n3-sc16 .gallery-box{position: relative; z-index: 1;}
+.n3-sc16 .gallery-box li{width: 100%; height: 900px; overflow: hidden; position: absolute; top: 0; left: 0; display: none;}
+.n3-sc16 .gallery-box li h3{position: absolute; bottom: 60px; right: 100px; font-size: 14px; color: #fff; line-height: 1.3em;}
+.n3-sc16 .gallery-box li.g1{background: url(../images/n3-sc16-figure1.jpg)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-sc16-figure1.jpg*/ center center no-repeat; background-size: cover;}
+.n3-sc16 .gallery-box li.g2{background: url(../images/n3-sc16-figure2.jpg)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-sc16-figure2.jpg*/ center center no-repeat; background-size: cover;}
+.n3-sc16 .switch-box{width: 100%; position: absolute; bottom: 50px; left: 0; text-align: center; z-index: 5;}
+.n3-sc16 .switch-box span{display: inline-block; height: 35px; border: 1px #fff solid; border: 1px rgba(255,255,255,.5) solid; overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; position: relative;}
+.n3-sc16 .switch-box span a{width: 100px; height: 35px; line-height: 35px; display: inline-block; font-size: 14px; color: #fff; color/*\**/: #000 \9; background: #fff; background: rgba(255,255,255,.2); overflow: hidden; position: relative; -webkit-transition: background-color .5s ease-in-out; -moz-transition: background-color .5s ease-in-out; -ms-transition: background-color .5s ease-in-out; transition: background-color .5s ease-in-out; }
+.n3-sc16 .switch-box span a:hover,.n3-sc16 .switch-box span a.current{background: #fff; background: rgba(255,255,255,.5);}
+
+/* sc17 */
+.n3-sc17{background: #f6f6f6;}
+.n3-sc17 .n3-dt-box{height: 1000px;}
+.n3-sc17 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 100px; margin-left: -350px;}
+.n3-sc17 .n3-figure{width: 910px; height: 419px; overflow: hidden; position: absolute; bottom: 200px; left: 50%; margin-left: -455px;}
+.n3-sc17 .n3-figure .mobile{width: 910px; height: 419px; overflow: hidden; position: absolute; top: 0; left: 0; z-index: 2;}
+.n3-sc17 .n3-figure .screen{width: 493px; height: 370px; overflow: hidden; position: absolute; top: 23px; left: 185px; background: #000; z-index: 1;}
+.n3-sc17 .n3-figure .screen img{position: absolute; top: 0; left: 0; z-index: 1;}
+.n3-sc17 .n3-figure .screen img.f{z-index: 2;}
+.n3-sc17 .n3-figure b.focus{width: 83px; height: 83px; overflow: hidden; position: absolute; top: 220px; left: 540px; background: url(../images/n3-sc17-focus.png)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-sc17-focus.png*/ no-repeat; z-index: 9;}
+.n3-sc17 .hands{width: 1830px; height: 650px; position: absolute; top: 570px; left: 500px; z-index: 3;}
+
+/* sc18*/
+.n3-sc18{background: #fff;}
+.n3-sc18 .n3-dt-box{height: 1250px;}
+.n3-sc18 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 100px; margin-left: -350px;}
+.n3-sc18 .n3-figure{width: 580px; height: 820px; overflow: hidden; position: absolute; bottom: 100px; left: 50%; margin-left: -290px;}
+.n3-sc18 .next-feature{width: 200px;height: 56px;position: absolute;bottom: 17px;left: 50%;margin-left: -100px; overflow: hidden;text-align: center;border: 5px solid #00925F;cursor: pointer;}
+.n3-sc18 .next-feature a{display: inline-block;width: 200px;height: 56px;line-height: 56px;color: #00925F;font-size: 20px;font-weight: 700;}
+
+/* sc19*/
+.n3-sc19{background: #f6f6f6;}
+.n3-sc19 .n3-dt-box{height: 800px;}
+.n3-sc19 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 100px; margin-left: -350px;}
+.n3-sc19 .n3-figure{width: 700px; height: 310px; overflow: hidden; position: relative; top: 380px; margin: auto;}
+.n3-sc19 .n3-data-graphic{width: 700px; height: 310px; position: absolute; top: 0; left: 0; overflow: hidden; background: #f6f6f6; opacity: 0; -webkit-transition: opacity .5s .5s ease-in-out; -moz-transition: opacity .5s .5s ease-in-out; -ms-transition: opacity .5s .5s ease-in-out; transition: opacity .5s .5s ease-in-out; opacity: 0;}
+.n3-sc19 .n3-data-graphic i{width: 700px; height: 310px; position: absolute; top: 0; left: 0; background: url(../images/n3-circle-ele.png)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-circle-ele.png*/ no-repeat;}
+.n3-sc19 .n3-data-graphic strong{width: 300px; height: 300px; overflow: hidden; position: absolute; top: 0; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; border-radius: 100%;}
+.n3-sc19 .n3-data-graphic strong.lc{left: 0;}
+.n3-sc19 .n3-data-graphic strong.rc{right: 0;}
+.n3-sc19 .n3-data-graphic strong canvas{-webkit-animation-timing-function: ease-in-out; -moz-animation-timing-function: ease-in-out; -ms-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; }
+.n3-sc19 .n3-data-graphic .data-value span{display: block; text-align: center; opacity: 0;}
+.n3-sc19 .n3-data-graphic .data-value span.st{padding: 70px 0 30px 0; -webkit-transform: translate3d(0,-10%,0); -moz-transform: translate3d(0,-10%,0); -ms-transform: translate3d(0,-10%,0); transform: translate3d(0,-10%,0); }
+.n3-sc19 .n3-data-graphic .data-value span.sd{-webkit-transform: translate3d(0,-15%,0); -moz-transform: translate3d(0,-15%,0); -ms-transform: translate3d(0,-15%,0); transform: translate3d(0,-15%,0); }
+.n3-sc19 .n3-data-graphic .data-value b{width: 53px; height: 53px; overflow: hidden; position: absolute; top: 127px; left: 50%; margin-left: -26px;}
+/* fix */
+.html5 .n3-sc19 .n3-figure img.low{display: none;}
+.nohtml5 .n3-sc19 .n3-data-graphic{display: none;}
+/* --- */
+.n3-sc19.play .n3-data-graphic{opacity: 1;}
+.n3-sc19.play .n3-data-graphic .data-value span.st{-webkit-transition: all .5s .7s ease-in-out; -moz-transition: all .5s .7s ease-in-out; -ms-transition: all .5s .7s ease-in-out; transition: all .5s .7s ease-in-out; opacity: 1; -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+.n3-sc19.play .n3-data-graphic .data-value span.sd{-webkit-transition: all .5s .8s ease-in-out; -moz-transition: all .5s .8s ease-in-out; -ms-transition: all .5s .8s ease-in-out; transition: all .5s .8s ease-in-out; opacity: 1; -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+
+/* sc20*/
+.n3-sc20{background: #ffff;}
+.n3-sc20 .n3-dt-box{height: 800px;}
+.n3-sc20 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 60px; margin-left: -350px;}
+.n3-sc20 .n3-figure{width: 600px; height: 520px; overflow: hidden; position: absolute; left: 50%; bottom: 0; margin-left: -300px;}
+
+/* sc21*/
+.n3-sc21{background: #000 url(../images/n3-sc21-bg.jpg)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/n3-sc21-bg.jpg*/ center center no-repeat; background-size: cover;}
+.n3-sc21 .n3-dt-box{height: 900px;}
+.n3-sc21 .n3-dt-title{width: 700px; position: absolute; left: 50%; bottom: 100px; margin-left: -350px;}
+.n3-sc21 .n3-figure{width: 1274px; height: 716px; overflow: hidden; position: relative; top: 0; left: 50%; margin-left: -637px;}
+
+/* sc22*/
+.n3-sc22{background: #fff;}
+.n3-sc22 .n3-dt-box{height: 840px;}
+.n3-sc22 .n3-dt-title{width: 700px; position: absolute; left: 50%; top: 60px; margin-left: -350px;}
+.n3-sc22 .n3-figure{width: 365px; height: 440px; overflow: hidden; position: relative; top: 300px; margin: auto;}
+.n3-sc22 .next-feature{width: 200px;height: 56px;position: absolute;bottom: 17px;left: 50%;margin-left: -100px; overflow: hidden;text-align: center;border: 5px solid #00925F;cursor: pointer;}
+.n3-sc22 .next-feature a{display: inline-block;width: 200px;height: 56px;line-height: 56px;color: #00925F;font-size: 20px;font-weight: 700;}
+
+/* ie <8 hack */
+.n3-dt-section .n3-graphic-info .gi-item{*display: inline; *zoom: 1;}
+
+/*edit by swing 2014-10-28*/
+#tabs li a,
+.y-reminder .y-btn{font-family: "微软雅黑";}
+#header .y-brand{float: left;width:130px;_background:url(../images/brand-n3-ie6.png)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/brand-n3-ie6.png*/ no-repeat;}
+.n3-sc2{background-color:#000;}
+#header .y-header .y-header-shadow{_height:5px;_overflow:hidden;}
+#tabs li i{_height:4px;_overflow:hidden;_width: 69px;}
+#tabs{_width: 300px;padding-right: 25px;}
+.tab-final{background: none!important;}
+#header .logo a{_background:url(../images/logo-2.jpg)/*tpa=http://shopfs.myoppo.com/cn/product/p/n3/images/logo-2.jpg*/ no-repeat;}
+
+.n3-param-wrapper{width: 1180px;margin: 0 auto;}
+.n3-param-unit-1{padding-top: 50px;}
+/*mobile message reminder dialog*/
+.mask{
+  background-color: #000;
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter:alpha(opacity=50); 
+  width: 100%;
+  z-index: 1099;
+  display:none;
+}
+
+.dialog{
+  z-index: 1100; 
+  background-color:#fff; 
+  border:solid 5px #ccc;
+  display: none;
+  margin: 10px auto;
+  font-family: "微软雅黑" arial;
+}
+
+.dialog-content{
+  position: relative;
+}
+
+.dialog-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.dialog-close a{
+  color: #b2b2b2;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  display: block;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.dialog-title{
+  height: 40px;
+  line-height: 40px;
+  background-color: #f6f6f6;
+  color: #575757;
+  font-size: 14px;
+  font-weight: bold;
+  text-indent: 20px;
+}
+
+.dialog-container{
+  padding: 40px 60px 70px;
+  position: relative;
+}
+
+.dialog-unit {
+  padding: 10px 0;
+}
+
+.dialog-unit input{
+  height: 28px;
+  line-height: 26px;
+  border: solid 1px #cccccc;
+  color: #666;
+  font-size: 14px;
+  text-indent: 10px;
+  margin-right: 10px;
+  width: 170px;
+}
+
+.dialog-unit input.short{
+  width: 80px;
+}
+
+.dialog-star{
+  color: #ed0000;
+  margin-right: 5px;
+}
+
+.dialog-error{
+  color: #ed0000;
+  font-size: 12px;
+  position: absolute;
+  line-height: 20px;
+}
+
+.dialog-unit label{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.dialog-unit img{
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
+.dialog-unit a{
+  font-size: 12px;
+  color: #999999;
+}
+
+.dialog-btn{
+  padding-left: 70px;
+  padding-top: 20px;
+}
+
+.dialog-btn a{
+  width: 82px;
+  height: 31px;
+  display: inline-block;
+  line-height: 31px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #03b788;
+  border-radius: 4px;
+  border: solid 1px #03b788;
+  font-size: 14px;
+}
+
+.dialog-btn a.disabled{
+  background-color: #f6f6f6;
+  color: #666666;
+  border: solid 1px #cccccc;
+  cursor: default;
+}
+
+.dialog-text{
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  color: #646464;
+}
+
+.dialog-text span{
+  color: #03b788;
+}
+
+#error-for-mobile{
+  left: 140px;
+  top: 108px;
+}
+
+#error-for-code{
+  left: 140px;
+  top: 158px;
+}
+
+#dialog-reminder{
+  width: 500px;
+}
+
+#dialog-welldone{
+  width: 490px;
+}
+
+#dialog-message{
+  width: 430px;
+}
+
+#dialog-welldone .dialog-container,
+#dialog-message .dialog-container{
+  padding: 90px 0 80px;
+}
+
+#dialog-welldone .dialog-btn,
+#dialog-message .dialog-btn{
+  padding: 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#n3-sc9-link{
+  position: absolute;
+  left: 680px;
+  top: 105px;
+  z-index: 99;
+}
+
+.n3-des sup{
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.footer-info{
+	color: #7b7b7b;
+	font-size: 13px;
+	text-align: left;
+	padding: 24px 0;
+	position: relative;
+	border-top: 1px solid #ededed;
+}
+
+.footer-info .wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+}

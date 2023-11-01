@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<!-- saved from url=(0041)http://id.oppo.com/account/profile?type=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>『OPPO帐号』-个人信息</title>
+    <meta name="keywords" content=" OPPO帐号,登录,注册,找回密码,OPPO账号,OPPO会员"> 
+    <meta name="description" content="登录OPPO帐号，可以在OPPO官网、社区、软件商店、游戏中心、主题商店等享受更多功能服务。">
+
+    <link rel="stylesheet" href="{{asset('Home/shop/css/common.css?r=20161011')}}" />
+	<link href="{{asset('media/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css"/>
+	<link href="{{asset('media/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css"/>
+
+	<link href="{{asset('media/css/bootstrap-responsive.min.css')}}" rel="stylesheet" type="text/css"/>
+    </head>
+<body>
+ 
+<div class="wrapper">
+    <!--头部-->
+    <div class="header">
+        <div class="w960">
+             <ul class="menu_sec">
+                <li><a href="http://www.oppo.com/">OPPO官网</a></li>
+                <li><a href="http://www.oppo.cn/">OPPO社区</a></li>
+                <li><a href="http://www.coloros.com/">ColorOS</a></li>
+                <div class="clear"></div>
+            </ul>
+            <ul class="account_area">
+                <li class="hasLogin"><a class="quit_link">退出</a></li>
+             </ul>       
+            <div class="clear"></div>
+        </div>  
+    </div>
+
+
+    <div class="main_content">
+        <!--帐号信息-->
+        <ul class="account_info">
+			<center>
+            <li>
+				<label >
+					<button type="button" data-toggle="modal" data-target="#myModal" > 
+						<img src="{{$result['uface']}}" title="点击我更换头像" >
+					</button>	
+				</label>
+			</li>
+			</center>
+        </ul>
+		<center>
+		<form action="/infoupdate" class="form-horizontal" method="post">
+									{!! csrf_field() !!}
+									<div class="control-group">
+
+										<label class="control-label">用户名</label>
+
+										<div class="controls">
+
+											<input type="text" class="span6 m-wrap" name="uname" value="{{$result['uname']}}"/>
+
+											<span class="help-inline"></span>
+
+										</div>
+
+									</div>
+
+									<div class="control-group">
+
+										<label class="control-label">电话</label>
+
+										<div class="controls">
+
+											<input type="text" class="span6 m-wrap" name="utel" value="{{$result['utel']}}"/>
+
+											<span class="help-inline"></span>
+
+										</div>
+
+									</div>
+
+									<div class="control-group">
+
+										<label class="control-label">邮箱</label>
+
+										<div class="controls">
+
+											<input type="email" class="span6 m-wrap" name="uemail"  value="{{$result['uemail']}}"/>
+
+											<span class="help-inline"></span>
+
+										</div>
+
+									</div>
+									<div class="control-group">
+
+										<label class="control-label">等级</label>
+
+										<div class="controls">
+
+											<input type="number" class="span6 m-wrap" name="level"   value="{{$result['level']}}" disabled/>
+
+											<span class="help-inline"></span>
+
+										</div>
+
+									</div>
+									<div class="control-group">
+
+										<label class="control-label">积分</label>
+
+										<div class="controls">
+
+											<input type="number" class="span6 m-wrap" name="points"   value="{{$result['points']}}" disabled/>
+
+											<span class="help-inline"></span>
+
+										</div>
+
+									</div>
+									<div class="control-group">
+
+										<label class="control-label">注册时间</label>
+
+										<div class="controls">
+
+											<input type="text" class="span6 m-wrap" name="rtime"  value="{{$result['rtime']}}" disabled/>
+
+											<span class="help-inline"></span>
+
+										</div>
+
+									</div>
+									<div class="form-actions">
+
+										<button type="submit" class="btn blue">提交</button>
+
+										<button type="reset" class="btn">重置</button>                            
+
+									</div>
+
+								</form>
+		</center>
+    </div>
+
+     <div class="footer_info">
+         <p>© 2005 - 2016 东莞市永盛通信科技有限公司 版权所有 粤ICP备08130115号-1</p>
+     </div>
+
+</div>
+  		<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<form role="form" action="/faceupdate" class="form-horizontal" method="post" enctype="multipart/form-data">
+	{!! csrf_field() !!}
+
+	<div class="modal-dialog">
+			<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					用户信息详情
+				</h4>
+			</div>
+			<div class="modal-body">
+				
+                  <div class="form-group">
+					<label for="inputEmail3" class="col-sm-2 control-label"></label>
+					<div class="col-sm-10">
+					  <input type="file" class="form-control" id="inputEmail3" name="uface"   >
+					</div>
+				</div>
+				 
+				 
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+				<button type="submit" class="btn btn-primary">
+					提交更改
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+		 
+		</div>
+	
+	</div>
+	</form>
+</div><!-- /.modal -->
+<script src="{{asset('media/js/jquery-1.10.1.min.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/jquery-migrate-1.2.1.min.js')}}" type="text/javascript"></script>
+
+	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+	<script src="{{asset('media/js/jquery-ui-1.10.1.custom.min.js')}}" type="text/javascript"></script>      
+
+	<script src="{{asset('media/js/bootstrap.min.js')}}" type="text/javascript"></script>
+
+	 
+
+	<script src="{{asset('media/js/jquery.slimscroll.min.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/jquery.blockui.min.js')}}" type="text/javascript"></script>  
+
+	<script src="{{asset('media/js/jquery.cookie.min.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/jquery.uniform.min.js')}}" type="text/javascript" ></script>
+
+	<!-- END CORE PLUGINS -->
+
+	<!-- BEGIN PAGE LEVEL PLUGINS -->
+
+	<script src="{{asset('media/js/jquery.vmap.js')}}" type="text/javascript"></script>   
+
+	<script src="{{asset('media/js/jquery.vmap.russia.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/jquery.vmap.world.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/jquery.vmap.europe.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/jquery.vmap.germany.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/jquery.vmap.usa.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/jquery.vmap.sampledata.js')}}" type="text/javascript"></script>  
+
+	<script src="{{asset('media/js/jquery.flot.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/jquery.flot.resize.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/jquery.pulsate.min.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/date.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/daterangepicker.js')}}" type="text/javascript"></script>     
+
+	<script src="{{asset('media/js/jquery.gritter.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/fullcalendar.min.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/jquery.easy-pie-chart.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/jquery.sparkline.min.js')}}" type="text/javascript"></script>  
+
+	<!-- END PAGE LEVEL PLUGINS -->
+
+	<!-- BEGIN PAGE LEVEL SCRIPTS -->
+
+	<script src="{{asset('media/js/app.js')}}" type="text/javascript"></script>
+
+	<script src="{{asset('media/js/index.js')}}" type="text/javascript"></script>     
+
+</body>
+</html>

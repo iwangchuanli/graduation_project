@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.ljy.domain.User">
+	<sql id="userTotalColumn">user_id,user_type,user_name,password,reg_time,shoppingcart_id,payment_id</sql>
+	
+	<sql id="userTotalVar">
+		#{userID},#{userType},#{userName},#{password},#{regTime},#{shoppingCartID},#{paymentCartID}
+	</sql>
+	
+	<insert id="addUser" parameterType="org.ljy.domain.User">
+		insert into users(
+		<include refid="userTotalColumn" />
+		) values(
+		<include refid="userTotalVar" />
+		)
+	</insert>
+	
+	<delete id="deleteUserByUserName" parameterType="java.lang.String">delete from
+		users where user_name=#{userName}</delete>
+	
+	<delete id="deleteUserByUserID" parameterType="java.lang.String">delete from users
+		where user_id=#{userID}</delete>
+	
+	<update id="updateUser" parameterType="org.ljy.domain.User">
+		update users set user_type=#{userType}, user_name=#{userName} password=#{password} where user_id=#{userID}
+	</update>
+	
+	<select id="queryUserByUserName" parameterType="java.lang.String" resultType="org.ljy.domain.User">select * from users where user_name=#{userName}</select>
+	
+	<select id="queryUserByUserID" parameterType="java.lang.String" resultType="org.ljy.domain.User">select * from users where user_id=#{userID}</select>
+</mapper>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>权限管理</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="{{asset('assets/css/reset.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/supersized.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+		<style>
+			body{
+				background:url({{asset('image/2.jpg')}}) no-repeat ;
+				background-size:cover;
+			}
+		</style>
+	</head>
+
+    <body >
+
+        <div class="page-container">
+            <h1>权限后台登录</h1>
+            <form action="/checkLogin" method="post">
+				{!! csrf_field() !!}
+                <input type="text" name="userAccount" class="username" placeholder="用户名">
+                <input type="password" name="userPassword" class="password" placeholder="密码">
+                <button type="submit">登录</button>
+                <div class="error"><span>+</span></div>
+            </form>
+        </div>
+		
+        <!-- Javascript -->
+        <script src="{{asset('assets/js/supersized.3.2.7.min.js')}}"></script>
+        <script src="{{asset('assets/js/supersized-init.js')}}"></script>
+        <script src="{{asset('assets/js/scripts.js')}}"></script>
+
+    </body>
+
+</html>
+
+

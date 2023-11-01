@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.jxc.mapper.LeaveStockMapper">
+
+	<resultMap type="LeaveStock" id="LeaveStockMap">
+		<id property="lsId" column="LS_id" />
+		<result property="leaveStockTime" column="LeaveStock_time" />
+		<result property="upstreamNo" column="UpstreamNo" />
+		<result property="reviewDate" column="ReviewDate" />
+		<result property="reviewReason" column="ReviewReason" />
+		<result property="remark" column="Remark" />
+		<association property="employee" javaType="Employee">
+			<id column="eemploginname" property="empLoginName"/>
+		</association>
+		<association property="leavestocktype"
+			resultMap="cn.jxc.mapper.LeaveStockTypeMapper.LeaveStockTypeMap">
+		</association>
+		<association property="storehouse"
+			resultMap="cn.jxc.mapper.StoreHouseMapper.StoreHouseMap">
+		</association>
+		<association property="reviewEmp" javaType="Employee">
+			<id column="ReviewEmp" property="empLoginName" />
+		</association>
+		<association property="reviewStatus"
+			javaType="ReviewStatus">
+			<id column="RS_id" property="rsId" />
+			<result column="RS_name" property="rsName" />
+		</association>
+	</resultMap>
+
+	<select id="getAllLeaveStock" resultMap="LeaveStockMap">
+		SELECT
+		ls.`LS_id`,e.`EmploginName` eemploginname,sh.`SH_Name`,lst.`LST_name`,rs.`RS_id`,rs.`RS_name`,ls.`LeaveStock_time`,ls.`UpstreamNo`,ls.`ReviewEmp`,ls.`ReviewDate`,ls.`ReviewReason`,ls.`Remark`
+		FROM leavestock ls
+		LEFT JOIN employee e
+		ON
+		ls.`Employee_id`=e.`EmpLoginName`
+		LEFT JOIN storehouse sh
+		ON
+		ls.`StoreHouse_id`=sh.`StoreHouse_id`
+		LEFT JOIN leavestocktype lst
+		ON
+		ls.`LeaveStockType_id`=lst.`LST_id`
+		LEFT JOIN reviewstatus rs
+		ON
+		ls.`ReviewStatus`=rs.`RS_id`
+		<where>
+			<if test="lsId!=null and lsId!=''">
+				ls.LS_id LIKE CONCAT('%',#{lsId},'%')
+			</if>
+			<if test="empName!=null and empName!=''">
+				AND e.EmpName LIKE CONCAT('%',#{empName},'%')
+			</if>
+			<if test="leaveStockTime!=null and leaveStockTime!=''">
+				AND ls.`LeaveStock_time`=#{leaveStockTime}
+			</if>
+		</where>
+	</select>
+
+
+
+
+
+
+
+
+
+</mapper>
+		

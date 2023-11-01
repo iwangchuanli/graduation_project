@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.jxc.mapper.LeaveStockDetailMapper">
+
+	<resultMap type="LeaveStockDetail" id="LeaveStockDetailMap">
+		<id column="LSD_id" property="lsdId" />
+		<result column="Product_count" property="productCount" />
+		<result column="Product_price" property="productPrice" />
+		<result column="ShouidCount" property="shouldCount" />
+		<association property="leavestockId" javaType="LeaveStock">
+			<id property="lsId" column="LS_id"/>
+		</association>
+		<association property="productUnitId" javaType="ProductUnit">
+			<id property="productUnitId" column="ProductUnit_id"/>
+			<result property="puName" column="PU_name"/>
+		</association>
+		<association property="productId" javaType="Product">
+			<id property="productId" column="Product_id"/>
+			<result property="productName" column="Product_name"/>
+		</association>
+	</resultMap>
+
+	<select id="getLSDetailAllByLSId"
+		resultMap="LeaveStockDetailMap">
+		SELECT lsd.`LSD_id`,ls.`LS_id`,p.`Product_id`,pu.`PU_name`,
+		lsd.`Product_count`,lsd.`Product_price`,lsd.`ShouidCount`,p.`Product_name`
+		,pu.productUnit_id
+		FROM leavestockdetail lsd
+		LEFT JOIN leavestock ls
+		ON lsd.`LeaveStock_id`=ls.`LS_id`
+		LEFT JOIN product p
+		ON p.`Product_id`=lsd.`Product_id`
+		LEFT JOIN productunit pu
+		ON lsd.`ProductUnit_id`=pu.`ProductUnit_id`
+		<where>
+			<if test="lsId!=null and lsId!=''">
+				and lsd.`LeaveStock_id`=#{lsId}
+			</if>
+		</where>
+	</select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</mapper>
+	

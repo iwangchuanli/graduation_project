@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html class='no-js'>
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE" />
+  <meta content='width=device-width,initial-scale=1, user-scalable=no' name='viewport'>
+  <title>『OPPO智能手机体验店』OPPO手机体验店地址_OPPO手机体验店服务|客户服务中心-OPPO智能手机官网 </title>
+  <meta name="keywords" content="OPPO智能手机体验店,OPPO手机体验店地址,OPPO手机体验店服务,OPPO手机客户服务中心 " />
+  <meta name="description" content="OPPO智能手机体验店分布在全国重点城市，您可通过OPPO官网查看体验店地址，更多OPPO手机体验店服务介绍以及客户服务中心供您选择，更多信息，就来OPPO智能手机官网。 " />
+  <meta property="qc:admins" content="1257363774670076375" />
+<style type="text/css">
+		#l-map{height:400px;width:100%;}
+		#r-result{width:100%; font-size:14px;line-height:20px;}
+</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=IGWnMUEqRXtLQ7hWfXxp9u4eOSHELegG"></script>
+  	<link media="all" type="text/css" rel="stylesheet" href="<?php echo e(asset('Home/oppozhu/css/styles.css-v=20161009101515.css')); ?>" >
+	<script src="<?php echo e(asset('Home/oppozhu/js/jquery-1.9.1.min.js')); ?>"></script>
+  	<script type="text/javascript">
+    	function checkBrowser(){
+			var browser = {};
+			var div = document.createElement( "div" );
+			div.innerHTML = "<link/><table></table><a href='http://www.oppo.com/a'>a</a><input type='checkbox'/>";
+			var a = div.getElementsByTagName( "a" )[0];
+			style = a && a.style;
+			if (!style) {
+				return;
+			}
+			style.cssText = "float:left;opacity:.5";
+			browser.opacity = style.opacity === "0.5";
+			browser.cssFloat = !!style.cssFloat;
+			if(browser.opacity && browser.cssFloat){
+				return true;
+			}else{
+        var userAgent = navigator.userAgent.toLocaleUpperCase();
+        var msie = /MSIE [\d\.]+/;
+        var version = msie.exec(userAgent);
+        if (version<"MSIE 8") return false;
+        else return true;
+			}
+		}
+        var v = checkBrowser();
+		if (!v) {
+			window.location.href = "lower.html"/*tpa=http://www.oppo.com/cn/lower.html*/;
+		}
+	</script>
+  </head>
+  <script>
+	var currentShowCity=0;
+	$(document).ready(function(){
+	   $("#province").change(function(){
+		   $("#province option").each(function(i,o){
+			   if($(this).attr("selected")){
+				   $(".city").hide();
+				   $(".city").eq(i).show();
+					currentShowCity=i;
+			   }
+			});
+	   });
+	   $("#province").change();
+	});
+	function getSelectValue(){
+		alert("1级="+$("#province").val());
+	  
+		$(".city").each(function(i,o){
+						
+			if(i == currentShowCity){
+			alert("2级="+$(".city").eq(i).val());
+			}
+	   });
+	}
+  
+  </script>
+
+<body>
+  <main class='main-content'>
+    <div class='wrapper'>
+      <ul class='breadcrumb'>
+  <li>
+    <a href="/" >
+      首页
+      <span>/</span>
+    </a>
+  </li>
+            <li>
+                  体验店
+              </li>
+      </ul>
+    </div>
+    <div class='hero'>
+      <div class='hero-image'>
+    <picture>
+    <!--[if IE 9]>
+    <video style="display: none;"> <![endif]-->
+
+    <img alt='' src="<?php echo e(asset('Home/oppozhu/image/20150317090358ot93yaALDPx6zZyJ.jpg')); ?>">
+  </picture>
+    </div>      
+	<div class='search-store-wrapper'>
+        <form action="/shops" class='search-store' method="get">
+          <div class='input-button-item'>
+            <input type='text' name="key" value="北京市" placeholder="请输入城市或体验店名称">
+            <button class='button' type='submit'>搜索</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class='slab-white'>
+      <div class='wrapper'>
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class='slab-light brick-s'>
+      <div class='wrapper'>
+        
+        <div class='location-map g slab-white-border'>
+          <div class='gi lap-one-whole desk-three-quarters'>
+            <div class='js-tabs'>
+              <div class='js-tab-content'>
+                <div class='js-tab is-active'>
+                  <div class='map map-fix-infowindow' id='shop_map'>
+					<div id="l-map" ></div>
+					<div id="r-result">
+						<input type="button" style="background:gray" value="显示体验店的位置" onclick="bdGEO()" />
+						<div id="result"></div>
+					</div>				  
+				  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class='gi lap-one-whole desk-one-quarter location-map-legend' data-desktop='.location-map'
+                 data-mobile='.aside-mobile'>
+            <section>
+              <h2 class='h-delta'>标准服务</h2>
+              <ul class='icon-list shops-icons'>
+                <li>
+                <span class='icon-wrapper'>
+                  <span class='icons-shops icon-shop-sjjyz'></span>
+                </span>
+                  免费充电
+                </li>
+                <li>
+                <span class='icon-wrapper'>
+                  <span class='icons-shops icon-shop-sx'></span>
+                </span>
+                  手机保养+维护
+                </li>
+                <li>
+                <span class='icon-wrapper'>
+                  <span class='icons-shops icon-shop-wificl'></span>
+                </span>
+                  免费WIFI
+                </li>
+                <li>
+                <span class='icon-wrapper'>
+                  <span class='icons-shops icon-shop-mfcy'></span>
+                </span>
+                  免费畅饮
+                </li>
+              </ul>
+              <h2 class='h-delta'>会员服务</h2>
+              <ul class='icon-list shops-icons'>
+                <li>
+                <span class='icon-wrapper'>
+                  <span class='icons-shops icon-shop-sjtm'></span>
+                </span>
+                  手机贴膜
+                </li>
+                <li>
+                <span class='icon-wrapper'>
+                  <span class='icons-shops icon-shop-hyjf'></span>
+                </span>
+                  积分兑换礼品
+                </li>
+              </ul>
+            </section>
+			
+			<input type="hidden" name="" class="a" value="<?php echo e($a); ?>">
+			<input type="hidden" name="" class="b" value="<?php echo e($jing); ?>">
+			<input type="hidden" name="" class="c" value="<?php echo e($wei); ?>">
+			
+          </aside>
+        </div>
+        <div class='location-address'>
+          <h3 class='h-gamma'><?php echo e($shi); ?> · 体验店（<?php echo e($number); ?>）</h3>
+          <ul class='list-store slab-white-border'>
+			<?php foreach($result as $key=>$one): ?>
+            <li class='store-location js-collapse'>
+                <span class='marker'><?php echo e($key+1); ?></span>
+
+                <div class='store-location-info g'>
+                  <div class='gi lap-one-fifth store-name'>
+                    <p>
+                      <strong><?php echo e($one['tname']); ?></strong>
+                    </p>
+                    <p>
+                      <a class='view-details' href="<?php echo e($one['turl']); ?>" >查看详情</a>
+                    </p>
+                  </div>
+                  <div class='gi lap-one-fifth'>
+                    <p><?php echo e($one['ttype']); ?></p>
+                  </div>                                              
+                       <div class='gi lap-two-fifths'>
+                    <p><?php echo e($one['taddress']); ?></p>
+                  </div>
+                  <div class='gi lap-one-fifth'>
+                    <p><?php echo e($one['tnumber']); ?></p>
+                  </div>
+                </div>
+              </li>
+            <?php endforeach; ?>
+           </ul>
+          <ul class="pagination"><?php echo $result->appends(['sort' => 'votes'])->render(); ?> </ul>
+        </div>
+		
+                <div class='aside-mobile'></div>
+      </div>
+
+    </div>
+  </main>
+	<?php echo $__env->make('Home/oppozhu/footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>;
+<div class='navi-scroll'>
+  <div class="navi-scroll-content">
+    <a href="javascript:;" class="scroll-top-btn"><span>回到顶部</span><i></i></a>
+    <a href=""><span>意见反馈</span><i></i></a>
+    <a href=""><span>意见反馈m</span><i></i></a>
+  </div>
+</div>
+<script src="<?php echo e(asset('Home/oppozhu/js/lib.min.js')); ?>" ></script>
+
+<script src="<?php echo e(asset('Home/oppozhu/js/custom_form.js-v=20150914144728.js')); ?>" ></script>
+
+<script src="<?php echo e(asset('Home/oppozhu/js/scripts.js-v=201506151120596.js')); ?>" ></script>
+
+<script src="<?php echo e(asset('Home/oppozhu/js/oppo.min.js-v=20161009101515.js')); ?>" ></script>
+
+
+  <script src="<?php echo e(asset('Home/oppozhu/js/api-v=2.0&ak=84943bd4d6cdee6b618a9baad6696e39.js')); ?>" ></script>
+
+  <script src="<?php echo e(asset('Home/oppozhu/js/shop_region.js')); ?>" ></script>
+
+  <script type="text/javascript" src="<?php echo e(asset('Home/oppozhu/js/SearchInfoWindow_min.js')); ?>" ></script>
+  <link rel="stylesheet" href="<?php echo e(asset('Home/oppozhu/css/SearchInfoWindow_min.css')); ?>"  />
+
+
+<script type="text/javascript">
+	var index = 0;
+	var addr=new BMap.Point();
+	var myGeo = new BMap.Geocoder();
+	var a=$('.a').val();
+	var adds=a.split(',');
+	var jing=$('.b').val();
+	var wei=$('.c').val();
+	var map = new BMap.Map("l-map");
+	map.centerAndZoom(new BMap.Point(jing,wei), 12);
+	map.enableScrollWheelZoom(true);
+	var index = 0;
+	var myGeo = new BMap.Geocoder();
+	function bdGEO(){
+		var add = adds[index];
+		geocodeSearch(add);
+		index++;
+	}
+	function geocodeSearch(add){
+		if(index < adds.length){
+			setTimeout(window.bdGEO,100);
+		} 
+		myGeo.getPoint(add, function(point){
+			if (point) {
+				var address = new BMap.Point(point.lng, point.lat);
+				addMarker(address,new BMap.Label(index+":"+add,{offset:new BMap.Size(20,-10)}));
+			}
+		}, "北京市");
+	}
+	 
+	// 编写自定义函数,创建标注
+	function addMarker(point,label){
+		var marker = new BMap.Marker(point);
+		map.addOverlay(marker);
+		marker.setLabel(label);
+	} 
+</script> 
+<noscript><img src="<?php echo e(asset('Home/oppozhu/image/img-site=1351.gif')); ?>"  style="border:0" alt="" /></noscript>
+
+<script type="text/javascript">
+$(function(){
+	$("body").on("click",".oppo-tj",function(){
+		if (typeof $(this).data('tj') != 'undefined' && typeof _optj != 'undefined') {
+			var tj = $(this).data('tj');
+			var tjs = tj.split("|");
+			_optj.push(['_trackEvent', tjs[0], tjs[1], tjs[2], tjs[3]]);
+		};
+	});
+}); 
+</script>
+
+<script src="<?php echo e(asset('Home/oppozhu/js/tingyun-rum.js')); ?>" ></script>
+
+</body>
+
+</html>

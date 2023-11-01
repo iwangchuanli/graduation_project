@@ -1,0 +1,55 @@
+﻿@font-face {
+  font-family: 'home2015';
+  src: url('../fonts/font_1433126960_431905.eot');
+  /* IE9*/
+  src: url('../fonts/font_1433126960_431905.eot') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/font_1433126960_431905.woff') format('woff'), /* chrome、firefox */ url('../fonts/font_1433126960_431905.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../fonts/font_1433126960_431905.svg') format('svg');
+  /* iOS 4.1- */
+}
+.home-iconfont {
+  font-style: normal;
+  font-family: 'home2015';
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  *display: inline;
+  *zoom: 1;
+}
+.home-category-tab .home-nav-tab {
+  width: 1190px;
+  border-bottom: 1px solid #ff4400;
+  height: 34px;
+  padding-left: 24px;
+  margin: 0 auto;
+  letter-spacing: -4px;
+  white-space: nowrap;
+}
+.home-category-tab .home-nav-item {
+  height: 33px;
+  font-size: 16px;
+  line-height: 33px;
+  padding: 1px 16px 0;
+  margin: 0 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  *display: inline;
+  *zoom: 1;
+}
+.home-category-tab .home-nav-item a {
+  color: #333333;
+  text-decoration: none;
+}
+.home-category-tab .home-nav-item a:hover {
+  color: #ff4400;
+}
+.home-category-tab .home-nav-item-current {
+  padding: 0 15px;
+  border: 1px solid #ff4400;
+  border-bottom-color: #ffffff;
+  position: relative;
+  margin-bottom: -1px;
+  color: #ff4400;
+}
+.all-special-market dl{overflow:hidden;background-color:#f5f5f5;padding:15px 20px;margin:20px auto;width:1150px}.all-special-market dt{color:#3c3c3c;font-size:16px;font-weight:600;padding-left:15px;width:95px;float:left}.all-special-market dd{overflow:hidden}.all-special-market .market-list-item{height:80px;width:180px;padding:30px;background-color:#fff;box-shadow:0 7px 10px #e0e0e0;margin-left:15px;overflow:hidden;position:relative;z-index:2;text-align:center;display:inline-block;zoom:1;*display:inline;letter-spacing:normal;word-spacing:normal;vertical-align:top;margin-bottom:15px}.all-special-market .market-list-item:hover{padding:29px;border:1px solid #f40}.all-special-market .market-list-figure{width:150px;height:50px;overflow:hidden;display:block;margin:0 auto}.all-special-market .market-list-figure img{max-width:100%;height:auto}.all-special-market .market-list-title{color:#6c6c6c;width:180px;overflow:hidden;height:12px;line-height:12px;margin-top:18px;display:block}.all-special-market .market-list-icon{position:absolute;top:0;left:0;width:55px;height:55px;overflow:hidden;background-image:url(../images/tb1z91iixxxxxxexpxxxxxxxxxx.png);background-repeat:no-repeat;background-position:-999em -999em;z-index:3}.all-special-market .market-list-icon-new{background-position:0 -55px}.all-special-market .market-list-icon-hot{background-position:0 0}.all-special-market .market-list-item:hover .market-list-icon{top:-1px;left:-1px}

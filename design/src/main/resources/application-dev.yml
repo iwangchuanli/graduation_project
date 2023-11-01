@@ -1,0 +1,55 @@
+# 应用
+spring:
+  # 应用配置
+  application:
+    name: design
+  # 数据源配置
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://localhost/design?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password:
+  redis:
+    host: localhost
+    port: 6379
+    pool:
+      max-active: 8
+      min-idle: 0
+    database: 1
+  data:
+    mongodb:
+      database: test
+      host: localhost
+      port: 27017
+    elasticsearch:
+      cluster-nodes: localhost:9300
+      cluster-name: elasticsearch_lxh
+      repositories:
+        enabled: true
+  devtools:
+    restart:
+      enabled: true
+
+# 服务器配置
+server:
+  port: 3000
+
+endpoints:
+  actuator:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    enabled: true
+  configprops:
+    sensitive: true
+
+logging:
+  level:
+    ROOT: info
+    org.springframework.web: info
+
+multipart:
+  enabled: true
+  max-file-size: 1mb
+  max-request-size: 3mb

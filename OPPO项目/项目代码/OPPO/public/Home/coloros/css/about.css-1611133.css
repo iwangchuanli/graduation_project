@@ -1,0 +1,179 @@
+.nav-wrapper{
+	border-bottom: 1px solid #f2f2f2;
+	box-shadow: 0px 10px 20px #f2f2f2;
+}
+.page-wrapper{
+	width: 1200px;
+	margin: 0 auto;
+	font-family: 'zhunhei';
+}
+.breadcrumb{
+	margin-top: 35px;
+	color: #999;
+	border-bottom: 1px solid #e4e4e4;
+	padding-bottom: 20px;
+	font-size: 14px;
+}
+.breadcrumb a{
+	color: #999;
+}
+.breadcrumb a:hover{
+	color: #00939b;
+}
+.breadcrumb span{
+	padding-right:10px;
+}
+.breadcrumb span.active{
+	color: #333;
+}
+.detail-wrapper{
+	min-height: 500px;
+}
+.detail-wrapper h1{
+	font-family: 'xianhei';
+	font-size: 36px;
+	margin: 0px;
+	padding: 38px 0 32px;
+	font-weight: normal;
+}
+.detail-wrapper .detail{
+	font-size: 14px;
+	line-height: 26px;
+	color: #666;
+}
+.detail-tips{
+	font-family: 'xianhei';
+}
+
+.detail-tips p{
+	font-size: 18px;
+	color: #333;
+}
+.detail-tips a{
+	color: #ea8024;
+	text-decoration: underline;
+}
+.footer{
+	border-top: 1px solid #e5e5e5;padding-top:35px;
+}
+/*****招聘页面*****/
+.zhaopin-wrapper{
+	padding-top: 30px;
+	overflow: hidden;
+	font-family: 'xianhei';
+}
+.zhaopin-list{
+	float: left;
+	width: 240px;
+	border-top: 1px solid #ccc;
+}
+.zhaopin-list li{
+	border-bottom: 1px solid #ccc;
+}
+.zhaopin-list li a{
+	display: block;
+	line-height: 55px;
+	font-size: 16px;
+	color:#333;
+}
+.zhaopin-list li a.active,
+.zhaopin-list li a:hover{
+	color: #ea8024;
+}
+.zhaopin-detail{
+	float: left;
+	width: 680px;
+	margin-left: 75px;
+}
+.zhaopin-detail h2{
+	font-size: 18px;
+	padding-bottom: 10px;
+	
+}
+.zhaopin-detail h3{
+	font-size: 16px;
+	padding: 25px 0 20px;
+	
+}
+.zhaopin-detail ul li{
+	font-size: 16px;
+	font-family: 'zhunhei';
+	line-height: 30px;
+	color: #666;
+	font-weight: normal;
+}
+/*****END OF招聘页面*****/
+
+/*****帮助页面*****/
+.help-wrapper{
+	padding-top: 30px;
+	overflow: hidden;
+	font-family: 'xianhei';
+}
+.help-list{
+	float: left;
+	width: 240px;
+	border-bottom: 1px solid #ccc;
+}
+.help-list li a{
+	display: block;
+	line-height: 55px;
+	font-size: 16px;
+	color:#333;
+}
+.help-list li a.active,
+.help-list li a:hover{
+	color: #ea8024;
+        background: url('../img/more.png')/*tpa=http://static01.coloros.com/www/public/img/more.png*/ no-repeat right center;
+}
+.help-detail{
+	float: left;
+	width: 680px;
+	margin-left: 75px;
+}
+.help-detail h2{
+	font-size: 18px;
+        line-height: 75px;border-bottom: 1px solid #E4E4E4;
+}
+.help-detail .tabs {width:100%;border-bottom:1px solid #EA8024;height:45px;line-height:45px;}
+.help-detail .tabs li{
+	font-size: 16px;
+	font-family: 'zhunhei';
+	font-weight: normal;
+        float:left;
+        color:#EA8024;
+        padding:0px 25px;
+        cursor:pointer;
+}
+.help-detail .tabs li.on {background:#EA8024;color:#fff;}
+.help-detail .list {margin-bottom: 60px;display: none;}
+.help-detail .list li {border-bottom: 1px solid #E4E4E4;padding-bottom:15px;}
+.help-detail .list li a {color:#EA8024;font-family: 'xianhei';font-size:16px;margin:15px 0px;display: block;cursor: default;}
+.help-detail .list li a:hover {color:#EA8024;}
+.help-detail .list p {font-size:14px;font-family: 'microsoft yahei','微软雅黑';}
+
+/*****END OF招聘页面*****/
+
+/*****联系我们*****/
+.contact-wrapper{
+	font-family: 'xianhei';
+}
+.contact-wrapper h2{
+	font-size: 18px;
+	color: #333;
+	padding:26px 0 15px;
+	font-weight: normal;
+}
+.contact-wrapper p{
+	font-size: 14px;
+	font-family: 'zhunhei';
+	color: #666;
+	line-height: 30px;
+}
+.contact-wrapper p a{
+	color: #ea8024;
+}
+.contact-wrapper p a:hover{
+	text-decoration: underline;
+}
+/*****END OF联系我们*****/

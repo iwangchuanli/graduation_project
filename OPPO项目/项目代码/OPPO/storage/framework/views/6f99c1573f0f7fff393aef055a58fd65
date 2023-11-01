@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class='no-js'>
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE" />
+  <meta content='width=device-width,initial-scale=1, user-scalable=no' name='viewport'>
+  <title> 『OPPO手机官网』OPPO智能手机_OPPO最新款手机-OPPO智能手机官方网站 </title>
+  <meta name="keywords" content=" OPPO,OPPO手机官网,OPPO智能手机,OPPO拍照手机,OPPO新款手机,OPPO手机资讯 " />
+  <meta name="description" content=" OPPO是一家全球性智能手机制造商和移动互联网服务商，让您随时了解OPPO手机官网,OPPO智能手机,,OPPO拍照手机OPPO新款手机,OPPO手机资讯等内容，为客户开创先进的智能手机产品和移动互联网服务。 " />
+  <meta property="qc:admins" content="1257363774670076375" />
+
+  	<link media="all" type="text/css" rel="stylesheet" href="<?php echo e(asset('Home/service/css/styles.css-v=20161009101515.css')); ?>">
+  	<script type="text/javascript">
+    	function checkBrowser(){
+			var browser = {};
+			var div = document.createElement( "div" );
+			div.innerHTML = "<link/><table></table><a href='http://www.oppo.com/a'>a</a><input type='checkbox'/>";
+			var a = div.getElementsByTagName( "a" )[0];
+			style = a && a.style;
+			if (!style) {
+				return;
+			}
+			style.cssText = "float:left;opacity:.5";
+			// Support: IE<9
+			// Make sure that element opacity exists (as opposed to filter)
+			browser.opacity = style.opacity === "0.5";
+
+			// Verify style float existence
+			// (IE uses styleFloat instead of cssFloat)
+			browser.cssFloat = !!style.cssFloat;
+			if(browser.opacity && browser.cssFloat){
+				return true;
+			}else{
+				//IE 8测试
+        var userAgent = navigator.userAgent.toLocaleUpperCase();
+        var msie = /MSIE [\d\.]+/;
+        var version = msie.exec(userAgent);
+        if (version<"MSIE 8") return false;
+        else return true;
+			}
+		}
+        var v = checkBrowser();
+		if (!v) {
+			window.location.href = "http://www.oppo.com/cn/lower.html";
+		}
+    </script>
+  </head>
+
+<body>
+	<?php echo $__env->make('Home/oppozhu/header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>;
+  <main class='main-content slab-light'>
+  <div class="supports">
+    <div class='wrapper'>
+      <ul class='breadcrumb'>
+  <li>
+    <a href="j">
+      首页
+      <span>/</span>
+    </a>
+  </li>
+            <li>
+                  <a href="">
+            服务
+            <span>/</span>
+          </a>
+              </li>
+          <li>
+                  所有问题
+              </li>
+      </ul>
+    </div>
+
+    <div class="g wrapper supports-faqs">
+	<?php echo $__env->make('Home/service/san', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>;
+    <div class="gi one-whole lap-three-quarters desk-four-fifths supports-faqs-content">
+              <div class="brick-s center-text">
+          <h3>产品相关问题</h3>
+        </div>
+		<?php echo $__env->make('Home/service/tu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>;
+        <div class="brick-s">
+          <ul class="supports-faq">
+                      <li>
+              <p class="word-break"><strong>如何修改相册图集文件夹名字</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">系统自动生成的图集是不可以修改的，自己新建的图集都是可以修改名字的。但是现在暂时不支持在相册内修改，不过可以通过文件管理来修改图集名字哦。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;"><br/></span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">首先，在桌面打开【文件管理】-【所有文件】-【DCIM】-【Pictures】，找到需要修改名</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">字的文件夹。（小伙伴请注意：只有自己新建的图集，才会出现在Pictures文件夹里！）</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">然后点击【编辑】，选择文件夹，并选择【高级】。选择【重命名】，修改名字后保存。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">&nbsp;</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">回到相册图集，看看是不是已经改好了？</span></p><p><br/></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="499" data-faq-type="-1"><span class="faqs-icon"></span><span>(24)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="499" data-faq-type="1"><span class="faqs-icon"></span><span>(32)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>怎么批量化将照片移动到相册文件夹里？</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">国庆遇到美景，忍不住啪啪啪……哦不，拍拍拍！照片拍了很多，想要分类怎么破？记住这几招就好！</span></p><p><br/></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">打开【相册】--【编辑】--【+添加到】--【新建图集】--【输入图集名称】-【点击确认】</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">点击确认保存之后，去【图集】-【点击刚刚新建的名称】就能找到你移动的照片了！</span></p><p><br/></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="498" data-faq-type="-1"><span class="faqs-icon"></span><span>(2)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="498" data-faq-type="1"><span class="faqs-icon"></span><span>(3)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>微信看小视频弹出选择播放器选项</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">通过苹果手机拍摄的小视频，分享到微信朋友圈或聊天界面，安卓手机点击播放按钮时，弹出需要选择其余播放器才能观看的提示，无法在微信里面直接播放。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">这个是因为朋友圈中的小视频要选择系统播放器主要是为了兼容苹果手机录制的视频，录制的视频中，音频微信解码不了就会出现这种现象（苹果手机录制的小视频发到朋友圈，安卓手机如果无法打开，就会选择用系统播放器）的哦，小伙伴们不用担心。</span></p><p><br/></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="485" data-faq-type="-1"><span class="faqs-icon"></span><span>(6)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="485" data-faq-type="1"><span class="faqs-icon"></span><span>(2)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>ColorOS3.0 如何设置黑名单</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">面对频繁的骚扰电话，该如何将其拖入黑名单？<br/>方法一：进入【通话记录】，点击任一记录右边的感叹号图标，进入点击【阻止此号码】。<br/>方法二：进入【电话本】，点击任一联系人，进入联系人详情界面，点击【阻止此联系人】。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">方法三：进入【设置】—【电话】—【黑名单】，点击【新增】，可进入【通话记录】、【群组】、【联系人】，批量添加联系人黑名单。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">注：拖入黑名单后，手机将不会再收到黑名单联系人的来电、短信。 &nbsp; &nbsp;</span></p><p><br/></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="451" data-faq-type="-1"><span class="faqs-icon"></span><span>(456)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="451" data-faq-type="1"><span class="faqs-icon"></span><span>(28)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>3.0便签的同步方法</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">同步便签有两个方法，一个是手动一个是自动。接下来就给小伙伴们分享一下如何操作&nbsp;&nbsp;&nbsp;</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">一、手动同步便签<br/>方法1、便签列表界面，下拉，松手顶部会显示“释放进行同步”》“正在同步”》“同步完成”。<br/>方法2、云服务设置中，立即备份数据，也可以将本地便签同步到云端。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">二、自动同步便签<br/>第一步，先在云服务设置中，打开便签开关（自动同步开关）第二步：手机在wifi状态下，每次返回键退出便签时，系统会自动同步一次数据，保持本地数据和服务器数据一致。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="449" data-faq-type="-1"><span class="faqs-icon"></span><span>(9)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="449" data-faq-type="1"><span class="faqs-icon"></span><span>(9)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>海报也能自己做，ColorOS3.0拼图功能详解</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">需要将多张照片同时展示时，拼图不乏是一种好方法。ColorOS 3.0系统自带拼图功能，可以讲多张照片以海报的形式展示，无需下载其他软件。各种花样的供你选择，还有拼成长图功能。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">1、进入手机相册，点击编辑；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">2、单击选择所需拼图的照片，点击底部拼图；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">3、根据个人喜好选择样式，拖动照片可以移动照片位置。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="441" data-faq-type="-1"><span class="faqs-icon"></span><span>(36)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="441" data-faq-type="1"><span class="faqs-icon"></span><span>(20)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>ColorOS3.0系统横幅通知、角标提示使用方法</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">3.0已经有横幅通知了，会玩么？如何把信息的横幅通知变成弹窗？不打开软件就只看图标也能知道有多少条通知！带你玩转3.0的横幅通知与信息弹窗！</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">首先以QQ为例说明横幅弹窗的玩法，下面就是打开横幅通知的具体步骤：</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">设置--通知与状态栏--通知管理--QQ--允许通知打开、在屏幕顶部显示打开、在桌面上显示角标打开即可实现横幅通知、角标提示。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">如果在玩游戏或者觉得横幅通知非常打扰可以退出软件或者关闭横幅通知即可。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">刚升级的时候信息也是横幅通知的状态！但是想要像ColorOS2.1系统一样直接弹出然后回复信息怎么设置呢？</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">步骤：手机设置--信息（打开设置后直接往下找“信息”）--信息弹窗打开即可。</span></p><p><a href="" target="_blank" style="text-decoration: underline; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; color: rgb(42, 173, 111); font-size: 16px;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; color: rgb(42, 173, 111); font-size: 16px;">点击查看图文版操作方法</span></a></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="382" data-faq-type="-1"><span class="faqs-icon"></span><span>(101)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="382" data-faq-type="1"><span class="faqs-icon"></span><span>(155)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>文件保险箱的使用方法</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">手机上总有一些隐私文件不想让别人看见，如何把这些文件隐藏起来呢？放进文件保险箱即可做到。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">1、进入文件管理--右下角三点--文件保险箱，首次进入需要设置密码及密码找回问题；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">2、设置完成之后即可进入文件保险箱，点击添加文件，选择需要放入的文件，点击确定，文件即可放入保险箱；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">3、点击右下角三点--编辑--勾选需要移除的文件--点击移出保险箱--选择存储位置--点击确定，文件即可从保险箱中移出。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="361" data-faq-type="-1"><span class="faqs-icon"></span><span>(491)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="361" data-faq-type="1"><span class="faqs-icon"></span><span>(118)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>语音助手详解</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">现如今的生活，每个人也都希望自己可以有个私人助理，TA可以聊天、打电话、导航还可以陪孩子聊天等，语音助手来助您实现：</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">1、打电话：善用语音助手的拨号功能，生活中会给你带来许多便利。开车时打电话，自己拨号总是不安全的，只需打开语音助手然后说出诸如：“打电话给张三”语音助手便自动拨号；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">2、发短信：和打电话一样，当遇到想要发信息而又不方便操作时，可以直接用语音助手来进行操作，除了可以发短信，你还可以对语音助手说：“查询未读短信”，这样所有的未读短信会全部展现在你面前，十分方便。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">3、提醒、打开应用 、音乐 、开关设置等：语音助手还有许多便捷的功能，比如语音助手可以设置闹钟，提醒重要的会议，让你再也不会忘记重要的事情啦！通过语音助手打开应用、音乐，还可以打开/关闭WIFi、打开静音等设置功能。语音助手还有查询天气、利率查询、视频搜索等等，更多功能静候使用。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">4、设置：通过语音助手的设置，可以打开语音播报功能，这样手机会播报来电及短信。个性化语音功能更完美，打开这个功能，五湖四海的朋友可以听到自已熟悉的方言。</span></p><p><a href="" target="_blank"><font face="微软雅黑, Microsoft YaHei"><span style="color: rgb(42, 173, 111);">点此查看图文版</span></font></a></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="357" data-faq-type="-1"><span class="faqs-icon"></span><span>(105)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="357" data-faq-type="1"><span class="faqs-icon"></span><span>(101)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>OPPO手机辅助功能介绍</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">在手机的设置—更多-辅助功能中有一些看似很神秘的辅助功能：</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">1、高对比度文字</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">进入设置--更多--辅助功能中打开高对比度文字（5.0及以上系统），手机字体可以变得更亮更显眼。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">2、颜色反转</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">在辅助功能打开颜色反转（5.0及以上系统），手机会出现字体颜色和背景颜色对调的情况。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">3、放大手势</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">进入辅助功能打开放大手势，三击手机屏幕后，手机会出现蓝色边框，此场景适用于看不清手机的老人用户，可以通过三指左右上下滑动操作。如果要退出，可再次三击手机屏幕，或按电源键锁屏再解锁。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">4、按电源键结束通话</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">进入辅助功能打开按电源键结束通话，在通话过程中按电源键，通话会挂断。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">5、色彩校正</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">打开色彩校正，颜色会发生更改。校正模式中有三种模式，校正模式不同，颜色效果也会不同。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="339" data-faq-type="-1"><span class="faqs-icon"></span><span>(59)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="339" data-faq-type="1"><span class="faqs-icon"></span><span>(92)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>OPPO手机OTG使用方法</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">想多保存几部电视剧或好莱坞大片在出门后观看，但是手机内存不足，通过OTG线将手机和U盘连接在一起，轻松存储在外置的U盘中观看；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">1、准备好一根日常生活中的OTG线。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">2、在设置--常规--（系统）更多--打开OTG连接开关（早期机型无此开关，直接连接OTG线和手机即可）；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">3、将手机连接OTG线，在OTG线的末端接上外接设别（此处以U盘为例），通知栏会提示“USB存储设备已连接”，然后打开文件管理--存储--进入U盘--选择保存在U盘中的视频或者工作需要的文件；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">4、目前支持OTG的机型有以下机型：</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">R7s plus、R7s、R7sm、R7 Plusm、R7 Plus、R7c、R7、A31t、R8109、R2010、R2017、R6007、R830S、R831S、R8000、R8007、R7007、R7005、X9000、X9070、X9077、X9007、1100、1105、1107、3005、3007、3000、R8207、R8200、U6607、N5110、N5117、N1T、N1W、N5207、N5209、R8205，后续机型可以随时关注官网信息。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="324" data-faq-type="-1"><span class="faqs-icon"></span><span>(164)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="324" data-faq-type="1"><span class="faqs-icon"></span><span>(296)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>手机时间显示异常的排查方法</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">手机在连接数据网络或wifi的状态下，显示的时间有异常，建议按照如下方法排查：</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">1、手机没有开启自动对时的状态下，时间显示异常，可以在设置--常规--日期和时间--打开“自动确定日期和时间”和“自动确定时区”， 开启后时间会自动恢复正常；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">2、下载的第三方桌面时间插件和状态栏时间不一致：软件考虑到内存占用和电量消耗，后台守护精灵可能会将三方进程关闭，导致程序在不使用情况下不会自动更新数据，出现时间不一致的现象。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">①可以在手机亮屏后，手动打开桌面时间插件软件--点击刷新即可；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">②下拉状态栏提示耗电通知时，可点击通知进入，将对应程序的开关关闭，关闭后守护精灵不再直接关闭此耗电程序，只会出现耗电通知。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="319" data-faq-type="-1"><span class="faqs-icon"></span><span>(30)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="319" data-faq-type="1"><span class="faqs-icon"></span><span>(44)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>手机无法识别SD卡的解决方法</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">手机装上SD卡后，正常读取可通过两种方法查看：</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">1、进入手机设置--电量和存储--存储空间--SD卡（若没有读取成功，则不会显示SD卡选项）；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">2、进入文件管理--存储--查看是否有SD卡选项；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">若手机出现无法识别内存卡，建议可通过如下方法排查：</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">1、查看存储卡容量，是否在手机可支持拓展卡最大的空间之内，然后重启手机尝试；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">2、将内存卡放入其他手机中，观察是否可以正常使用，或更换不同SD卡插入手机中尝试（检查SD卡、SD卡槽是否损坏）；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">3、备份内存卡中的数据，格式化内存卡后查看是否正常；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">4、备份手机重要资料（联系人、多媒体文件等），恢复出厂设置（设置--系统“更多”--恢复出厂设置，请勿勾选“完全清除”）。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">若问题依然存在，请你携带购机发票、保修卡和机器送到究竟OPPO客户服务中心检测，由专业工程师为您解决。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="302" data-faq-type="-1"><span class="faqs-icon"></span><span>(316)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="302" data-faq-type="1"><span class="faqs-icon"></span><span>(338)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>手机语音助手中播报声音有哪几种?</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">手机语音助手中播报声音有6种，分别为：普通话、广东话、四川话、东北话、河南话、湖南话，但语音助手仅识别普通话，对话中，建议您说普通话，语音助手才能更好识别并进行相关操作。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="161" data-faq-type="-1"><span class="faqs-icon"></span><span>(119)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="161" data-faq-type="1"><span class="faqs-icon"></span><span>(128)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>语音助手在没有网络的情况下可以使用哪几项功能？</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">语音助手离线时，可以使用打电话、发短信、联系人、打开应用四个功能，若需要使用更多有趣功能，还需联网后再进行操作。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="160" data-faq-type="-1"><span class="faqs-icon"></span><span>(116)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="160" data-faq-type="1"><span class="faqs-icon"></span><span>(151)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>为什么语音助手播报来电时语音只播报一遍？</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">语音助手播报来电时语音播报完一遍后会切换成铃声，这样是避免没听到播报而漏接了电话。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="159" data-faq-type="-1"><span class="faqs-icon"></span><span>(182)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="159" data-faq-type="1"><span class="faqs-icon"></span><span>(196)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>手机一来电话、短信就会自动语音播报，怎样取消？</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">这是因为开启了语音助手的播报功能，在手机桌面--语音助手--设置--关闭语音播报即可。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="158" data-faq-type="-1"><span class="faqs-icon"></span><span>(203)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="158" data-faq-type="1"><span class="faqs-icon"></span><span>(213)</span></a>
+              </p>
+            </li>
+                     </ul>
+        </div>
+              </div>
+    </div>
+  </div>
+  </main>
+
+	<?php echo $__env->make('Home/oppozhu/header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>;
+<div class='navi-scroll'>
+  <div class="navi-scroll-content">
+    <a href="javascript:;" class="scroll-top-btn"><span>回到顶部</span><i></i></a>
+    <a href="" target="_blank" class="survey-btn survey-btn-normal"><span>意见反馈</span><i></i></a>
+    <a href="" class="survey-btn survey-btn-mobile"><span>意见反馈m</span><i></i></a>
+  </div>
+</div>
+<script src="<?php echo e(asset('Home/service/js/lib.min.js')); ?>"></script>
+
+<script src="<?php echo e(asset('Home/service/js/custom_form.js-v=20150914144728.js')); ?>"></script>
+
+<script src="<?php echo e(asset('Home/service/js/scripts.js-v=201506151120596.js')); ?>"></script>
+
+<script src="<?php echo e(asset('Home/service/js/oppo.min.js-v=20161009101515.js')); ?>"></script>
+
+
+
+<script type="text/javascript">
+  var vm;
+  OPPO.conf.BASE_URL = "http://www.oppo.com/cn";
+  OPPO.conf.STORE_URL = 'http://www.opposhop.cn/';
+  OPPO.conf.ACCOUNT_URL = 'http://my.oppo.com/';
+  OPPO.conf.domains = [];
+  OPPO.conf.jsonpDone = false;
+      OPPO.conf.jsonpDone = true;
+  
+  var url = OPPO.conf.STORE_URL + '/auth/check';
+  //callback for jsonp
+  var successCallback = function(data){
+    $('ul.log-area .hasLogout').removeClass('show').addClass('hidden');
+    $('ul.log-area .hasLogin').removeClass('hidden').addClass('show');
+    $('.n-messages').text("(" + data['message_number'] + ")");
+    $('.user-menu').addClass('isLogin');
+    $('.user-menu-toLogin').hide();
+    if (data['message_number']>0 || data['cart_number']>0) {
+      $('.js-open-user').addClass('point-red');
+      if (data['message_number']>0) $('.user-menu-message a').addClass('point-red');
+      if (data['cart_number']>0) $('.user-menu-cart a').addClass('point-red');
+    };
+    if (data['append'] != '') $('body').append(data['append']);
+  };
+  var errorCallback = function(){
+    $('ul.log-area .hasLogin').removeClass('show').addClass('hidden');
+    $('ul.log-area .hasLogout').removeClass('hidden').addClass('show');
+  };
+  $.ajax({
+    url: url,
+    type: 'GET',
+    dataType: 'jsonp',
+    error: function() {
+      errorCallback();
+    },
+    success: function(data){
+      successCallback(data);
+    }
+  });
+
+  (function () {
+    var controllerNameWithAction = "SupportsController@faqShow".split('@');
+    var controllerName = controllerNameWithAction[0];
+    var actionName = controllerNameWithAction[1];
+    var controller = OPPO.controller[controllerName];
+    if (controller) {
+      action = controller()[actionName];
+      if (action) {
+        $(function () {
+          vm = action();
+        });
+      }
+    }
+    // else console.log(controllerNameWithAction);
+  })();
+</script>
+<script type="text/javascript">
+  $(function () {
+      });
+</script>
+<noscript><img src="<?php echo e(asset('Home/service/image/img-site=1351.gif')); ?>" style="border:0" alt="" /></noscript> 
+
+<!--听云监测-->
+<script src="<?php echo e(asset('Home/service/js/tingyun-rum.js')); ?>"></script>
+
+<script type="text/javascript">
+$(function(){
+	$("body").on("click",".oppo-tj",function(){
+		if (typeof $(this).data('tj') != 'undefined' && typeof _optj != 'undefined') {
+			var tj = $(this).data('tj');
+			var tjs = tj.split("|");
+			_optj.push(['_trackEvent', tjs[0], tjs[1], tjs[2], tjs[3]]);
+		};
+	});
+});
+</script>
+</body>
+
+</html>

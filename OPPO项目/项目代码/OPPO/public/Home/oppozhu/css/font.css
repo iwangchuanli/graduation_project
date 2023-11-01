@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* 声明 WebFont */
+@font-face {
+  font-family: 'FZLTCXHJW';
+  src: url('../font/FZLTCXHJW.ttf')/*tpa=http://www.oppo.com/cn/product/p/a37/font/FZLTCXHJW.ttf*/;
+  src:
+    url('../font/FZLTCXHJW.eot-#font-spider')/*tpa=http://www.oppo.com/cn/product/p/a37/font/FZLTCXHJW.eot?#font-spider*/ format('embedded-opentype'),
+    url('../font/FZLTCXHJW.woff')/*tpa=http://www.oppo.com/cn/product/p/a37/font/FZLTCXHJW.woff*/ format('woff'),
+    url('../font/FZLTCXHJW.ttf')/*tpa=http://www.oppo.com/cn/product/p/a37/font/FZLTCXHJW.ttf*/ format('truetype'),
+    url('../font/FZLTCXHJW.svg')/*tpa=http://www.oppo.com/cn/product/p/a37/font/FZLTCXHJW.svg*/ format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: '微软雅黑', 'FZLTCXHJW';
+}

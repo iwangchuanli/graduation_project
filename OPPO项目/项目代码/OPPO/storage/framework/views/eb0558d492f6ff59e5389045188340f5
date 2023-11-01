@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class='no-js'>
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE" />
+  <meta content='width=device-width,initial-scale=1, user-scalable=no' name='viewport'>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  
+  <title>『OPPO智能手机帮助中心』OPPO手机产品维修|常见问题|系统升级-OPPO智能手机官网 </title>
+  <meta name="keywords" content="OPPO智能手机帮助中心,OPPO手机产品维修,OPPO手机常见问题,OPPO手机系统升级 " />
+  <meta name="description" content="OPPO智能手机帮助中心为您解决OPPO手机使用问题，还有更多OPPO手机产品维修、服务以及系统升级等手机常见问题，更多信息，就来OPPO智能手机官网。 " />
+  <meta property="qc:admins" content="1257363774670076375" />
+  
+
+  	<link media="all" type="text/css" rel="stylesheet" href="<?php echo e(asset('Home/oppozhu/css/styles.css-v=20161009101515.css')); ?>" >
+  </head>
+  <style>
+  button{
+	height:66px;
+  }
+	#l-map{height:400px;width:100%;}
+	#r-result{width:100%; font-size:14px;line-height:20px;
+</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=IGWnMUEqRXtLQ7hWfXxp9u4eOSHELegG">
+	</script>
+<body>
+	<?php echo $__env->make('Home/oppozhu/header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>;
+	<!-- 微信去头尾的模板见network_weixin.blade.php文件 -->
+	<script>
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(116.331398,39.897445);
+	map.centerAndZoom(point,12);
+	// 创建地址解析器实例
+	var myGeo = new BMap.Geocoder();
+	var address
+	// 将地址解析结果显示在地图上,并调整地图视野
+	myGeo.getPoint("北京市海淀区上地10街", function(point){
+		if (point) {
+			map.centerAndZoom(point, 16);
+			map.addOverlay(new BMap.Marker(point));
+		}else{
+			alert("您选择地址没有解析到结果!");
+		}
+	}, "北京市");
+
+</script>
+  <main class='main-content slab-white supports'>
+		<div class='wrapper'>
+			<ul class='breadcrumb'>
+				<li>
+					<a href="/" >
+					首页
+					<span>/</span>
+					</a>
+				</li>
+				<li>
+					<a href="/service" >
+					服务
+					<span>/</span>
+					</a>
+				</li>
+				<li>
+					服务网点查询
+				</li>
+			</ul>
+		</div>
+
+		<div class='wrapper supports-network'>
+			<div class="brick-s">
+				<h1 class="h-beta">服务网点查询</h1>
+			</div>
+			<div class='  brick-bottom'>
+				<div class='gi one-whole'>
+          	        <div class="select-territories" >
+						<span class="tips">请选择查询的城市：</span>
+						<div class='basic-input one-whole desk-one-fifth inline-block'>
+							<span class='icon icon-grey-arrow-down'></span>
+							<select id='select' name='province_id' class="sheng">
+								<?php foreach($sheng as $she): ?>
+									<option name="<?php echo e($she); ?>"><?php echo e($she); ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<?php foreach($city as $one=>$two): ?>
+							<div class='basic-input one-whole desk-one-fifth inline-block' name="xuan" id="<?php echo e($one); ?>" style="display:none">
+								<span class='icon icon-grey-arrow-down'></span>
+								<select id="select" name="city_id" class="shi <?php echo e($one); ?>">
+									<?php foreach($two as $three=>$four): ?>
+									<option id="<?php echo e($one); ?>" class="<?php echo e($four); ?>"><?php echo e($four); ?></option>
+									<?php endforeach; ?>
+								</select>
+							</div>
+						<?php endforeach; ?>
+						<div class='basic-input one-whole desk-one-fifth inline-block city-select'>	
+							<form action="/service/map" method="get">
+								<input type="hidden" name="ssheng" value="<?php echo e($ssheng); ?>"></input>
+								<input type="hidden" name="sshi" value="<?php echo e($sshi); ?>"></input>
+								<button type="submit" class="button">搜索</button>
+							</form>
+						</div>
+					</div>
+          	
+          			<div class='location-map'>
+						<div class='map map-fix-infowindow' id='network-map'>
+							<div id="l-map"></div>
+							<div id="r-result">
+								<input type="button" value="显示服务网点位置" onclick="bdGEO()" />
+								<div id="result"></div>
+							</div>
+						</div>
+					</div>
+					<div class='location-address'>
+		                <h3 class='h-gamma'> <?php echo e($sshi); ?> </h3>
+						<div class="field">
+							<h4 class="pull-left">客户服务中心：</h4>
+							<a href=""  target="_blank" class="pull-right clickable">预约客服中心&gt;&gt;</a>
+						</div>
+						<ul class='list-store slab-white-border'>
+							<?php foreach($result as $key=>$one): ?>
+		          			<li class='store-location js-collapse'>
+								<span class='marker'><?php echo e($key+1); ?></span>
+								<div class='store-location-info g'>
+								<div class='gi desk-two-fifths store-name'>
+									<p><strong><?php echo e($one['sname']); ?></strong></p>
+									<p><?php echo e($one['saddress']); ?></p>
+									<p>
+									   <span class='remarks'></span>
+									</p>
+								</div>
+								<div class='gi desk-one-fifth'>
+									<p>工作时间:09:00-17:00(休息时间:<?php echo e($one['sxiu']); ?>)</p>
+								</div>
+								<div class='gi desk-one-fifth'>
+									<p><?php echo e($one['snumber']); ?><br>（<?php echo e($one['sshi']); ?>统一咨询电话）</p>
+								</div>
+								<div class='gi desk-one-fifth relative network-message'>
+									<p class='network-send-message-box'>
+										<a href='javascript:;' class='button button-s network-send-message'>发送地址到手机</a>
+									</p>
+									<p class='network-show-route-box'>
+										<a href=""  class='button button-s'>地图导航</a>
+									</p>
+									<div class='badge-icon-tip'>
+										<div class='badge-icon-tip-container'>
+										<div class='badge-icon-tip-close'>
+											<a href='#'>x</a>
+										</div>
+										<div class='badge-icon-tip-triangle'>
+										</div>
+										<div class='badge-icon-tip-content badge-icon-tip-message'>
+											<form action="http://www.oppo.com/cn/service/sendsms" class="sendMsg">
+												<h4 class='badge-icon-tip-title'>输入您的手机号码</h4>
+												<div class='input-captcha'>
+													<input type='hidden' name='sid' value='1648'/>
+													<input type='text' name='mobile' placeholder='输入您的手机号码' value='' />
+												</div>
+												<div class='g input-captcha'>
+													<div class='gi one-half'><input type='text' name='captcha' placeholder='图片验证码' value='' /></div>
+													<div class='gi one-half'><a href='javascript:;' onclick='vm.refreshCaptcha();' class='refreshCaptcha'><img src='' width='100%'/></a></div>
+												</div>
+												<div class='sendMessageError error'></div>
+												<div class="center-text"><button class='button button-s'>确定</button></div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+		                </div>
+		            </li>
+		            <?php endforeach; ?>		             
+                </ul>
+              <div class="network-note">
+                <p>说明：</p>
+                <p>1、<strong>客户服务中心：</strong>OPPO为用户提供真诚、便捷、专业服务的窗口，包括咨询、检测、升级及维修等服务。</p>
+                <p>2、<strong>客户服务授权店：</strong>OPPO认证并授权开展售后服务的体验店，包括咨询、检测、升级及快速送修等服务。</p>
+              </div>
+		        </div>
+		                </div>
+
+      </div>
+    </div>
+  </main>
+	<?php echo $__env->make('Home/oppozhu/footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>;
+<div class='navi-scroll'>
+  <div class="navi-scroll-content">
+    <a href="javascript:;" class="scroll-top-btn"><span>回到顶部</span><i></i></a>
+    <a href=""  target="_blank" class="survey-btn survey-btn-normal"><span>意见反馈</span><i></i></a>
+    <a href=""  class="survey-btn survey-btn-mobile"><span>意见反馈m</span><i></i></a>
+  </div>
+</div>
+<input type="hidden" name="chs" value="aa" class="chs">	
+<script src="<?php echo e(asset('/Home/oppozhu/js/jquery-1.7.2.js')); ?>"></script>
+			<input type="hidden" name="" class="a" value="<?php echo e($address); ?>">
+			<input type="hidden" name="" class="b" value="<?php echo e($jing); ?>">
+			<input type="hidden" name="" class="c" value="<?php echo e($wei); ?>">
+<script>
+
+	$(function(){
+		//显示默认省市
+		var msheng=$('input[name=ssheng]').val();
+		$('option[name='+msheng+']').attr('type','selected');
+		$('.sheng').change(function(){			
+			var ssheng=$(this).val();
+			$('input[name=ssheng]').val(ssheng);
+			$('div[id='+ssheng+']').attr('style','');	
+			$('div[name=xuan]').not('#'+ssheng).attr('style','display:none');
+			var sshi=$('option[id='+ssheng+']').first().val();
+			$('input[name=sshi]').val(sshi);
+		});
+		$('.shi').change(function(){			
+			var sshi=$(this).val();	
+			$('input[name=sshi]').val(sshi);
+		});		
+	});
+</script>
+<script type="text/javascript">
+	var index = 0;
+	var addr=new BMap.Point();
+	var myGeo = new BMap.Geocoder();
+	var a=$('.a').val();
+	var adds=a.split(',');
+	var jing=$('.b').val();
+	var wei=$('.c').val();
+	var map = new BMap.Map("l-map");
+	map.centerAndZoom(new BMap.Point(jing,wei), 12);
+	map.enableScrollWheelZoom(true);
+	var index = 0;
+	var myGeo = new BMap.Geocoder();
+	function bdGEO(){
+		var add = adds[index];
+		geocodeSearch(add);
+		index++;
+	}
+	function geocodeSearch(add){
+		if(index < adds.length){
+			setTimeout(window.bdGEO,100);
+		} 
+		myGeo.getPoint(add, function(point){
+			if (point) {
+				var address = new BMap.Point(point.lng, point.lat);
+				addMarker(address,new BMap.Label(index+":"+add,{offset:new BMap.Size(20,-10)}));
+			}
+		}, "北京市");
+	}
+	 
+	// 编写自定义函数,创建标注
+	function addMarker(point,label){
+		var marker = new BMap.Marker(point);
+		map.addOverlay(marker);
+		marker.setLabel(label);
+	} 
+</script> 
+<script src="<?php echo e(asset('Home/oppozhu/js/lib.min.js')); ?>" ></script>
+
+<script src="<?php echo e(asset('Home/oppozhu/js/custom_form.js-v=20150914144728.js')); ?>" ></script>
+<script src="<?php echo e(asset('Home/oppozhu/js/oppo.min.js-v=20161009101515.js')); ?>" ></script>
+<script src="<?php echo e(asset('Home/oppozhu/js/scripts.js-v=201506151120596.js')); ?>" ></script>
+  <script src="<?php echo e(asset('Home/oppozhu/js/region_new.js')); ?>" ></script>
+
+  <script type="text/javascript" src="<?php echo e(asset('Home/oppozhu/js/SearchInfoWindow_min.js')); ?>" ></script>
+<link rel="stylesheet" href="<?php echo e(asset('Home/oppozhu/css/SearchInfoWindow_min.css')); ?>"  />
+
+<noscript><img src="<?php echo e(asset('Home/oppozhu/image/img-site=1351.gif')); ?>"  style="border:0" alt="" /></noscript>
+
+
+
+
+</body>
+
+</html>

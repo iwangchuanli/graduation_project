@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class='no-js'>
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE" />
+  <meta content='width=device-width,initial-scale=1, user-scalable=no' name='viewport'>
+  <title> 『OPPO手机官网』OPPO智能手机_OPPO最新款手机-OPPO智能手机官方网站 </title>
+  <meta name="keywords" content=" OPPO,OPPO手机官网,OPPO智能手机,OPPO拍照手机,OPPO新款手机,OPPO手机资讯 " />
+  <meta name="description" content=" OPPO是一家全球性智能手机制造商和移动互联网服务商，让您随时了解OPPO手机官网,OPPO智能手机,,OPPO拍照手机OPPO新款手机,OPPO手机资讯等内容，为客户开创先进的智能手机产品和移动互联网服务。 " />
+  <meta property="qc:admins" content="1257363774670076375" />
+
+  	<link media="all" type="text/css" rel="stylesheet" href="{{asset('Home/service/css/styles.css-v=20161009101515.css')}}">
+  	<script type="text/javascript">
+    	function checkBrowser(){
+			var browser = {};
+			var div = document.createElement( "div" );
+			div.innerHTML = "<link/><table></table><a href='http://www.oppo.com/a'>a</a><input type='checkbox'/>";
+			var a = div.getElementsByTagName( "a" )[0];
+			style = a && a.style;
+			if (!style) {
+				return;
+			}
+			style.cssText = "float:left;opacity:.5";
+			// Support: IE<9
+			// Make sure that element opacity exists (as opposed to filter)
+			browser.opacity = style.opacity === "0.5";
+
+			// Verify style float existence
+			// (IE uses styleFloat instead of cssFloat)
+			browser.cssFloat = !!style.cssFloat;
+			if(browser.opacity && browser.cssFloat){
+				return true;
+			}else{
+				//IE 8测试
+        var userAgent = navigator.userAgent.toLocaleUpperCase();
+        var msie = /MSIE [\d\.]+/;
+        var version = msie.exec(userAgent);
+        if (version<"MSIE 8") return false;
+        else return true;
+			}
+		}
+        var v = checkBrowser();
+		if (!v) {
+			window.location.href = "http://www.oppo.com/cn/lower.html";
+		}
+    </script>
+  </head>
+
+<body>
+	@include('Home/oppozhu/header');
+  <main class='main-content slab-light'>
+  <div class="supports">
+    <div class='wrapper'>
+      <ul class='breadcrumb'>
+  <li>
+    <a href="">
+      首页
+      <span>/</span>
+    </a>
+  </li>
+            <li>
+                  <a href="">
+            服务
+            <span>/</span>
+          </a>
+              </li>
+          <li>
+                  所有问题
+              </li>
+      </ul>
+    </div>
+	
+    <div class="g wrapper supports-faqs">
+    @include('Home/service/san');
+      <div class="gi one-whole lap-three-quarters desk-four-fifths supports-faqs-content">
+              <div class="brick-s center-text">
+          <h3>产品相关问题</h3>
+        </div>
+		@include('Home/service/tu');
+            <div class="brick-s">
+          <ul class="supports-faq">
+                      <li>
+              <p class="word-break"><strong>有了指纹解锁，为什么还要设置密码或者图案解锁？</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">这个是因为如果只用指纹解锁，万一指纹传感器出问题，手机可就不能开启了！搭配图案或密码一起使用，在指纹识别出问题的情况下依然可以快速开启手机，确保手机永远都在你的掌控之内哦！</span><br/></p><p><br/></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="488" data-faq-type="-1"><span class="faqs-icon"></span><span>(740)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="488" data-faq-type="1"><span class="faqs-icon"></span><span>(755)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>免打扰模式下，没有消息推送的原因和解决方法</strong></p>
+              <div class="word-break"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">免打扰开启后，系统默认你现在不方便接收信息，所以为了不打扰到你，是不会推送消息的。如果你想接收信息，可以退出免打扰模式，下划呼出状态栏--关闭--免打扰模式，然后看一看，消息是不是回来了？<br/></span></p><p><br/></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="482" data-faq-type="-1"><span class="faqs-icon"></span><span>(442)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="482" data-faq-type="1"><span class="faqs-icon"></span><span>(287)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>充电时弹出锁屏广告的原因和解决办法？</strong></p>
+              <div class="word-break"><p><span  微软雅黑, ';Microsoft YaHei';; font-size: 16px;">个别用户反馈，在充电时会弹出锁屏广告？</span></p><p><span  微软雅黑, ';Microsoft YaHei';; font-size: 16px;">经分析，这是【字体管家】V5.2.6.6版本弹出的锁屏广告。如有出现此类问题，将【字体管家】卸载或升级至V 5.2.6.8版本即可解决问题。</span></p><p><br/></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="457" data-faq-type="-1"><span class="faqs-icon"></span><span>(263)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="457" data-faq-type="1"><span class="faqs-icon"></span><span>(330)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>为何更新手机的系统后，呼吸灯就不亮了</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">ColorOS3.0最新版本，基本都修改了呼吸灯提示机制，需要我们对软件进行单独的设置。接下来就告诉小伙伴们该如何进行设置</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">1、在设置--通知与状态栏--打开“收到通知时呼吸灯闪烁”总开关。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">2、在设置，通知与状态栏，通知管理，找“具体的应用程序”，打开“呼吸灯闪烁”开关 &nbsp; <br/>说明：除拨号，电话本，信息外，其他程序的呼吸灯开关默认是关闭的,因此需要手动打开；并修改了充电呼吸灯提示机制，亮屏时充电呼吸灯无指示，只有关机充电息屏时呼吸灯才亮。后续有呼吸灯的机型基本都会采用这个设计哦！ &nbsp; &nbsp;</span></p><p><br/></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="450" data-faq-type="-1"><span class="faqs-icon"></span><span>(423)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="450" data-faq-type="1"><span class="faqs-icon"></span><span>(415)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>字体空心，白色字体边框加粗的解决办法</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">手机字体出现空心情况，白色字体边框还加粗，每次看手机整个人都不好了！</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">这是因为打开了辅助功能的高对比文字，按照步骤：设置-辅助功能-高对比文字 &nbsp; 操作关闭就可以啦！ &nbsp; &nbsp;</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;"></span><br/></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="448" data-faq-type="-1"><span class="faqs-icon"></span><span>(538)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="448" data-faq-type="1"><span class="faqs-icon"></span><span>(208)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>弹窗、角标、横幅通知，解锁消息提醒的三种姿势</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;"></span><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">现在手机里装的APP多了，有消息时，图标小红点就都冒出来了，强迫症表示，一个个点开简直要人命啊！这次要和大家科普下我们手机里的三个信息通知小能手，横幅通知，弹窗通知，角标提醒！</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">1、打开“设置-通知与状态栏-通知管理”。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">2、选择需要设置通知形式的APP，从上往下三个按钮分别代表“锁屏弹窗”、“角标提醒”、“横幅通知”，根据你的需求开启或关闭。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">学会它，在“通知管理”里，你就可以自由控制手机各种APP的通知形式啦！</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="447" data-faq-type="-1"><span class="faqs-icon"></span><span>(511)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="447" data-faq-type="1"><span class="faqs-icon"></span><span>(225)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>一招教你轻松设置软件后台运行</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">ColorOS 3.0系统设计了一种省电机制，防止部分软件在后台耗电，或者当软件在后台运行存在耗电行为时，系统会自动将其关闭。当然，如果想要让该软件在后台长期运行，我们可以通过下面的方法实现：</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">进入设置--电池，找到需要设置后台运行的软件（如果找不到，可点击其他查找），比如微博，点击进入：</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">关闭【后台冻结】的开关，可使该软件在后台运行；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">关闭检【测到异常时自动优化】的开关，可使该软件长期在后台运行。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">注：关闭开关，不利于手机省电，请谨慎设置噢！</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="439" data-faq-type="-1"><span class="faqs-icon"></span><span>(437)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="439" data-faq-type="1"><span class="faqs-icon"></span><span>(219)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>ColorOS3.0简介之手机桌面</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">1、桌面搜索</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">桌面任意位置往下滑，即可出现搜索栏，应用，电话本，信息，浏览器等均可搜到；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">2、分页式通知栏</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">快捷设置与通知分页 ：展示内容更多，页面更聚焦，增加手动亮度图标，智能省电改为低电量模式。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">对比ColorOS2.1系统去除了：自动同步、护眼显示、个人热点、一键清理图标。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">3、锁屏杂志</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">高清杂志壁纸，结合唯美的文字介绍，每次亮屏都自动更换，惊喜不断。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">操作路径：设置--壁纸与锁屏杂志--锁屏杂志</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">每天共有12张锁屏壁纸轮流自动更换。</span></p><p><a href="" target="_blank" style="color: rgb(42, 173, 111); font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px; text-decoration: underline;"><span style="color: rgb(42, 173, 111); font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">猛戳看图文版</span></a></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="387" data-faq-type="-1"><span class="faqs-icon"></span><span>(165)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="387" data-faq-type="1"><span class="faqs-icon"></span><span>(657)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>如何设置使用老人桌面</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">春节回家有没有计划给父母带一部新手机呢？对于年长者来说，使用普通的桌面可能会看不清楚，看看改如何设置使用“老人桌面”：</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">1、软件商店下载安装成功后，若只是暂时使用“老人桌面“，只要点击桌面的老人桌面图标，即可进入“老人桌面”使用；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">2、若需要长期使用“老人桌面”，需要通过手机设置--应用程序管理--默认应用管理--桌面，选择使用老人桌面；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">3、若需要退出“老人桌面”，重新使用“ColorOS桌面”，则进入手机设置--应用程序管理--默认应用管理--桌面，选择使用ColorOS桌面即可。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">4、以上方法主要针对于新机型，对于老机型可通过进入--安全中心--权限管理--默认应用管理--桌面，切换桌面主题使用。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="349" data-faq-type="-1"><span class="faqs-icon"></span><span>(58)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="349" data-faq-type="1"><span class="faqs-icon"></span><span>(412)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>单手操作的设置方法</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">全新的单手操作功能，你造吗？</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">1、可进入手机设置--手势体感--亮屏手势--单手操作打开；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">2、屏幕左下角或右下角向屏幕中心滑动触发，手机小屏显示（小屏状态下，你可以单手进行各种操作：通话、信息、相机、微信等功能）；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">3、在小屏状态下，点击屏幕上方放大的图标，即可退出小屏模式了。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="290" data-faq-type="-1"><span class="faqs-icon"></span><span>(195)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="290" data-faq-type="1"><span class="faqs-icon"></span><span>(103)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>设置了锁屏壁纸，为何不显示？</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">导致此种现象是因为手机使用了自定义锁屏方式或主题（带锁屏），只有在默认主题或默认锁屏方式下，设置的锁屏壁纸才可以正常显示。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">长按手机桌面空白处—壁纸--选择更多--相册--选择喜欢的照片--右下角√键--壁纸应用为--“锁屏”、“桌面”、“同时应用”，选择需要应用的对象即可。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="288" data-faq-type="-1"><span class="faqs-icon"></span><span>(15)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="288" data-faq-type="1"><span class="faqs-icon"></span><span>(139)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>手机桌面的删除和添加方法</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">有时候想添加/删除一些手机的桌面页数，却不知道怎么做？和大家分享一下操作方法：</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">ColorOS2.0以下的机型：</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">1.手机主界面双指从屏幕四周向内滑动--出现九宫格界面--点击+键即可添加；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">2.在手机主界面长按空白处--滑动上面的页面--右上角会出现X键即可删除。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">ColorOS2.0以上的机型：</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">1.若桌面图标位置不足，安装新软件后，桌面自动生成新桌面；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">2.卸载软件，空白桌面即可自动消失；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">（第三方桌面的删除方法不同，需卸载第三方桌面软件即可）。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="287" data-faq-type="-1"><span class="faqs-icon"></span><span>(851)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="287" data-faq-type="1"><span class="faqs-icon"></span><span>(545)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>R7等机型升级，如何寻找消失的应用图标</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">近期R7等机型升级新版本后，个别的应用图标消失，实属正常现象，按照如下方法，即可找到相应功能：</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">一键锁屏：目前手机新版本保留了按开机键锁屏功能，最新版本去除“一键锁屏”桌面图标显示。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">语音助手：最新版本去除“语音助手”桌面图标显示，手机保留长按菜单键唤起“语音助手”功能。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">系统更新：最新版本去除“系统更新”桌面图标显示，可在“设置”的常规模块找到“系统更新”入口。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">服务指南：最新版本去除“服务指南”桌面图标显示，可在“设置”的常规模块找到“使用说明”入口。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">手电筒：最新版本去除“手电筒”桌面图标显示，可在下拉状态栏打开，或者在解锁界面长按HOME键启动。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">锁屏快捷功能：为减少误操作，去除了锁屏界面向左滑动启动相机和向右滑动添加插件的功能。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="286" data-faq-type="-1"><span class="faqs-icon"></span><span>(931)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="286" data-faq-type="1"><span class="faqs-icon"></span><span>(393)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>R7 Plus巴萨定制版主题丢失后找回的方法</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">R7Plusm巴萨定制版主题，在恢复出厂设置后定制的主题会还原。若主题丢失，您可以<a href="" target="_blank" style="color: rgb(42, 173, 111); text-decoration: underline;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px; color: rgb(42, 173, 111);">下载巴萨主题</span></a>，并将</span><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">文件拷贝到文件管理--Themes目录下--长按桌面--主题--选择巴萨主题即可。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">巴萨主题应用后：仅桌面壁纸和锁屏界面有变化，桌面图标颜色不变。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="285" data-faq-type="-1"><span class="faqs-icon"></span><span>(573)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="285" data-faq-type="1"><span class="faqs-icon"></span><span>(152)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>手机状态栏为何显示“…”</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">手机状态栏显示“…”因为有程序在后台运行，ColorOS 2.0系统采用纯净状态栏显示所致。</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">常用的第三方程序，如：QQ、微信、新浪微博、陌陌等社交应用，状态栏正常显示程序图标；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">系统通知和</span>非常用的第三方程序，如：截屏图标、酷狗音乐、QQ音乐等，状态栏均以“...”显示（两个或两个以上的程序在后台运行时也显示“...”图标）。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="284" data-faq-type="-1"><span class="faqs-icon"></span><span>(119)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="284" data-faq-type="1"><span class="faqs-icon"></span><span>(384)</span></a>
+              </p>
+            </li>
+                       <li>
+              <p class="word-break"><strong>如何设置节日壁纸</strong></p>
+              <div class="word-break"><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">ColorOS系统：需要将美丽的OPPO节日壁纸显示在锁屏界面，可按照如下方法设置：</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">1.进入手机设置--显示--节日壁纸，打开开关；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">2.手机设置--常规--安全与隐私--屏幕锁定方式，选择为：“无/无锁屏”之外的锁屏方式；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">3.在设置--显示--选择系统自带的锁屏样式（旅行解锁除外，旅行解锁时不显示节日壁纸）；</span></p><p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">4.节日当天若没有显示，以上方法操作完成后，可重新设置下手机系统的时间。</span></p></div>
+              <p class="faqs-action">
+                <a href="javascript:;" class="faqs-bad" data-faq-id="232" data-faq-type="-1"><span class="faqs-icon"></span><span>(807)</span></a>
+                <a href="javascript:;" class="faqs-good" data-faq-id="232" data-faq-type="1"><span class="faqs-icon"></span><span>(355)</span></a>
+              </p>
+            </li>
+                     </ul>
+        </div>
+              </div>
+    </div>
+  </div>
+  </main>
+
+	@include('Home/oppozhu/footer');
+<div class='navi-scroll'>
+  <div class="navi-scroll-content">
+    <a href="javascript:;" class="scroll-top-btn"><span>回到顶部</span><i></i></a>
+    <a href="" target="_blank" class="survey-btn survey-btn-normal"><span>意见反馈</span><i></i></a>
+    <a href="" class="survey-btn survey-btn-mobile"><span>意见反馈m</span><i></i></a>
+  </div>
+</div>
+<script src="{{asset('Home/service/js/lib.min.js')}}"></script>
+
+<script src="{{asset('Home/service/js/custom_form.js-v=20150914144728.js')}}"></script>
+
+<script src="{{asset('Home/service/js/scripts.js-v=201506151120596.js')}}"></script>
+
+<script src="{{asset('Home/service/js/oppo.min.js-v=20161009101515.js')}}"></script>
+
+
+
+<script type="text/javascript">
+  var vm;
+  OPPO.conf.BASE_URL = "http://www.oppo.com/cn";
+  OPPO.conf.STORE_URL = 'http://www.opposhop.cn/';
+  OPPO.conf.ACCOUNT_URL = 'http://my.oppo.com/';
+  OPPO.conf.domains = [];
+  OPPO.conf.jsonpDone = false;
+      OPPO.conf.jsonpDone = true;
+  
+  var url = OPPO.conf.STORE_URL + '/auth/check';
+  //callback for jsonp
+  var successCallback = function(data){
+    $('ul.log-area .hasLogout').removeClass('show').addClass('hidden');
+    $('ul.log-area .hasLogin').removeClass('hidden').addClass('show');
+    $('.n-messages').text("(" + data['message_number'] + ")");
+    $('.user-menu').addClass('isLogin');
+    $('.user-menu-toLogin').hide();
+    if (data['message_number']>0 || data['cart_number']>0) {
+      $('.js-open-user').addClass('point-red');
+      if (data['message_number']>0) $('.user-menu-message a').addClass('point-red');
+      if (data['cart_number']>0) $('.user-menu-cart a').addClass('point-red');
+    };
+    if (data['append'] != '') $('body').append(data['append']);
+  };
+  var errorCallback = function(){
+    $('ul.log-area .hasLogin').removeClass('show').addClass('hidden');
+    $('ul.log-area .hasLogout').removeClass('hidden').addClass('show');
+  };
+  $.ajax({
+    url: url,
+    type: 'GET',
+    dataType: 'jsonp',
+    error: function() {
+      errorCallback();
+    },
+    success: function(data){
+      successCallback(data);
+    }
+  });
+
+  (function () {
+    var controllerNameWithAction = "SupportsController@faqShow".split('@');
+    var controllerName = controllerNameWithAction[0];
+    var actionName = controllerNameWithAction[1];
+    var controller = OPPO.controller[controllerName];
+    if (controller) {
+      action = controller()[actionName];
+      if (action) {
+        $(function () {
+          vm = action();
+        });
+      }
+    }
+    // else console.log(controllerNameWithAction);
+  })();
+</script>
+<script type="text/javascript">
+  $(function () {
+      });
+</script>
+
+<noscript><img src="{{asset('Home/service/image/img-site=1351.gif')}}" style="border:0" alt="" /></noscript> 
+
+<!--听云监测-->
+<script src="{{asset('Home/service/js/tingyun-rum.js')}}"></script>
+
+<script type="text/javascript">
+$(function(){
+	$("body").on("click",".oppo-tj",function(){
+		if (typeof $(this).data('tj') != 'undefined' && typeof _optj != 'undefined') {
+			var tj = $(this).data('tj');
+			var tjs = tj.split("|");
+			_optj.push(['_trackEvent', tjs[0], tjs[1], tjs[2], tjs[3]]);
+		};
+	});
+});
+</script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+server:
+  port: 9000
+spring:
+  redis:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+  rabbitmq:
+    host: ${RABBIT_HOST:localhost}
+    port: ${RABBIT_PORT:5672}
+    username: ${RABBITMQ_DEFAULT_USER:guest}
+    password: ${RABBITMQ_DEFAULT_PASS:guest}
+  boot:
+    admin:
+      client:
+        url: http://${ADMIN_HOST:localhost}:${ADMIN_PORT:8085}/admin
+        username: ${ADMIN_USERNAME:admin}
+        password: ${ADMIN_PASSWORD:11}
+        instance:
+          service-base-url: http://${AUTH_SERVICE_HOST:localhost}:${server.port}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+sms:
+  appKey: test
+  appSecret: test
+  regionId: cn-hangzhou
+  domain: dysmsapi.aliyuncs.com
+
+ignore:
+  urls:
+    - /
+    - /error
+    - /favicon.ico
+    - /**/*swagger*/**
+    - /v2/api-docs
+    - /csrf
+    - /actuator/**
+    - /hystrix.sender
+    - /v1/sms/**
+    - /**/*.css
+    - /**/*.js
+    - /info
+    - /health
+    - /metrics/**
+    - /loggers/**
+
+# 集群ID生成配置
+cluster:
+  workId: ${CLUSTER_WORKID:1}
+  dataCenterId: ${CLUSTER_DATA_CENTER_ID:1}
+
+logging:
+  level:
+    root: info
+    com.github.tangyi: debug

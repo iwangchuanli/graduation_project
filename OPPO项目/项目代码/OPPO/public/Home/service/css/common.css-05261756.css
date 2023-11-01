@@ -1,0 +1,63 @@
+.ico-xs, .ico-js, .ico-zx, .ico-rx, .ico-kh, .ico-lt, .ico-zc, .ico-gj { height: 60px; line-height: 60px; padding-left: 60px; display:block; text-align: center; font-size: 18px; color: #00925E; background: url(../../../../../../../../www.oppo.cn/error-msg=404，您访问的页面不存在！)/*tpa=http://www.oppo.cn/template/oppo/images/service_icon.png*/ no-repeat; }
+.ico-xs { background-position: 0 -350px; }
+.ico-js { background-position: 0 -450px; }
+.ico-zx { background-position: 0 -550px; }
+.ico-rx { background-position: 0 -650px; }
+.ico-kh { background-position: 0 -750px; }
+.ico-lt { background-position: 0 -850px; }
+.ico-zc { background-position: 0 -950px; }
+.ico-gj { background: url(../../../../../../../../www.oppo.cn/error-msg=404，您访问的页面不存在！)/*tpa=http://www.oppo.cn/template/oppo/images/course_icon.png*/ no-repeat }
+.ico-rx, .ico-kh { line-height:30px; }
+/**/
+.ce64c3b { color:#E64C3B; }
+.c1fb272 { color:#1FB272; }
+.cfebf2e { color:#FEBF2E; }
+.step1, .step2, .step3, .step4 { width:535px; height:86px; margin:0 auto 20px; background:url(../../images/reserve/step.png)/*tpa=http://static.oppo.com/bbs/reserve/static/themes/oppo/images/reserve/step.png*/; }
+.step2 { background-position:0 -86px; }
+.step3 { background-position:0 -172px; }
+.step4 { background-position:0 -258px; height:132px; }
+th, td { padding:5px; line-height:28px; }
+.record { background: #F4F4F4; }
+.record th, .record td { padding:10px 5px; line-height:1.5; }
+.record .th { border-bottom:1px solid #D5D5D5; }
+.record .td { border-bottom:1px dashed #D5D5D5; }
+/*index*/
+.index-top { background:url(../../images/reserve/index_top.jpg)/*tpa=http://static.oppo.com/bbs/reserve/static/themes/oppo/images/reserve/index_top.jpg*/; width:100%; height:300px; color:#fff; margin-top:30px; }
+.index-top td { padding-left:530px; }
+.index-mid { width:696px; margin:10px auto 30px; }
+.index-mid ul { width:852px; }
+.index-mid li { float:left; width:284px; font-weight:bold; text-align:left; color:#575757; }
+.index-mid li i { background: url(../../images/reserve/index_mid.png)/*tpa=http://static.oppo.com/bbs/reserve/static/themes/oppo/images/reserve/index_mid.png*/; display: block; width: 128px; height: 128px; margin-bottom: 30px; }
+.index-mid li .a { background-position: 0 0; }
+.index-mid li .b { background-position: -240px 0; }
+.index-mid li .c { background-position: -477px 0; }
+.index-btn a { font-size: 15px; font-weight: bold; width: 148px; height: 48px; line-height: 48px; margin-left: 70px; padding: 0; }
+.index-btn .first { margin-left: 0; }
+
+/*step1*/
+#map { height:400px; background:#CCC; }
+/*step2*/
+#choose a { color: #20b273; border: 1px solid #20b273; border-radius: 4px; display: inline-block; vertical-align: middle; cursor:pointer; padding: 22px 0 23px; font-size: 14px; width:180px; text-align:center; margin:0 30px 20px 0; }
+#choose a:hover, #choose a.s { color:#fff; background:#20b273; }
+#choose a.m { padding: 12px 0; }
+#choose a.g { border-color: #8e8e8e; color: #878787 !important; background: #fff !important; cursor:default; }
+/*step3*/
+.text { border:#7A7A7A solid 1px; padding-left:10px; padding-right:10px; color:#848484; border-radius:3px; resize:none; }
+input.text { width:300px; height:26px; line-height:26px; }
+#models a, #question a { margin:0 10px 10px 0; padding:0; text-align:center; }
+#models a { width:109px; }
+#question a { width:85px; }
+#models_hover { display:none; position:absolute; background:url(../../images/reserve/step3_model.png)/*tpa=http://static.oppo.com/bbs/reserve/static/themes/oppo/images/reserve/step3_model.png*/; width:116px; height:100px; padding: 19px 0 25px 0; text-align:center; opacity: 0; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; }
+#models_hover img { height:100px; }
+#models a.s, #question a.s { color:#fff; background:#20b273; }
+
+/*record*/
+#reviews { border:#20B273 solid 1px; padding:30px; display:none; background:#fff; }
+.star, .star a { height:28px; display:inline-block; vertical-align: top; }
+.star { width:120px; }
+.star a { width:24px; background: #fff url(../../images/reserve/record_star.png)/*tpa=http://static.oppo.com/bbs/reserve/static/themes/oppo/images/reserve/record_star.png*/ 0 -35px repeat-x; }
+.star .s { background-position:0 7px; }
+
+.pagination { overflow:hidden; zoom:1; }
+.pagination li { float:left; }
+.pagination li * { padding:0 5px; }

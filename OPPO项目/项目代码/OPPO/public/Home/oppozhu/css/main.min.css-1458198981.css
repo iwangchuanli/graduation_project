@@ -1,0 +1,3354 @@
+@charset "UTF-8";
+/* Background Gradient */
+/* Background Image Size */
+/* animation */
+/* keyframe */
+/* Radius */
+/* Background Opacity */
+/* Rotate */
+/* Text Shadow */
+/* transform Translate */
+/* Transition */
+/*
+@mixin transition($what: all, $length: 1s, $easing: ease-in-out) {
+    -moz-transition:    $what $length $easing;
+    -o-transition:      $what $length $easing;
+    -webkit-transition: $what $length $easing;
+    -ms-transition:     $what $length $easing;
+    transition:         $what $length $easing;
+
+}
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\000032}}
+body {
+  color: #000;
+  background-color: #fff;
+  font-size: 18px;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\000039}}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000313}}
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000319}}
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  word-wrap: break-word; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000325}}
+h1, h2, h3 {
+  font-size: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000329}}
+ol, ul {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000333}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  font-size: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000340}}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000345}}
+cite, em, s, i, b {
+  font-style: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000349}}
+input, button, textarea, select {
+  font-size: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000353}}
+input, button, textarea, select, option {
+  font-size: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000357}}
+a, input, textarea {
+  text-decoration: none;
+  outline: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000362}}
+li, img, label, input {
+  vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000366}}
+var {
+  font-style: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000370}}
+ins {
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000374}}
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000379}}
+sup {
+  vertical-align: text-top; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000383}}
+sub {
+  vertical-align: text-bottom; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000387}}
+button, select {
+  text-transform: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000391}}
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\0000395}}
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\00003102}}
+button, input, select, textarea {
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\00003108}}
+button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: none;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\00003113}}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\00003119}}
+a:link, a:visited {
+  color: #b2b2b2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\00003123}}
+a:hover {
+  color: #00925f; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\00003127}}
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\00003135}}
+.clearfix {
+  display: table; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\00003139}}
+* + html .clearfix {
+  min-height: 1%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\00003143}}
+.hide {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\00003147}}
+.overflow {
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\00003151}}
+.wrapper {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_base\.scss}line{font-family:\00003157}}
+.wrapper-s {
+  width: 1114px;
+  margin: 0 auto;
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031}}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: 0;
+  border: 0;
+  font-style: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\0000310}}
+.wrapper {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\0000317}}
+.text-init.animate {
+  -webkit-animation: text_animate 0.5s forwards ease-in-out;
+  -moz-animation: text_animate 0.5s forwards ease-in-out;
+  -ms-animation: text_animate 0.5s forwards ease-in-out;
+  animation: text_animate 0.5s forwards ease-in-out; }
+
+@-webkit-keyframes text_animate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 25px, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+@-moz-keyframes text_animate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 25px, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+@-ms-keyframes text_animate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 25px, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+@-o-keyframes text_animate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 25px, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+@keyframes text_animate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 25px, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\0000332}}
+.main {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\0000340}}
+.title {
+  font-size: 42px;
+  line-height: 54px;
+  font-family: 'FZLTCXHJW';
+  font-weight: bold;
+  color: #3c3c3c; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\0000348}}
+.subtitle {
+  font-size: 36px;
+  line-height: 54px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\0000353}}
+.text {
+  font-size: 16px;
+  color: #787878;
+  line-height: 28px;
+  margin-top: 21px;
+  font-family: "微软雅黑"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\0000361}}
+.text-init {
+  opacity: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\0000365}}
+.link {
+  font-family: "微软雅黑";
+  font-size: 16px;
+  margin-top: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\0000369}}
+  .link a {
+    color: #aa8c64; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\0000374}}
+.next {
+  font-family: 'FZLTCXHJW';
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\0000379}}
+.dot {
+  font-family: "微软雅黑";
+  font-size: 26px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\0000384}}
+sub.star {
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: top; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\0000390}}
+em.tm {
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 28px;
+  vertical-align: top !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\0000398}}
+.sec-invert-color .title {
+  color: #fff;
+  font-family: 'FZLTCXHJW';
+  font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003103}}
+.sec-invert-color .text {
+  color: #fff;
+  font-family: "微软雅黑"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003109}}
+.sec-text-center {
+  width: 1180px;
+  left: 0;
+  text-align: center; }
+
+/* home page */
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003117}}
+.sec {
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003124}}
+.sec-1 {
+  height: 100%;
+  background: url("../images/sec-1-bg.jpg")/*tpa=http://shopfs.myoppo.com/cn/product/p/r9/images/sec-1-bg.jpg*/ center no-repeat;
+  background-size: cover;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003131}}
+.sec-1-title {
+  position: absolute;
+  top: 23.89%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transition: opacity 0.5s cubic-bezier(0.4, 0, 1, 1);
+  -moz-transition: opacity 0.5s cubic-bezier(0.4, 0, 1, 1);
+  -o-transition: opacity 0.5s cubic-bezier(0.4, 0, 1, 1);
+  -ms-transition: opacity 0.5s cubic-bezier(0.4, 0, 1, 1);
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 1, 1); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003140}}
+.sec-1-mobile-1 {
+  position: absolute;
+  top: 100%;
+  left: 42.5%;
+  width: 30%;
+  -webkit-transform: translate3d(-50%, 50%, 0) scale(1);
+  -moz-transform: translate3d(-50%, 50%, 0) scale(1);
+  -o-transform: translate3d(-50%, 50%, 0) scale(1);
+  -ms-transform: translate3d(-50%, 50%, 0) scale(1);
+  transform: translate3d(-50%, 50%, 0) scale(1);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003149}}
+.sec-1-mobile-2 {
+  position: absolute;
+  top: 100%;
+  left: 59.5%;
+  width: 30%;
+  -webkit-transform: translate3d(-50%, 50%, 0) scale(1);
+  -moz-transform: translate3d(-50%, 50%, 0) scale(1);
+  -o-transform: translate3d(-50%, 50%, 0) scale(1);
+  -ms-transform: translate3d(-50%, 50%, 0) scale(1);
+  transform: translate3d(-50%, 50%, 0) scale(1);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003158}}
+.sec-1-ie {
+  height: 1180px;
+  display: none;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003166}}
+.sec-2 {
+  background-color: #fff;
+  height: 1543px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003171}}
+.nav {
+  height: 60px;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  line-height: 60px;
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0.95;
+  filter: alpha(opacity=95); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_mixin\.scss}line{font-family:\00003186}}
+  .nav:after {
+    clear: both;
+    content: '';
+    display: table; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003182}}
+  .nav.active {
+    position: fixed;
+    top: 0;
+    left: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003189}}
+.nav-banner {
+  display: none;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.95;
+  filter: alpha(opacity=95);
+  background-color: #fff;
+  z-index: 8; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003202}}
+#header {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0.95;
+  filter: alpha(opacity=95);
+  font-family: "微软雅黑"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003216}}
+.y-header {
+  position: relative;
+  overflow: hidden;
+  zoom: 1;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  width: 1180px;
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003227}}
+.y-logo {
+  float: left;
+  margin-left: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003230}}
+  .y-logo a {
+    color: #3c3c3c;
+    font-size: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003233}}
+    .y-logo a:hover {
+      color: #3c3c3c; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003239}}
+.y-menu {
+  display: inline-block;
+  margin-left: 235px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003242}}
+  .y-menu .menu li {
+    width: 72px;
+    text-align: center;
+    display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003246}}
+    .y-menu .menu li a {
+      color: #a0a0a0;
+      font-size: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003249}}
+      .y-menu .menu li a.active {
+        color: #3c3c3c; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003252}}
+      .y-menu .menu li a:hover {
+        color: #3c3c3c; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003258}}
+.y-buy {
+  float: right;
+  text-align: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_mixin\.scss}line{font-family:\00003186}}
+  .y-buy:after {
+    clear: both;
+    content: '';
+    display: table; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003262}}
+  .y-buy a {
+    color: #3c3c3c;
+    font-size: 16px;
+    padding: 6px 18px;
+    border: 1px solid #1e1e1e;
+    border-radius: 2px;
+    margin-right: 10px;
+    cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003273}}
+.sec-2-text {
+  position: absolute;
+  top: 175px;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003277}}
+  .sec-2-text .title {
+    color: #373a36; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003280}}
+  .sec-2-text .comment {
+    font-size: 12px;
+    color: #b4b4b4;
+    margin-top: 10px;
+    font-family: "微软雅黑"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003288}}
+.sec-2-mobile-1 {
+  position: absolute;
+  left: 78px;
+  top: 490px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003296}}
+.sec-2-mobile-2 {
+  position: absolute;
+  left: 463px;
+  top: 442px;
+  z-index: 2;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003305}}
+.sec-2-icon-1 {
+  position: absolute;
+  left: 177px;
+  top: 579px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003311}}
+.sec-2-icon-2 {
+  position: absolute;
+  left: 894px;
+  top: 1278px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003317}}
+.sec-3 {
+  height: 1080px;
+  background-color: #fff;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003323}}
+.sec-3-text {
+  position: absolute;
+  left: 108px;
+  top: 341px;
+  width: 466px;
+  text-align: left;
+  z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003330}}
+  .sec-3-text .comment {
+    font-size: 12px;
+    color: #b4b4b4;
+    margin-top: 10px;
+    font-family: "微软雅黑"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003338}}
+.sec-3-mobile {
+  position: absolute;
+  left: 653px;
+  top: 149px;
+  /* .sec-3-circle-2 {
+      left: 105px;
+      top: 340px;
+  } */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003342}}
+  .sec-3-mobile img {
+    position: absolute;
+    top: 0;
+    left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003347}}
+  .sec-3-mobile .sec-3-mobile-1 {
+    z-index: 3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003350}}
+  .sec-3-mobile .sec-3-mobile-2 {
+    z-index: 2;
+    -webkit-transform: translate3d(0, 402px, 0);
+    -moz-transform: translate3d(0, 402px, 0);
+    -o-transform: translate3d(0, 402px, 0);
+    -ms-transform: translate3d(0, 402px, 0);
+    transform: translate3d(0, 402px, 0);
+    -webkit-transition: transform 0.5s ease 0.5S;
+    -moz-transition: transform 0.5s ease 0.5S;
+    -o-transition: transform 0.5s ease 0.5S;
+    -ms-transition: transform 0.5s ease 0.5S;
+    transition: transform 0.5s ease 0.5S; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003354}}
+    .sec-3-mobile .sec-3-mobile-2.animate {
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-transition: transform 0.5s ease 0.5s;
+      -moz-transition: transform 0.5s ease 0.5s;
+      -o-transition: transform 0.5s ease 0.5s;
+      -ms-transition: transform 0.5s ease 0.5s;
+      transition: transform 0.5s ease 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003359}}
+  .sec-3-mobile .sec-3-circle-1 {
+    left: 105px;
+    top: 340px;
+    opacity: 0;
+    z-index: 4; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003364}}
+    .sec-3-mobile .sec-3-circle-1.animate {
+      opacity: 1;
+      -webkit-animation: circle_animate 1.5s linear infinite;
+      -moz-animation: circle_animate 1.5s linear infinite;
+      -ms-animation: circle_animate 1.5s linear infinite;
+      animation: circle_animate 1.5s linear infinite; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003374}}
+  .sec-3-mobile .sec-3-circle-3 {
+    left: 105px;
+    top: 340px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003378}}
+  .sec-3-mobile .sec-3-percent {
+    position: absolute;
+    left: 105px;
+    top: 340px;
+    width: 148px;
+    height: 148px;
+    line-height: 148px;
+    color: #eeeeee;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    text-align: center;
+    z-index: 5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003390}}
+    .sec-3-mobile .sec-3-percent .sec-3-number {
+      font-size: 32px; }
+
+@-webkit-keyframes circle_animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-moz-keyframes circle_animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-ms-keyframes circle_animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-o-keyframes circle_animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes circle_animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003408}}
+.sec-4 {
+  height: 2076px;
+  background-color: #fafafa; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003413}}
+.sec-4-mobile-1 {
+  position: absolute;
+  left: 50px;
+  top: 215px;
+  -webkit-transform: translate3d(0, 0, 0) rotate(0);
+  -moz-transform: translate3d(0, 0, 0) rotate(0);
+  -o-transform: translate3d(0, 0, 0) rotate(0);
+  -ms-transform: translate3d(0, 0, 0) rotate(0);
+  transform: translate3d(0, 0, 0) rotate(0);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003421}}
+.sec-4-mobile-2 {
+  position: absolute;
+  left: 315px;
+  top: 747px;
+  -webkit-transform: translate3d(0, 0, 0) rotate(0);
+  -moz-transform: translate3d(0, 0, 0) rotate(0);
+  -o-transform: translate3d(0, 0, 0) rotate(0);
+  -ms-transform: translate3d(0, 0, 0) rotate(0);
+  transform: translate3d(0, 0, 0) rotate(0);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003429}}
+.sec-4-mobile-3 {
+  position: absolute;
+  left: 402px;
+  top: 1220px;
+  -webkit-transform: translate3d(0, 0, 0) rotate(0);
+  -moz-transform: translate3d(0, 0, 0) rotate(0);
+  -o-transform: translate3d(0, 0, 0) rotate(0);
+  -ms-transform: translate3d(0, 0, 0) rotate(0);
+  transform: translate3d(0, 0, 0) rotate(0);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003437}}
+.sec-4-text-1 {
+  position: absolute;
+  left: 640px;
+  top: 288px;
+  width: 470px;
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003445}}
+.sec-4-text-2 {
+  position: absolute;
+  top: 1698px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003448}}
+  .sec-4-text-2 .comment {
+    font-size: 12px;
+    color: #b4b4b4;
+    margin-top: 10px;
+    font-family: "微软雅黑"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003456}}
+.sec-5 {
+  background-color: #fff;
+  height: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003461}}
+.sec-6 {
+  background-color: #fff;
+  height: 1060px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003467}}
+.sec-6-mobile-1 {
+  position: absolute;
+  left: -262px;
+  top: 431px;
+  -webkit-transform: translate3d(303px, 0, 0);
+  -moz-transform: translate3d(303px, 0, 0);
+  -o-transform: translate3d(303px, 0, 0);
+  -ms-transform: translate3d(303px, 0, 0);
+  transform: translate3d(303px, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003472}}
+  .sec-6-mobile-1.animate {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.5s cubic-bezier(0.1, 0, 0.1, 1);
+    -moz-transition: all 0.5s cubic-bezier(0.1, 0, 0.1, 1);
+    -o-transition: all 0.5s cubic-bezier(0.1, 0, 0.1, 1);
+    -ms-transition: all 0.5s cubic-bezier(0.1, 0, 0.1, 1);
+    transition: all 0.5s cubic-bezier(0.1, 0, 0.1, 1); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003478}}
+.sec-6-mobile-2 {
+  position: absolute;
+  left: -262px;
+  top: 431px;
+  z-index: 2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003485}}
+.sec-6-mobile-3 {
+  position: absolute;
+  left: -262px;
+  top: 431px;
+  -webkit-transform: translate3d(-324px, 0, 0);
+  -moz-transform: translate3d(-324px, 0, 0);
+  -o-transform: translate3d(-324px, 0, 0);
+  -ms-transform: translate3d(-324px, 0, 0);
+  transform: translate3d(-324px, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003490}}
+  .sec-6-mobile-3.animate {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.5s cubic-bezier(0.1, 0, 0.1, 1);
+    -moz-transition: all 0.5s cubic-bezier(0.1, 0, 0.1, 1);
+    -o-transition: all 0.5s cubic-bezier(0.1, 0, 0.1, 1);
+    -ms-transition: all 0.5s cubic-bezier(0.1, 0, 0.1, 1);
+    transition: all 0.5s cubic-bezier(0.1, 0, 0.1, 1); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003496}}
+.sec-6-text {
+  position: absolute;
+  top: 112px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003501}}
+.sec-7 {
+  background-color: #fff;
+  height: 308px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003507}}
+.sec-7-mobile {
+  position: absolute;
+  left: 655px;
+  top: 48px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003513}}
+.sec-7-text {
+  position: absolute;
+  left: 192px;
+  top: 108px;
+  opacity: 1;
+  text-align: center;
+  z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003520}}
+  .sec-7-text .next {
+    color: #1e1e1e;
+    font-size: 36px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003526}}
+.sec-8 {
+  background-color: #fbfbfb; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003530}}
+.sec-comments {
+  font-family: "微软雅黑";
+  padding: 65px 100px 90px;
+  color: #b4b4b4;
+  font-size: 14px;
+  line-height: 1.5; }
+
+/* design page */
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003540}}
+.sec-9 {
+  background-color: #fff;
+  height: 1080px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003546}}
+.sec-9-mobile {
+  position: absolute;
+  top: -47px;
+  left: -370px;
+  -webkit-transform: translate3d(0, -15px, 0);
+  -moz-transform: translate3d(0, -15px, 0);
+  -o-transform: translate3d(0, -15px, 0);
+  -ms-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003551}}
+  .sec-9-mobile.animate {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003557}}
+.sec-9-text {
+  position: absolute;
+  top: 791px;
+  left: 422px;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003564}}
+.sec-10 {
+  background: url("../images/sec-10-bg.jpg")/*tpa=http://shopfs.myoppo.com/cn/product/p/r9/images/sec-10-bg.jpg*/ center no-repeat;
+  background-size: cover;
+  height: 1080px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003571}}
+.sec-10-mobile {
+  position: absolute;
+  top: 145px;
+  left: -21px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003576}}
+  .sec-10-mobile.animate {
+    -webkit-transform: translate3d(0, 40px, 0);
+    -moz-transform: translate3d(0, 40px, 0);
+    -o-transform: translate3d(0, 40px, 0);
+    -ms-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003582}}
+.sec-10-text {
+  position: absolute;
+  left: 147px;
+  top: 365px;
+  width: 350px;
+  text-align: left;
+  z-index: 3; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003591}}
+.sec-11 {
+  background-color: #fff;
+  height: 1118px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003596}}
+.sec-11-text {
+  position: absolute;
+  top: 147px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003601}}
+.sec-11-mobile {
+  position: absolute;
+  top: 362px;
+  left: 151px;
+  /* @include transform(translate3d(0, 0, 0));
+  &.animate {
+      @include transform(translate3d(0, -15px, 0));
+      @include transition(transform 1s ease);
+  } */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003612}}
+.sec-12 {
+  height: 980px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003617}}
+.sec-12-mobile-bg {
+  position: absolute;
+  top: 0;
+  left: -370px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003623}}
+.sec-12-magnifier {
+  position: absolute;
+  top: 329px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003626}}
+  .sec-12-magnifier .sec-12-mobile-1 {
+    position: absolute;
+    left: 124px;
+    top: 14px;
+    z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003632}}
+  .sec-12-magnifier .sec-12-mobile-2 {
+    position: absolute;
+    left: 0;
+    top: 72px;
+    z-index: 4; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003638}}
+  .sec-12-magnifier .sec-12-detail {
+    position: absolute;
+    top: -90px;
+    width: 248px;
+    height: 248px;
+    overflow: hidden;
+    z-index: 3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003646}}
+  .sec-12-magnifier .sec-12-glass {
+    z-index: 5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003649}}
+  .sec-12-magnifier .sec-12-circle {
+    position: absolute;
+    left: 19px;
+    top: 19px;
+    width: 210px;
+    height: 210px;
+    -moz-border-radius: 105px;
+    -webkit-border-radius: 105px;
+    border-radius: 105px;
+    overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003660}}
+.sec-12-text {
+  position: absolute;
+  top: 624px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003663}}
+  .sec-12-text .text {
+    color: #1e1e1e; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003668}}
+.sec-13 {
+  background-color: #fff;
+  height: 1180px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003673}}
+.sec-13-mobile-1 {
+  position: absolute;
+  top: 210px;
+  left: 270px;
+  /* @include transform(translate3d(0, 0, 0));
+  @include transition(transform 2s liner); */
+  -webkit-transform: translate3d(0, 0, 0) rotate(0);
+  -moz-transform: translate3d(0, 0, 0) rotate(0);
+  -o-transform: translate3d(0, 0, 0) rotate(0);
+  -ms-transform: translate3d(0, 0, 0) rotate(0);
+  transform: translate3d(0, 0, 0) rotate(0);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003683}}
+.sec-13-mobile-2 {
+  position: absolute;
+  top: 102px;
+  left: 474px;
+  /* @include transform(translate3d(0, 0, 0));
+  @include transition(transform 2s liner); */
+  -webkit-transform: translate3d(0, 0, 0) rotate(0);
+  -moz-transform: translate3d(0, 0, 0) rotate(0);
+  -o-transform: translate3d(0, 0, 0) rotate(0);
+  -ms-transform: translate3d(0, 0, 0) rotate(0);
+  transform: translate3d(0, 0, 0) rotate(0);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003693}}
+.sec-13-text {
+  position: absolute;
+  top: 859px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003698}}
+.sec-14 {
+  background-color: #fafafa;
+  height: 1080px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003704}}
+.sec-14-mobile-animate {
+  position: absolute;
+  left: 224px;
+  top: 270px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003708}}
+  .sec-14-mobile-animate .sec-14-mobile {
+    position: absolute;
+    left: 0;
+    top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003713}}
+  .sec-14-mobile-animate .sec-14-home {
+    position: absolute;
+    left: 206px;
+    top: 238px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003718}}
+  .sec-14-mobile-animate .sec-14-home-1 {
+    opacity: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003721}}
+  .sec-14-mobile-animate .sec-14-home-2 {
+    opacity: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003723}}
+    .sec-14-mobile-animate .sec-14-home-2.animate {
+      opacity: 1;
+      -webkit-transition: opacity 1.85s ease 0.5s;
+      -moz-transition: opacity 1.85s ease 0.5s;
+      -o-transition: opacity 1.85s ease 0.5s;
+      -ms-transition: opacity 1.85s ease 0.5s;
+      transition: opacity 1.85s ease 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003728}}
+  .sec-14-mobile-animate .sec-14-home-3 {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 37px, 0);
+    -moz-transform: translate3d(0, 37px, 0);
+    -o-transform: translate3d(0, 37px, 0);
+    -ms-transform: translate3d(0, 37px, 0);
+    transform: translate3d(0, 37px, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003731}}
+    .sec-14-mobile-animate .sec-14-home-3.animate {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-transition: all 0.37s ease 0.5s;
+      -moz-transition: all 0.37s ease 0.5s;
+      -o-transition: all 0.37s ease 0.5s;
+      -ms-transition: all 0.37s ease 0.5s;
+      transition: all 0.37s ease 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003737}}
+  .sec-14-mobile-animate .sec-14-home-4 {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 57px, 0);
+    -moz-transform: translate3d(0, 57px, 0);
+    -o-transform: translate3d(0, 57px, 0);
+    -ms-transform: translate3d(0, 57px, 0);
+    transform: translate3d(0, 57px, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003740}}
+    .sec-14-mobile-animate .sec-14-home-4.animate {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-transition: all 0.57s ease 0.5s;
+      -moz-transition: all 0.57s ease 0.5s;
+      -o-transition: all 0.57s ease 0.5s;
+      -ms-transition: all 0.57s ease 0.5s;
+      transition: all 0.57s ease 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003746}}
+  .sec-14-mobile-animate .sec-14-home-5 {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 89px, 0);
+    -moz-transform: translate3d(0, 89px, 0);
+    -o-transform: translate3d(0, 89px, 0);
+    -ms-transform: translate3d(0, 89px, 0);
+    transform: translate3d(0, 89px, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003749}}
+    .sec-14-mobile-animate .sec-14-home-5.animate {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-transition: all 0.89s ease 0.5s;
+      -moz-transition: all 0.89s ease 0.5s;
+      -o-transition: all 0.89s ease 0.5s;
+      -ms-transition: all 0.89s ease 0.5s;
+      transition: all 0.89s ease 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003755}}
+  .sec-14-mobile-animate .sec-14-home-6 {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 132px, 0);
+    -moz-transform: translate3d(0, 132px, 0);
+    -o-transform: translate3d(0, 132px, 0);
+    -ms-transform: translate3d(0, 132px, 0);
+    transform: translate3d(0, 132px, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003758}}
+    .sec-14-mobile-animate .sec-14-home-6.animate {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-transition: all 1.32s ease 0.5s;
+      -moz-transition: all 1.32s ease 0.5s;
+      -o-transition: all 1.32s ease 0.5s;
+      -ms-transition: all 1.32s ease 0.5s;
+      transition: all 1.32s ease 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003764}}
+  .sec-14-mobile-animate .sec-14-home-7 {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 185px, 0);
+    -moz-transform: translate3d(0, 185px, 0);
+    -o-transform: translate3d(0, 185px, 0);
+    -ms-transform: translate3d(0, 185px, 0);
+    transform: translate3d(0, 185px, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003767}}
+    .sec-14-mobile-animate .sec-14-home-7.animate {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-transition: all 1.85s ease 0.5s;
+      -moz-transition: all 1.85s ease 0.5s;
+      -o-transition: all 1.85s ease 0.5s;
+      -ms-transition: all 1.85s ease 0.5s;
+      transition: all 1.85s ease 0.5s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003775}}
+.sec-14-text {
+  position: absolute;
+  left: 167px;
+  top: 173px;
+  width: 392px;
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003783}}
+.sec-15 {
+  width: 100%;
+  height: 1080px;
+  overflow: hidden;
+  background-image: url("../images/sec-15-bg.jpg")/*tpa=http://shopfs.myoppo.com/cn/product/p/r9/images/sec-15-bg.jpg*/;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003793}}
+.sec-15-mobile-whole {
+  position: absolute;
+  top: 168px;
+  left: 273px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003797}}
+  .sec-15-mobile-whole .sec-15-mobile {
+    position: absolute;
+    left: 0;
+    top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003802}}
+  .sec-15-mobile-whole .sec-15-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 5;
+    background: url("../images/sec-15-icon.png")/*tpa=http://shopfs.myoppo.com/cn/product/p/r9/images/sec-15-icon.png*/ center no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003809}}
+    .sec-15-mobile-whole .sec-15-icon.active {
+      background: url("../images/sec-15-icon-active.png")/*tpa=http://shopfs.myoppo.com/cn/product/p/r9/images/sec-15-icon-active.png*/ center no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003813}}
+  .sec-15-mobile-whole .sec-15-icon-1 {
+    left: 34px;
+    top: -20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003817}}
+  .sec-15-mobile-whole .sec-15-icon-2 {
+    left: 147px;
+    top: 113px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003821}}
+  .sec-15-mobile-whole .sec-15-icon-3 {
+    left: 62px;
+    top: 314px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003825}}
+  .sec-15-mobile-whole .sec-15-icon-4 {
+    left: -20px;
+    top: 105px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003832}}
+.sec-15-text {
+  position: absolute;
+  left: 170px;
+  top: 597px;
+  width: 430px;
+  text-align: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003838}}
+  .sec-15-text .title {
+    color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003841}}
+  .sec-15-text .text {
+    color: #787878; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003846}}
+.sec-15-detail {
+  position: absolute;
+  opacity: 0;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003851}}
+  .sec-15-detail.active {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003858}}
+.sec-15-detail-1 {
+  left: 736px;
+  top: 52px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003863}}
+.sec-15-detail-2 {
+  left: 334px;
+  top: -607px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003868}}
+.sec-15-detail-3 {
+  left: 553px;
+  top: -86px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003873}}
+.sec-15-detail-4 {
+  left: 198px;
+  top: -509px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003878}}
+.sec-16 {
+  background-color: #fff;
+  height: 308px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003884}}
+.sec-16-mobile {
+  position: absolute;
+  left: 666px;
+  top: 86px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003890}}
+.sec-16-text {
+  position: absolute;
+  left: 192px;
+  top: 108px;
+  opacity: 1;
+  text-align: center;
+  z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003897}}
+  .sec-16-text .next {
+    color: #1e1e1e;
+    font-size: 36px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003903}}
+.sec-17 {
+  background-color: #fafafa; }
+
+/* camera page */
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003909}}
+.sec-18 {
+  background: url("../images/sec-18-bg.jpg")/*tpa=http://shopfs.myoppo.com/cn/product/p/r9/images/sec-18-bg.jpg*/ center no-repeat;
+  background-size: cover;
+  height: 1080px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003916}}
+.sec-18-mobile-1 {
+  position: absolute;
+  left: 109px;
+  top: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  -moz-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003921}}
+  .sec-18-mobile-1.animate {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003927}}
+.sec-18-mobile-2 {
+  position: absolute;
+  left: 109px;
+  bottom: -633px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003932}}
+  .sec-18-mobile-2.animate {
+    -webkit-transform: translate3d(0, -318px, 0);
+    -moz-transform: translate3d(0, -318px, 0);
+    -o-transform: translate3d(0, -318px, 0);
+    -ms-transform: translate3d(0, -318px, 0);
+    transform: translate3d(0, -318px, 0);
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003938}}
+.sec-18-text {
+  position: absolute;
+  top: 416px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003943}}
+.sec-19 {
+  background-color: #fff;
+  height: 940px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003948}}
+.sec-19-mobile {
+  position: absolute;
+  right: 107px;
+  top: 107px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003954}}
+.sec-19-text {
+  position: absolute;
+  top: 652px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003957}}
+  .sec-19-text em {
+    font-weight: 200; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003962}}
+.sec-20 {
+  background-color: #fff;
+  height: 600px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003967}}
+.sec-20-title {
+  position: absolute;
+  top: -60px;
+  left: 550px;
+  text-align: center;
+  line-height: 60px;
+  color: #787878;
+  font-size: 20px;
+  font-family: 'FZLTCXHJW';
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003979}}
+.sec-20-slick {
+  position: absolute;
+  left: 100px;
+  top: 0;
+  width: 980px;
+  height: 650px;
+  z-index: 2;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003987}}
+  .sec-20-slick div {
+    width: 100%;
+    float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003990}}
+    .sec-20-slick div img {
+      width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\00003997}}
+.sec-20 .slick-dots {
+  position: absolute;
+  top: 632px;
+  left: 445px;
+  width: 90px;
+  z-index: 3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031003}}
+  .sec-20 .slick-dots li {
+    float: left;
+    width: 30px;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031007}}
+    .sec-20 .slick-dots li button {
+      text-indent: -9999em;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #707070; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031016}}
+  .sec-20 .slick-dots li.slick-active button {
+    text-indent: -9999em;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #3c3c3c; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031028}}
+.sec-21 {
+  background-color: #fff;
+  height: 1095px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031034}}
+.sec-21-mobile {
+  position: absolute;
+  left: 49px;
+  top: 202px;
+  /* @include transform(translate3d(0, 100%, 0));
+  &.animate {
+      @include transform(translate3d(0, 0, 0));
+      @include transition(transform 1s ease);
+  } */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031045}}
+.sec-21-text {
+  position: absolute;
+  left: 691px;
+  top: 494px;
+  width: 424px;
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031053}}
+.sec-22 {
+  height: 1080px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031058}}
+.sec-22-slick {
+  position: absolute;
+  left: -370px;
+  top: 0;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031065}}
+  .sec-22-slick div {
+    width: 100%;
+    float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031068}}
+    .sec-22-slick div img {
+      width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031075}}
+.sec-22 .slick-dots {
+  position: absolute;
+  top: 1040px;
+  left: 885px;
+  width: 150px;
+  z-index: 3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031081}}
+  .sec-22 .slick-dots li {
+    float: left;
+    width: 30px;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031085}}
+    .sec-22 .slick-dots li button {
+      text-indent: -9999em;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031094}}
+  .sec-22 .slick-dots li.slick-active button {
+    text-indent: -9999em;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031106}}
+.sec-22-text {
+  position: absolute;
+  left: 189px;
+  top: 795px;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031113}}
+.sec-23 {
+  background-color: #fff;
+  height: 1180px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031118}}
+.sec-23-text-1 {
+  position: absolute;
+  left: 216px;
+  top: 213px;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031125}}
+.sec-23-mobile {
+  position: absolute;
+  left: 60px;
+  top: 428px;
+  /* @include transform(translate3d(0, 15px, 0));
+  &.animate {
+      @include transform(translate3d(0, 0, 0));
+      @include transition(transform 1s ease);
+  } */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031136}}
+.sec-24 {
+  height: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031140}}
+.sec-24-mobile {
+  position: absolute;
+  left: -370px;
+  top: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031146}}
+.sec-25 {
+  height: 1080px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031151}}
+.sec-25-mobile {
+  position: absolute;
+  left: -370px;
+  top: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031157}}
+.sec-25-text {
+  position: absolute;
+  top: 837px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031162}}
+.sec-26 {
+  background-color: #fff;
+  height: 328px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031167}}
+.sec-26-mobile {
+  position: absolute;
+  left: 169px;
+  top: 83px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031173}}
+.sec-27 {
+  background-color: #fafafa;
+  height: 308px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031179}}
+.sec-27-mobile {
+  position: absolute;
+  left: 713px;
+  top: 39px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031185}}
+.sec-27-text {
+  position: absolute;
+  left: 192px;
+  top: 108px;
+  opacity: 1;
+  text-align: center;
+  z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031192}}
+  .sec-27-text .next {
+    color: #1e1e1e;
+    font-size: 36px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031198}}
+.sec-28 {
+  background-color: #fff; }
+
+/* vooc page */
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031204}}
+.sec-29 {
+  background: url("../images/sec-29-bg.jpg")/*tpa=http://shopfs.myoppo.com/cn/product/p/r9/images/sec-29-bg.jpg*/ center no-repeat;
+  background-size: cover;
+  height: 1080px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031211}}
+.sec-29-text {
+  position: absolute;
+  left: 370px;
+  top: 187px;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031216}}
+  .sec-29-text sub {
+    font-size: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031221}}
+.sec-29-mobile-1 {
+  position: absolute;
+  left: 241px;
+  top: 354px;
+  -webkit-transform: translate3d(0, 10px, 0);
+  -moz-transform: translate3d(0, 10px, 0);
+  -o-transform: translate3d(0, 10px, 0);
+  -ms-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031226}}
+  .sec-29-mobile-1.animate {
+    -webkit-transform: translate3d(0, 0px, 0);
+    -moz-transform: translate3d(0, 0px, 0);
+    -o-transform: translate3d(0, 0px, 0);
+    -ms-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0);
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031232}}
+.sec-29-mobile-2 {
+  position: absolute;
+  left: 241px;
+  top: 354px;
+  -webkit-transform: translate3d(0, -10px, 0);
+  -moz-transform: translate3d(0, -10px, 0);
+  -o-transform: translate3d(0, -10px, 0);
+  -ms-transform: translate3d(0, -10px, 0);
+  transform: translate3d(0, -10px, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031237}}
+  .sec-29-mobile-2.animate {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031243}}
+.sec-29-mobile-3 {
+  position: absolute;
+  left: 241px;
+  top: 354px;
+  -webkit-transform: translate3d(0, 10px, 0);
+  -moz-transform: translate3d(0, 10px, 0);
+  -o-transform: translate3d(0, 10px, 0);
+  -ms-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031248}}
+  .sec-29-mobile-3.animate {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031254}}
+.sec-29-comment {
+  position: absolute;
+  left: 173px;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #b4b4b4;
+  font-family: "微软雅黑"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031265}}
+.sec-30 {
+  background-color: #fff;
+  height: 980px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031271}}
+.sec-30-text {
+  position: absolute;
+  left: 149px;
+  top: 224px;
+  width: 424px;
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031279}}
+.sec-30-mobile {
+  position: absolute;
+  left: -370px;
+  bottom: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031285}}
+.sec-31 {
+  height: 1080px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031290}}
+.sec-31-text {
+  position: absolute;
+  top: 156px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031295}}
+.sec-31-mobile {
+  position: absolute;
+  left: -370px;
+  top: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031301}}
+.sec-32 {
+  background-color: #fff;
+  height: 980px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031306}}
+.sec-32-text {
+  position: absolute;
+  left: 668px;
+  top: 340px;
+  width: 407px;
+  text-align: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031312}}
+  .sec-32-text .test {
+    font-family: "微软雅黑";
+    color: #b4b4b4;
+    margin-top: 76px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031316}}
+    .sec-32-text .test .sec-test {
+      width: 50%;
+      float: left;
+      text-align: left;
+      font-size: 12px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031321}}
+      .sec-32-text .test .sec-test .hour {
+        font-size: 62px;
+        color: #aa8c64;
+        font-family: 'FZLTCXHJW';
+        margin-right: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031327}}
+      .sec-32-text .test .sec-test .minutes {
+        font-size: 34px;
+        color: #aa8c64;
+        font-family: 'FZLTCXHJW';
+        margin-left: 5px;
+        margin-right: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031334}}
+      .sec-32-text .test .sec-test p {
+        margin-top: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031338}}
+    .sec-32-text .test .sec-test-r9plus {
+      width: 50%;
+      float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031345}}
+.sec-32-mobile-1 {
+  position: absolute;
+  left: 59px;
+  top: 208px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031351}}
+.sec-32-mobile-2 {
+  position: absolute;
+  left: 77px;
+  top: 441px;
+  opacity: 0;
+  -webkit-transform: scale(0.938);
+  -moz-transform: scale(0.938);
+  -o-transform: scale(0.938);
+  -ms-transform: scale(0.938);
+  transform: scale(0.938); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031357}}
+  .sec-32-mobile-2.animate {
+    -webkit-animation: battery_animate 1s forwards;
+    -moz-animation: battery_animate 1s forwards;
+    -ms-animation: battery_animate 1s forwards;
+    animation: battery_animate 1s forwards; }
+
+@-webkit-keyframes battery_animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0) scale(0.938);
+    -moz-transform: translate3d(0, 0, 0) scale(0.938);
+    -o-transform: translate3d(0, 0, 0) scale(0.938);
+    -ms-transform: translate3d(0, 0, 0) scale(0.938);
+    transform: translate3d(0, 0, 0) scale(0.938); }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(0.938);
+    -moz-transform: translate3d(0, 0, 0) scale(0.938);
+    -o-transform: translate3d(0, 0, 0) scale(0.938);
+    -ms-transform: translate3d(0, 0, 0) scale(0.938);
+    transform: translate3d(0, 0, 0) scale(0.938); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(41px, -41px, 0) scale(1);
+    -moz-transform: translate3d(41px, -41px, 0) scale(1);
+    -o-transform: translate3d(41px, -41px, 0) scale(1);
+    -ms-transform: translate3d(41px, -41px, 0) scale(1);
+    transform: translate3d(41px, -41px, 0) scale(1); } }
+@-moz-keyframes battery_animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0) scale(0.938);
+    -moz-transform: translate3d(0, 0, 0) scale(0.938);
+    -o-transform: translate3d(0, 0, 0) scale(0.938);
+    -ms-transform: translate3d(0, 0, 0) scale(0.938);
+    transform: translate3d(0, 0, 0) scale(0.938); }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(0.938);
+    -moz-transform: translate3d(0, 0, 0) scale(0.938);
+    -o-transform: translate3d(0, 0, 0) scale(0.938);
+    -ms-transform: translate3d(0, 0, 0) scale(0.938);
+    transform: translate3d(0, 0, 0) scale(0.938); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(41px, -41px, 0) scale(1);
+    -moz-transform: translate3d(41px, -41px, 0) scale(1);
+    -o-transform: translate3d(41px, -41px, 0) scale(1);
+    -ms-transform: translate3d(41px, -41px, 0) scale(1);
+    transform: translate3d(41px, -41px, 0) scale(1); } }
+@-ms-keyframes battery_animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0) scale(0.938);
+    -moz-transform: translate3d(0, 0, 0) scale(0.938);
+    -o-transform: translate3d(0, 0, 0) scale(0.938);
+    -ms-transform: translate3d(0, 0, 0) scale(0.938);
+    transform: translate3d(0, 0, 0) scale(0.938); }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(0.938);
+    -moz-transform: translate3d(0, 0, 0) scale(0.938);
+    -o-transform: translate3d(0, 0, 0) scale(0.938);
+    -ms-transform: translate3d(0, 0, 0) scale(0.938);
+    transform: translate3d(0, 0, 0) scale(0.938); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(41px, -41px, 0) scale(1);
+    -moz-transform: translate3d(41px, -41px, 0) scale(1);
+    -o-transform: translate3d(41px, -41px, 0) scale(1);
+    -ms-transform: translate3d(41px, -41px, 0) scale(1);
+    transform: translate3d(41px, -41px, 0) scale(1); } }
+@-o-keyframes battery_animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0) scale(0.938);
+    -moz-transform: translate3d(0, 0, 0) scale(0.938);
+    -o-transform: translate3d(0, 0, 0) scale(0.938);
+    -ms-transform: translate3d(0, 0, 0) scale(0.938);
+    transform: translate3d(0, 0, 0) scale(0.938); }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(0.938);
+    -moz-transform: translate3d(0, 0, 0) scale(0.938);
+    -o-transform: translate3d(0, 0, 0) scale(0.938);
+    -ms-transform: translate3d(0, 0, 0) scale(0.938);
+    transform: translate3d(0, 0, 0) scale(0.938); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(41px, -41px, 0) scale(1);
+    -moz-transform: translate3d(41px, -41px, 0) scale(1);
+    -o-transform: translate3d(41px, -41px, 0) scale(1);
+    -ms-transform: translate3d(41px, -41px, 0) scale(1);
+    transform: translate3d(41px, -41px, 0) scale(1); } }
+@keyframes battery_animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0) scale(0.938);
+    -moz-transform: translate3d(0, 0, 0) scale(0.938);
+    -o-transform: translate3d(0, 0, 0) scale(0.938);
+    -ms-transform: translate3d(0, 0, 0) scale(0.938);
+    transform: translate3d(0, 0, 0) scale(0.938); }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(0.938);
+    -moz-transform: translate3d(0, 0, 0) scale(0.938);
+    -o-transform: translate3d(0, 0, 0) scale(0.938);
+    -ms-transform: translate3d(0, 0, 0) scale(0.938);
+    transform: translate3d(0, 0, 0) scale(0.938); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(41px, -41px, 0) scale(1);
+    -moz-transform: translate3d(41px, -41px, 0) scale(1);
+    -o-transform: translate3d(41px, -41px, 0) scale(1);
+    -ms-transform: translate3d(41px, -41px, 0) scale(1);
+    transform: translate3d(41px, -41px, 0) scale(1); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031377}}
+.sec-33 {
+  height: 906px;
+  background: url("../images/sec-33-bg.jpg")/*tpa=http://shopfs.myoppo.com/cn/product/p/r9/images/sec-33-bg.jpg*/ center no-repeat;
+  background-size: cover;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031384}}
+.sec-33-text {
+  position: absolute;
+  top: 127px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031389}}
+.sec-33-mobile-1 {
+  position: absolute;
+  left: 387px;
+  top: 375px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031395}}
+.sec-33-mobile-2 {
+  position: absolute;
+  left: 387px;
+  top: 375px;
+  opacity: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031400}}
+  .sec-33-mobile-2.animate {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease 0.3s;
+    -moz-transition: opacity 1s ease 0.3s;
+    -o-transition: opacity 1s ease 0.3s;
+    -ms-transition: opacity 1s ease 0.3s;
+    transition: opacity 1s ease 0.3s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031406}}
+.sec-34 {
+  background-color: #fff;
+  height: 892px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031411}}
+.sec-34-text {
+  position: absolute;
+  top: 644px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031416}}
+.sec-34-mobile-1 {
+  position: absolute;
+  left: 277px;
+  top: 155px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031422}}
+.sec-34-cover {
+  position: absolute;
+  left: 277px;
+  top: 155px;
+  width: 0;
+  height: 378px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031431}}
+.sec-34-mobile-2 {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031437}}
+.sec-35 {
+  height: 1080px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031442}}
+.sec-35-text {
+  position: absolute;
+  left: 246px;
+  top: 157px;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031449}}
+.sec-35-mobile {
+  position: absolute;
+  left: -370px;
+  top: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031455}}
+.sec-36 {
+  background-color: #fafafa;
+  height: 308px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031461}}
+.sec-36-mobile {
+  position: absolute;
+  left: 656px;
+  top: 67px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031467}}
+.sec-36-text {
+  position: absolute;
+  left: 192px;
+  top: 108px;
+  opacity: 1;
+  text-align: center;
+  z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031474}}
+  .sec-36-text .next {
+    color: #1e1e1e;
+    font-size: 36px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031480}}
+.sec-37 {
+  background-color: #fff; }
+
+/* performance page */
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031486}}
+.sec-38 {
+  background-color: #fff;
+  height: 940px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031491}}
+.sec-38-text {
+  position: absolute;
+  top: 123px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031494}}
+  .sec-38-text .comment {
+    font-size: 12px;
+    color: #b4b4b4;
+    margin-top: 10px;
+    font-family: "微软雅黑"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031502}}
+.sec-38-mobile {
+  position: absolute;
+  left: 180px;
+  top: 318px;
+  -webkit-transform: translate3d(0, 0, 0) rotate(0);
+  -moz-transform: translate3d(0, 0, 0) rotate(0);
+  -o-transform: translate3d(0, 0, 0) rotate(0);
+  -ms-transform: translate3d(0, 0, 0) rotate(0);
+  transform: translate3d(0, 0, 0) rotate(0);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031510}}
+.sec-38-shadow {
+  position: absolute;
+  left: 101px;
+  top: 827px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031516}}
+.sec-39 {
+  background-color: #fff;
+  height: 1270px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031522}}
+.sec-39-video {
+  position: absolute;
+  left: -370px;
+  top: 0;
+  overflow: hidden;
+  width: 1920px;
+  height: 840px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031529}}
+  .sec-39-video .sec-39-video-1 {
+    position: absolute;
+    left: 0;
+    top: -205px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031534}}
+  .sec-39-video .sec-39-video-2 {
+    position: absolute;
+    left: 0;
+    top: -238px;
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031540}}
+  .sec-39-video .sec-39-img-1 {
+    position: absolute;
+    left: 0;
+    top: -205px;
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031546}}
+  .sec-39-video .sec-39-img-2 {
+    position: absolute;
+    left: 0;
+    top: -238px;
+    display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031554}}
+.sec-39-button {
+  position: absolute;
+  top: 866px;
+  left: 460px;
+  width: 260px;
+  text-align: center;
+  font-family: 'FZLTCXHJW';
+  font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_mixin\.scss}line{font-family:\00003186}}
+  .sec-39-button:after {
+    clear: both;
+    content: '';
+    display: table; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031563}}
+  .sec-39-button .sec-39-button-1 {
+    float: left;
+    width: 120px;
+    cursor: pointer;
+    color: #b4b4b4; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031568}}
+    .sec-39-button .sec-39-button-1.active {
+      color: #3c3c3c; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031571}}
+    .sec-39-button .sec-39-button-1:hover {
+      color: #3c3c3c; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031575}}
+  .sec-39-button .sec-39-button-2 {
+    float: right;
+    width: 120px;
+    cursor: pointer;
+    color: #b4b4b4; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031580}}
+    .sec-39-button .sec-39-button-2.active {
+      color: #3c3c3c; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031583}}
+    .sec-39-button .sec-39-button-2:hover {
+      color: #3c3c3c; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031587}}
+  .sec-39-button .dot {
+    font-size: 16px;
+    line-height: 16px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031593}}
+.sec-39-text {
+  position: absolute;
+  top: 990px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031598}}
+.sec-40 {
+  height: 860px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031603}}
+.sec-40-text {
+  position: absolute;
+  top: 625px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031608}}
+.sec-40-bg {
+  position: absolute;
+  left: -370px;
+  top: -144px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031616}}
+.sec-41 {
+  background-color: #fff;
+  height: 1870px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031621}}
+.sec-41-text-1 {
+  position: absolute;
+  left: 101px;
+  top: 343px;
+  width: 464px;
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031629}}
+.sec-41-text-2 {
+  position: absolute;
+  left: 664px;
+  top: 1203px;
+  width: 438px;
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031637}}
+.sec-41-text-3 {
+  position: absolute;
+  left: 664px;
+  top: 1425px;
+  width: 416px;
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031645}}
+.sec-41-mobile-1 {
+  position: absolute;
+  left: 523px;
+  top: 78px;
+  -webkit-transform: translate3d(0, 0, 0) rotate(0);
+  -moz-transform: translate3d(0, 0, 0) rotate(0);
+  -o-transform: translate3d(0, 0, 0) rotate(0);
+  -ms-transform: translate3d(0, 0, 0) rotate(0);
+  transform: translate3d(0, 0, 0) rotate(0);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031653}}
+.sec-41-mobile-2 {
+  position: absolute;
+  left: 106px;
+  top: 683px;
+  -webkit-transform: translate3d(0, 0, 0) rotate(0);
+  -moz-transform: translate3d(0, 0, 0) rotate(0);
+  -o-transform: translate3d(0, 0, 0) rotate(0);
+  -ms-transform: translate3d(0, 0, 0) rotate(0);
+  transform: translate3d(0, 0, 0) rotate(0);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031661}}
+.sec-41-shadow {
+  position: absolute;
+  left: 245px;
+  top: 1713px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031667}}
+.sec-42 {
+  height: 930px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031672}}
+.sec-42-text {
+  position: absolute;
+  left: 662px;
+  top: 139px;
+  width: 421px;
+  text-align: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031678}}
+  .sec-42-text em {
+    font-weight: 200; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031683}}
+.sec-42-bg {
+  position: absolute;
+  left: -370px;
+  top: -129px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031691}}
+.sec-43 {
+  background-color: #fff;
+  height: 900px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031697}}
+.sec-43-text {
+  position: absolute;
+  top: 151px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031700}}
+  .sec-43-text em {
+    font-weight: 200; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031705}}
+.sec-43-mobile-1 {
+  position: absolute;
+  left: 285px;
+  top: 361px;
+  opacity: 1;
+  /* &.animate {
+      opacity: 1;
+      @include transition(opacity 1s ease 1s);
+  } */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031716}}
+.sec-43-mobile-2 {
+  position: absolute;
+  left: 133px;
+  top: 485px;
+  /* @include transform(translate3d(0, 420px, 0));
+  &.animate {
+      @include transform(translate3d(0, 0, 0));
+      @include transition(transform 1s ease);
+  } */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031727}}
+.sec-44 {
+  background-color: #000;
+  height: 940px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031733}}
+.sec-44-text {
+  position: absolute;
+  left: 657px;
+  top: 178px;
+  width: 481px;
+  text-align: left;
+  color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031740}}
+  .sec-44-text .text {
+    color: #fff;
+    margin-bottom: 68px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031744}}
+  .sec-44-text .detail {
+    font-size: 28px;
+    font-family: 'FZLTCXHJW';
+    font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031749}}
+  .sec-44-text .detail-text {
+    margin-top: 21px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-family: "微软雅黑"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031757}}
+.sec-44-mobile {
+  position: absolute;
+  left: 101px;
+  top: 105px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031763}}
+.sec-44-breath {
+  position: absolute;
+  left: 73px;
+  top: 38px;
+  opacity: 1;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031769}}
+  .sec-44-breath.animate {
+    -webkit-animation: breath_animate 3s infinite ease-in-out;
+    -moz-animation: breath_animate 3s infinite ease-in-out;
+    -ms-animation: breath_animate 3s infinite ease-in-out;
+    animation: breath_animate 3s infinite ease-in-out; }
+
+@-webkit-keyframes breath_animate {
+  0% {
+    opacity: 1; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  60% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes breath_animate {
+  0% {
+    opacity: 1; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  60% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-ms-keyframes breath_animate {
+  0% {
+    opacity: 1; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  60% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-o-keyframes breath_animate {
+  0% {
+    opacity: 1; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  60% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@keyframes breath_animate {
+  0% {
+    opacity: 1; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  60% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031795}}
+.sec-45 {
+  background-color: #fafafa;
+  height: 308px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031801}}
+.sec-45-mobile {
+  position: absolute;
+  left: 712px;
+  top: 56px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031807}}
+.sec-45-text {
+  position: absolute;
+  left: 192px;
+  top: 108px;
+  opacity: 1;
+  text-align: center;
+  z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031814}}
+  .sec-45-text .next {
+    color: #1e1e1e;
+    font-size: 36px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031820}}
+.sec-46 {
+  background-color: #fff; }
+
+/* coloros page */
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031826}}
+.sec-47 {
+  background-color: #fff;
+  height: 980px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031831}}
+.sec-47-mobile {
+  position: absolute;
+  left: 334px;
+  top: 348px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031837}}
+.sec-47-text {
+  position: absolute;
+  top: 658px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031842}}
+.sec-48 {
+  background-color: #fff;
+  height: 1190px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031848}}
+.sec-48-mobile-1 {
+  position: absolute;
+  left: 39px;
+  top: 115px;
+  -webkit-transform: translate3d(389px, 0, 0);
+  -moz-transform: translate3d(389px, 0, 0);
+  -o-transform: translate3d(389px, 0, 0);
+  -ms-transform: translate3d(389px, 0, 0);
+  transform: translate3d(389px, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031853}}
+  .sec-48-mobile-1.animate {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.778s cubic-bezier(0.1, 0, 0.1, 1);
+    -moz-transition: all 0.778s cubic-bezier(0.1, 0, 0.1, 1);
+    -o-transition: all 0.778s cubic-bezier(0.1, 0, 0.1, 1);
+    -ms-transition: all 0.778s cubic-bezier(0.1, 0, 0.1, 1);
+    transition: all 0.778s cubic-bezier(0.1, 0, 0.1, 1); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031859}}
+.sec-48-mobile-2 {
+  position: absolute;
+  left: 39px;
+  top: 115px;
+  z-index: 2;
+  -webkit-transform: translate3d(209px, 0, 0);
+  -moz-transform: translate3d(209px, 0, 0);
+  -o-transform: translate3d(209px, 0, 0);
+  -ms-transform: translate3d(209px, 0, 0);
+  transform: translate3d(209px, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031865}}
+  .sec-48-mobile-2.animate {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.418s cubic-bezier(0.1, 0, 0.1, 1);
+    -moz-transition: all 0.418s cubic-bezier(0.1, 0, 0.1, 1);
+    -o-transition: all 0.418s cubic-bezier(0.1, 0, 0.1, 1);
+    -ms-transition: all 0.418s cubic-bezier(0.1, 0, 0.1, 1);
+    transition: all 0.418s cubic-bezier(0.1, 0, 0.1, 1); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031871}}
+.sec-48-mobile-3 {
+  position: absolute;
+  left: 39px;
+  top: 115px;
+  z-index: 3; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031878}}
+.sec-48-mobile-4 {
+  position: absolute;
+  left: 39px;
+  top: 115px;
+  z-index: 2;
+  -webkit-transform: translate3d(-215px, 0, 0);
+  -moz-transform: translate3d(-215px, 0, 0);
+  -o-transform: translate3d(-215px, 0, 0);
+  -ms-transform: translate3d(-215px, 0, 0);
+  transform: translate3d(-215px, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031884}}
+  .sec-48-mobile-4.animate {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.43s cubic-bezier(0.1, 0, 0.1, 1);
+    -moz-transition: all 0.43s cubic-bezier(0.1, 0, 0.1, 1);
+    -o-transition: all 0.43s cubic-bezier(0.1, 0, 0.1, 1);
+    -ms-transition: all 0.43s cubic-bezier(0.1, 0, 0.1, 1);
+    transition: all 0.43s cubic-bezier(0.1, 0, 0.1, 1); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031890}}
+.sec-48-mobile-5 {
+  position: absolute;
+  left: 39px;
+  top: 115px;
+  -webkit-transform: translate3d(-400px, 0, 0);
+  -moz-transform: translate3d(-400px, 0, 0);
+  -o-transform: translate3d(-400px, 0, 0);
+  -ms-transform: translate3d(-400px, 0, 0);
+  transform: translate3d(-400px, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031895}}
+  .sec-48-mobile-5.animate {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.8s cubic-bezier(0.1, 0, 0.1, 1);
+    -moz-transition: all 0.8s cubic-bezier(0.1, 0, 0.1, 1);
+    -o-transition: all 0.8s cubic-bezier(0.1, 0, 0.1, 1);
+    -ms-transition: all 0.8s cubic-bezier(0.1, 0, 0.1, 1);
+    transition: all 0.8s cubic-bezier(0.1, 0, 0.1, 1); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031901}}
+.sec-48-text {
+  position: absolute;
+  top: 879px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031906}}
+.sec-49 {
+  background: url("../images/sec-49-bg.jpg")/*tpa=http://shopfs.myoppo.com/cn/product/p/r9/images/sec-49-bg.jpg*/ center no-repeat;
+  background-size: cover;
+  height: 920px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031913}}
+.sec-49-text {
+  position: absolute;
+  top: 587px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031918}}
+.sec-49-icon-1 {
+  position: absolute;
+  left: 143px;
+  top: 221px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031924}}
+.sec-49-layer {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031930}}
+.sec-49-layer-2 {
+  opacity: 1;
+  -webkit-transition: opacity 0.1s ease;
+  -moz-transition: opacity 0.1s ease;
+  -o-transition: opacity 0.1s ease;
+  -ms-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031933}}
+  .sec-49-layer-2.animate {
+    opacity: 0;
+    -webkit-transition: opacity 0.1s ease;
+    -moz-transition: opacity 0.1s ease;
+    -o-transition: opacity 0.1s ease;
+    -ms-transition: opacity 0.1s ease;
+    transition: opacity 0.1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031938}}
+.sec-49-layer-3 {
+  opacity: 0;
+  -webkit-transition: opacity 0.385s ease;
+  -moz-transition: opacity 0.385s ease;
+  -o-transition: opacity 0.385s ease;
+  -ms-transition: opacity 0.385s ease;
+  transition: opacity 0.385s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031941}}
+  .sec-49-layer-3.animate {
+    opacity: 1;
+    -webkit-transition: opacity 0.385s ease;
+    -moz-transition: opacity 0.385s ease;
+    -o-transition: opacity 0.385s ease;
+    -ms-transition: opacity 0.385s ease;
+    transition: opacity 0.385s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031946}}
+.sec-49-layer-4 {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 29px, 0);
+  -moz-transform: translate3d(0, 29px, 0);
+  -o-transform: translate3d(0, 29px, 0);
+  -ms-transform: translate3d(0, 29px, 0);
+  transform: translate3d(0, 29px, 0);
+  -webkit-transition: all 0.145s ease;
+  -moz-transition: all 0.145s ease;
+  -o-transition: all 0.145s ease;
+  -ms-transition: all 0.145s ease;
+  transition: all 0.145s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031950}}
+  .sec-49-layer-4.animate {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.145s ease;
+    -moz-transition: all 0.145s ease;
+    -o-transition: all 0.145s ease;
+    -ms-transition: all 0.145s ease;
+    transition: all 0.145s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031956}}
+.sec-49-layer-5 {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 61px, 0);
+  -moz-transform: translate3d(0, 61px, 0);
+  -o-transform: translate3d(0, 61px, 0);
+  -ms-transform: translate3d(0, 61px, 0);
+  transform: translate3d(0, 61px, 0);
+  -webkit-transition: all 0.305s ease;
+  -moz-transition: all 0.305s ease;
+  -o-transition: all 0.305s ease;
+  -ms-transition: all 0.305s ease;
+  transition: all 0.305s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031960}}
+  .sec-49-layer-5.animate {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.305s ease;
+    -moz-transition: all 0.305s ease;
+    -o-transition: all 0.305s ease;
+    -ms-transition: all 0.305s ease;
+    transition: all 0.305s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031966}}
+.sec-49-layer-6 {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 77px, 0);
+  -moz-transform: translate3d(0, 77px, 0);
+  -o-transform: translate3d(0, 77px, 0);
+  -ms-transform: translate3d(0, 77px, 0);
+  transform: translate3d(0, 77px, 0);
+  -webkit-transition: all 0.385s ease;
+  -moz-transition: all 0.385s ease;
+  -o-transition: all 0.385s ease;
+  -ms-transition: all 0.385s ease;
+  transition: all 0.385s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031970}}
+  .sec-49-layer-6.animate {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.385s ease;
+    -moz-transition: all 0.385s ease;
+    -o-transition: all 0.385s ease;
+    -ms-transition: all 0.385s ease;
+    transition: all 0.385s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031977}}
+.sec-49-icon-2 {
+  position: absolute;
+  left: 487px;
+  top: 243px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031983}}
+.sec-49-layer-8 {
+  opacity: 1;
+  -webkit-transition: opacity 0.1s ease;
+  -moz-transition: opacity 0.1s ease;
+  -o-transition: opacity 0.1s ease;
+  -ms-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031986}}
+  .sec-49-layer-8.animate {
+    opacity: 0;
+    -webkit-transition: opacity 0.1s ease;
+    -moz-transition: opacity 0.1s ease;
+    -o-transition: opacity 0.1s ease;
+    -ms-transition: opacity 0.1s ease;
+    transition: opacity 0.1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031991}}
+.sec-49-layer-9 {
+  opacity: 0;
+  -webkit-transition: opacity 0.405s ease;
+  -moz-transition: opacity 0.405s ease;
+  -o-transition: opacity 0.405s ease;
+  -ms-transition: opacity 0.405s ease;
+  transition: opacity 0.405s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031994}}
+  .sec-49-layer-9.animate {
+    opacity: 1;
+    -webkit-transition: opacity 0.405s ease;
+    -moz-transition: opacity 0.405s ease;
+    -o-transition: opacity 0.405s ease;
+    -ms-transition: opacity 0.405s ease;
+    transition: opacity 0.405s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000031999}}
+.sec-49-layer-10 {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 30px, 0);
+  -moz-transform: translate3d(0, 30px, 0);
+  -o-transform: translate3d(0, 30px, 0);
+  -ms-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  -ms-transition: all 0.15s ease;
+  transition: all 0.15s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032003}}
+  .sec-49-layer-10.animate {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    transition: all 0.15s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032009}}
+.sec-49-layer-11 {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 81px, 0);
+  -moz-transform: translate3d(0, 81px, 0);
+  -o-transform: translate3d(0, 81px, 0);
+  -ms-transform: translate3d(0, 81px, 0);
+  transform: translate3d(0, 81px, 0);
+  -webkit-transition: all 0.405s ease;
+  -moz-transition: all 0.405s ease;
+  -o-transition: all 0.405s ease;
+  -ms-transition: all 0.405s ease;
+  transition: all 0.405s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032013}}
+  .sec-49-layer-11.animate {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.405s ease;
+    -moz-transition: all 0.405s ease;
+    -o-transition: all 0.405s ease;
+    -ms-transition: all 0.405s ease;
+    transition: all 0.405s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032020}}
+.sec-49-icon-3 {
+  position: absolute;
+  left: 776px;
+  top: 234px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032026}}
+.sec-49-layer-13 {
+  opacity: 1;
+  -webkit-transition: opacity 0.1s ease;
+  -moz-transition: opacity 0.1s ease;
+  -o-transition: opacity 0.1s ease;
+  -ms-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032029}}
+  .sec-49-layer-13.animate {
+    opacity: 0;
+    -webkit-transition: opacity 0.1s ease;
+    -moz-transition: opacity 0.1s ease;
+    -o-transition: opacity 0.1s ease;
+    -ms-transition: opacity 0.1s ease;
+    transition: opacity 0.1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032034}}
+.sec-49-layer-14 {
+  opacity: 0;
+  -webkit-transition: opacity 0.38s ease;
+  -moz-transition: opacity 0.38s ease;
+  -o-transition: opacity 0.38s ease;
+  -ms-transition: opacity 0.38s ease;
+  transition: opacity 0.38s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032037}}
+  .sec-49-layer-14.animate {
+    opacity: 1;
+    -webkit-transition: opacity 0.38s ease;
+    -moz-transition: opacity 0.38s ease;
+    -o-transition: opacity 0.38s ease;
+    -ms-transition: opacity 0.38s ease;
+    transition: opacity 0.38s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032042}}
+.sec-49-layer-15 {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 29px, 0);
+  -moz-transform: translate3d(0, 29px, 0);
+  -o-transform: translate3d(0, 29px, 0);
+  -ms-transform: translate3d(0, 29px, 0);
+  transform: translate3d(0, 29px, 0);
+  -webkit-transition: all 0.145s ease;
+  -moz-transition: all 0.145s ease;
+  -o-transition: all 0.145s ease;
+  -ms-transition: all 0.145s ease;
+  transition: all 0.145s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032046}}
+  .sec-49-layer-15.animate {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.145s ease;
+    -moz-transition: all 0.145s ease;
+    -o-transition: all 0.145s ease;
+    -ms-transition: all 0.145s ease;
+    transition: all 0.145s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032052}}
+.sec-49-layer-16 {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 76px, 0);
+  -moz-transform: translate3d(0, 76px, 0);
+  -o-transform: translate3d(0, 76px, 0);
+  -ms-transform: translate3d(0, 76px, 0);
+  transform: translate3d(0, 76px, 0);
+  -webkit-transition: all 0.38s ease;
+  -moz-transition: all 0.38s ease;
+  -o-transition: all 0.38s ease;
+  -ms-transition: all 0.38s ease;
+  transition: all 0.38s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032056}}
+  .sec-49-layer-16.animate {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.38s ease;
+    -moz-transition: all 0.38s ease;
+    -o-transition: all 0.38s ease;
+    -ms-transition: all 0.38s ease;
+    transition: all 0.38s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032063}}
+.sec-49-icon-ie {
+  position: absolute;
+  top: 296px;
+  left: 168px;
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032070}}
+.sec-50 {
+  background-color: #fff;
+  height: 1240px;
+  width: 100%;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032077}}
+.sec-50-text {
+  position: absolute;
+  top: 977px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032082}}
+.sec-50-slick {
+  position: absolute;
+  left: 443px;
+  top: 196px;
+  width: 389px;
+  height: 609px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032088}}
+  .sec-50-slick div {
+    width: 100%;
+    float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032091}}
+    .sec-50-slick div img {
+      width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032097}}
+.sec-50-mobile-ie {
+  position: absolute;
+  left: -370px;
+  top: 196px;
+  z-index: 10;
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032106}}
+.sec-50 .slick-slide {
+  margin-right: 90px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032109}}
+.sec-50 .slick-active {
+  z-index: 5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032112}}
+.sec-50 .slick-dots {
+  position: absolute;
+  top: 670px;
+  left: 82px;
+  width: 140px;
+  z-index: 3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032118}}
+  .sec-50 .slick-dots li {
+    float: left;
+    width: 20px;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032122}}
+    .sec-50 .slick-dots li button {
+      text-indent: -9999em;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #b5b5b5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032131}}
+  .sec-50 .slick-dots li.slick-active button {
+    text-indent: -9999em;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #b5b5b5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032141}}
+.sec-50 .slick-prev {
+  background: url("../images/sec-50-arrow-1.png")/*tpa=http://shopfs.myoppo.com/cn/product/p/r9/images/sec-50-arrow-1.png*/ center no-repeat;
+  position: absolute;
+  left: -52px;
+  top: 276px;
+  width: 17px;
+  height: 37px;
+  z-index: 4;
+  text-indent: -9999em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032151}}
+.sec-50 .slick-next {
+  background: url("../images/sec-50-arrow-2.png")/*tpa=http://shopfs.myoppo.com/cn/product/p/r9/images/sec-50-arrow-2.png*/ center no-repeat;
+  position: absolute;
+  right: 38px;
+  top: 276px;
+  width: 17px;
+  height: 37px;
+  z-index: 4;
+  text-indent: -9999em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032163}}
+.sec-50-mask {
+  position: absolute;
+  top: 196px;
+  height: 609px;
+  background-color: #fff;
+  opacity: 0.55;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=55)";
+  filter: alpha(opacity=55);
+  z-index: 2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032174}}
+.sec-50-mask-left {
+  left: -1000px;
+  width: 1443px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032179}}
+.sec-50-mask-right {
+  right: -1000px;
+  width: 1443px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032184}}
+.sec-51 {
+  background: url("../images/sec-51-bg.jpg")/*tpa=http://shopfs.myoppo.com/cn/product/p/r9/images/sec-51-bg.jpg*/ center no-repeat;
+  background-size: cover;
+  height: 980px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032190}}
+.sec-51-text {
+  position: absolute;
+  left: 638px;
+  top: 521px;
+  width: 472px;
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032198}}
+.sec-51-mobile {
+  position: absolute;
+  left: 98px;
+  top: 142px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032204}}
+.sec-51-chart-1 {
+  position: absolute;
+  left: 638px;
+  top: 170px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032210}}
+.sec-51-cover {
+  position: absolute;
+  left: 638px;
+  top: 170px;
+  width: 0;
+  height: 292px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032219}}
+.sec-51-chart-2 {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032225}}
+.sec-51-chart-ie {
+  position: absolute;
+  left: 638px;
+  top: 170px;
+  z-index: 5;
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032233}}
+.sec-52 {
+  height: 960px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032238}}
+.sec-52-bg {
+  position: absolute;
+  left: -370px;
+  top: -30px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  transition: transform 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032246}}
+.sec-52-text {
+  position: absolute;
+  left: 120px;
+  top: 234px;
+  width: 428px;
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032254}}
+.sec-53 {
+  height: 860px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032258}}
+.sec-53-slick {
+  position: absolute;
+  left: 45px;
+  top: 63px;
+  width: 1098px;
+  height: 775px;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032265}}
+  .sec-53-slick div {
+    width: 100%;
+    float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032268}}
+    .sec-53-slick div img {
+      width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032275}}
+.sec-53 .slick-dots {
+  position: absolute;
+  top: 722px;
+  left: 510px;
+  width: 80px;
+  z-index: 3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032281}}
+  .sec-53 .slick-dots li {
+    float: left;
+    width: 20px;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032285}}
+    .sec-53 .slick-dots li button {
+      text-indent: -9999em;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #b5b5b5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032294}}
+  .sec-53 .slick-dots li.slick-active button {
+    text-indent: -9999em;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #b5b5b5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032304}}
+.sec-53 .slick-prev {
+  background: url("../images/sec-53-arrow-1.png")/*tpa=http://shopfs.myoppo.com/cn/product/p/r9/images/sec-53-arrow-1.png*/ center no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 320px;
+  width: 41px;
+  height: 40px;
+  z-index: 4;
+  text-indent: -9999em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032314}}
+.sec-53 .slick-next {
+  background: url("../images/sec-53-arrow-2.png")/*tpa=http://shopfs.myoppo.com/cn/product/p/r9/images/sec-53-arrow-2.png*/ center no-repeat;
+  position: absolute;
+  right: 0px;
+  top: 320px;
+  width: 41px;
+  height: 40px;
+  z-index: 4;
+  text-indent: -9999em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032326}}
+.sec-54 {
+  background-color: #fafafa;
+  height: 308px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032332}}
+.sec-54-mobile {
+  position: absolute;
+  left: 749px;
+  top: 56px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032338}}
+.sec-54-text {
+  position: absolute;
+  left: 192px;
+  top: 108px;
+  opacity: 1;
+  text-align: center;
+  z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032345}}
+  .sec-54-text .next {
+    color: #1e1e1e;
+    font-size: 36px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032351}}
+.sec-55 {
+  background-color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032355}}
+.params {
+  background: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/f\:\/code\/oppo_product\/cn\/product\/p\/r9\/sass\/detail\/_layout\.scss}line{font-family:\000032357}}
+  .params .param img {
+    vertical-align: top;
+    width: 100%; }
+
+/*# sourceMappingURL=main.css.map */

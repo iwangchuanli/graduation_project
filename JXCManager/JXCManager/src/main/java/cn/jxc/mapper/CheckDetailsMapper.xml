@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.jxc.mapper.CheckDetailsMapper">
+
+	<resultMap type="CheckDetails" id="checkde">
+		<id column="id" property="id" />
+		<result column="Pro_count" property="productCount" />
+		<result column="Pro_checkcount" property="checkCount" />
+		<association property="productid"
+			resultMap="cn.jxc.mapper.ProductMapper.productResultMap"></association>
+		<association property="cid"
+			resultMap="cn.jxc.mapper.CheckMapper.checkMap"></association>
+	</resultMap>
+
+	<select id="getCheckDetailsDetailsBySingleNo"
+		resultMap="checkde">
+		SELECT c.*,ck.*,r.*,
+		<include refid="cn.jxc.mapper.ProductMapper.product" />  
+		FROM `jxcdb`.`checkdetail` AS c
+		LEFT JOIN product p
+		ON c.`Product_id`=p.product_id
+		LEFT JOIN `check` ck
+		ON ck.`c_id`=c.`c_id`
+		LEFT JOIN `reviewstatus` AS r 
+		ON r.`RS_id`=ck.`c_state`
+		WHERE c.`c_id`=#{singleNo}
+	</select>
+	<select id="selectCount" resultType="int">
+		select count(*) from `check` where c_state=1
+	</select>
+
+	<insert id="CheckDetailAdd">
+		INSERT INTO `jxcdb`.`checkdetail`
+		(`id`,
+		`c_id`,
+		`Product_id`,
+		`Pro_count`,
+		`Pro_checkcount`)
+		VALUES (null,
+		#{cda.cid.cid},
+		#{cda.productid.productId},
+		#{cda.productCount},
+		#{cda.checkCount}
+		);
+
+	</insert>
+
+	<update id="updateCheckDetailsDetailByProductAndSingleNo">
+		UPDATE `jxcdb`.`checkdetail`
+		SET
+		`Product_id` =#{chd.productid.productId},
+		`Pro_count` = #{chd.productCount},
+		`Pro_checkcount` =#{chd.checkCount}
+		WHERE `c_id` =#{chd.cid.cid};
+	</update>
+    <update id="updateStock">
+    
+    
+    </update>
+	<delete id="deleteCheckDetailsDetailBySingleNo">
+		DELETE FROM `checkdetail` WHERE `c_id`=#{singleNo}
+	</delete>
+</mapper>

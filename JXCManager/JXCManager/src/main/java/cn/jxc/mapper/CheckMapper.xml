@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.jxc.mapper.CheckMapper">
+
+	<resultMap type="Checks" id="checkMap">
+		<id column="c_id" property="cid" />
+		<result column="c_creater" property="ccreater" />
+		<result column="c_createDate" property="createStartDate" />
+		<result column="c_createDate" property="createEndDate" />
+		<result column="c_reviewDate" property="creviewDate" />
+		<association property="states" javaType="ReviewStatus"
+			resultMap="cn.jxc.mapper.ReviewStatusMapper.ReviewStatusMap">
+		</association>
+		<association property="creviewEmp" javaType="Employee">
+			<id column="c_reviewEmp" property="empLoginName" />
+		</association>
+	</resultMap>
+
+
+	<select id="checksOne" resultMap="checkMap">
+		select * from `check` where
+		`c_id`=#{singleNo}
+	</select>
+
+	<select id="getALLChecks" resultMap="checkMap">
+		SELECT c.*,r.*
+		FROM
+		`check` AS c
+		left join reviewstatus AS r
+		on
+		r.RS_id=c.`c_state`
+		<where>
+			<if test="cid!=null and cid!=''">
+				and c.c_id like concat('%',#{cid},'%')
+			</if>
+			<if test="createStartDate!=null and createStartDate!=''">
+				and c.c_createDate <![CDATA[>]]>= STR_TO_DATE(#{createStartDate},'%m/%d/%Y')
+			</if>
+			<if test="createEndDate!=null and createEndDate!=''">
+				and c.c_createDate <![CDATA[<]]>= STR_TO_DATE(#{createEndDate},'%m/%d/%Y')
+			</if>
+			<if test="states!=null and states!=0">
+				and r.RS_id = #{states}
+			</if>
+		</where>
+		order by c.c_createDate desc
+	</select>
+
+	<select id="selectCount" resultType="int">
+		select count(*) from `check`
+		where c_state=1
+	</select>
+
+	<insert id="ChecksAdd" parameterType="Checks">
+		INSERT INTO `jxcdb`.`check`
+		(
+		`c_id`,
+		`c_state`,
+		`c_creater`,
+		`c_createDate`,
+		`OrderStatus`)
+		VALUES (
+		#{ck.cid},
+		1,
+		#{ck.ccreater},
+		Now(),
+		1);
+	</insert>
+	<update id="ChecksReview" parameterType="Checks">
+		UPDATE `jxcdb`.`check`
+		SET `c_state`= #{ck.states.rsId}, `c_reviewEmp`=
+		#{ck.creviewEmp.empLoginName},
+		`c_reviewDate`= #{ck.creviewDate}
+		WHERE (`c_id`=#{ck.cid})
+	</update>
+
+
+	<update id="ChecksUpdate">
+		UPDATE `jxcdb`.`check`
+		SET `c_creater` =
+		#{ck.ccreater},
+		`c_createDate` = Now()
+		WHERE `c_id` = #{ck.cid};
+	</update>
+
+	<delete id="ChecksDelete" parameterType="string">
+		DELETE FROM `check`
+		WHERE `c_id`=#{singleNo}
+	</delete>
+
+</mapper>

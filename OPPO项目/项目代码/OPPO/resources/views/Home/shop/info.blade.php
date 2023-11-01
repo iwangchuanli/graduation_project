@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<!-- saved from url=(0041)http://id.oppo.com/account/profile?type=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>『OPPO帐号』-个人信息</title>
+    <meta name="keywords" content=" OPPO帐号,登录,注册,找回密码,OPPO账号,OPPO会员"> 
+    <meta name="description" content="登录OPPO帐号，可以在OPPO官网、社区、软件商店、游戏中心、主题商店等享受更多功能服务。">
+
+    <link rel="stylesheet" href="{{asset('Home/shop/css/common.css?r=20161011')}}" />
+    </head>
+<body>
+	<div style="background:red;text-align:center;height:100%;width:100%">
+		重复啦！~~~~
+	</div>
+</body>
+</html>

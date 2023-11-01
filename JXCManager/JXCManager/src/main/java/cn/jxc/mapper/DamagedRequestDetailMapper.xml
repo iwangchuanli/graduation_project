@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.jxc.mapper.DamagedRequestDetailMapper">
+
+	<resultMap type="DamagedRequestDetail" id="damagedRequestDetailMap">
+		<result column="DRD_id" property="dRDId" />
+		<result column="Count" property="count" />
+		<association property="damagedRequest" javaType="DamagedRequest">
+			<id column="DamagedRequest_id" property="damagedRequestId" />
+		</association>
+		<association property="product" javaType="Product">
+			<id column="Product_id" property="productId" />
+			<result column="Product_name" property="productName" />
+		</association>
+		<association property="productUnit" javaType="ProductUnit">
+			<id column="ProductUnit_id" property="productUnitId" />
+			<result column="PU_name" property="puName" />
+		</association>
+	</resultMap>
+
+
+	<insert id="AddDamagedRequesDetail" parameterType="DamagedRequestDetail">
+		INSERT INTO
+		`damagedrequestdetail`
+		(`DRD_id`,
+		`DamaagedRequest_id`,
+		`Product_id`,
+		`Count`,
+		`ProductUnit_id`)
+		VALUES
+		(NULL,
+		#{damagedRequest.damagedRequestId},
+		#{product.productId},
+		#{count},
+		#{productUnit.productUnitId})
+	</insert>
+
+	<select id="getDRDByDRID" parameterType="string"
+		resultMap="damagedRequestDetailMap">
+		select drt.*,p.product_name,u.pu_name,dr.requestempid from
+		damagedrequestdetail drt
+		LEFT JOIN product p
+		ON drt.product_id=p.product_id
+		LEFT JOIN productunit u
+		ON drt.productunit_id=u.productunit_id
+		LEFT JOIN damagedrequest dr
+		ON dr.DamagedRequest_id=drt.damaagedrequest_id
+		WHERE
+		drt.damaagedrequest_id=#{drId}
+	</select>
+
+	<delete id="DeleteDamagedRequestDetail">
+		DELETE from damagedrequestdetail where
+		DamaagedRequest_id=#{id}
+	</delete>
+	
+	<delete id="delDamagedRequestDetailById" parameterType="int">
+		delete from damagedrequestdetail where drd_id=#{id}
+	</delete>
+
+</mapper>

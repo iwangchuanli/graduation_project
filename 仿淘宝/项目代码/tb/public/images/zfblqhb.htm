@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0111)https://cmspromo.alipay.com/beitoukj/zfblqhb.htm?skip=false&sign_from=3000&sign_account_no=20885222865062730156 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">  <title>领红包</title> 	 <script>
+(function(win){
+  if(!win.monitor){win.monitor = {};}
+
+  var METHODS = ["lost", "log", "error", "on", "off"];
+
+  for(var i=0,method,l=METHODS.length; i<l; i++){
+    method = METHODS[i];
+    if("function" !== typeof win.monitor[method]){
+      win.monitor[method] = function(){};
+    }
+  }
+})(window);
+</script> <script charset="utf-8" crossorigin="anonymous" id="seajsnode" onerror="window.monitor &amp;&amp; monitor.lost &amp;&amp; monitor.lost(this.src)" src="saved_resource(6)"></script> <script>
+seajs.config({
+  alias: {
+    '$': 'jquery/jquery/1.7.2/jquery',
+    '$-debug': 'jquery/jquery/1.7.2/jquery',
+    'jquery': 'jquery/jquery/1.7.2/jquery',
+    'jquery-debug': 'jquery/jquery/1.7.2/jquery-debug',
+    'seajs-debug': 'seajs/seajs-debug/1.1.1/seajs-debug'
+  },
+  crossorigin: function(uri){
+  
+    function typeOf(type){
+	  return function(object){
+	    return Object.prototype.toString.call(object) === '[object ' + type + ']';
+	  }
+	}
+	var isString = typeOf("String");
+	var isRegExp = typeOf("RegExp");
+    
+	var whitelist = [];
+	
+                  whitelist.push('https://a.alipayobjects.com/');
+          	
+	for (var i=0, rule, l=whitelist.length; i<l; i++){
+	  rule = whitelist[i];
+	  if (
+	    (isString(rule) && uri.indexOf(rule) === 0) ||
+	    (isRegExp(rule) && rule.test(uri))
+		) {
+		
+	    return "anonymous";
+	  }
+	}
+  },
+  vars: {
+    locale: 'zh-cn'
+  }
+});
+</script> <script>
+seajs.pluginSDK = seajs.pluginSDK || {
+  Module: {
+    _resolve: function() {}
+  },
+  config: {
+    locale: ''
+  }
+};
+// 干掉载入 plugin-i18n.js，避免 404
+seajs.config({
+  map: [
+	[/^.*\/seajs\/plugin-i18n\.js$/, ''],
+	[/^.*\i18n!lang\.js$/, '']
+  ] 
+});
+</script> <script>
+(function(){
+
+var JQ = '/jquery/1.7.2/jquery.js';
+seajs.cache['https://a.alipayobjects.com/gallery' + JQ] = seajs.cache['https://a.alipayobjects.com/jquery' + JQ];
+
+var GALLERY_MODULES = [
+  'async','backbone','coffee','cookie','es5-safe','handlebars','iscroll',
+  'jasmine','jasmine-jquery','jquery','jquery-color','json','keymaster',
+  'labjs','less','marked','moment','mustache','querystring','raphael',
+  'socketio','store','swfobject','underscore','zepto','ztree'
+];
+
+var ARALE_MODULES = [
+  'autocomplete','base','calendar','class','cookie','dialog','easing',
+  'events','iframe-uploader','iframe-shim','messenger','overlay','popup',
+  'position','select','switchable','tip','validator','widget'
+];
+
+var util = {};
+util.indexOf = Array.prototype.indexOf ?
+  function(arr, item) {
+    return arr.indexOf(item);
+  } :
+  function(arr, item) {
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] === item) {
+        return i;
+      }
+    }
+    return -1;
+  };
+util.map = Array.prototype.map ?
+  function(arr, fn) {
+    return arr.map(fn);
+  } :
+  function(arr, fn) {
+    var ret = [];
+	for (var i = 0; i < arr.length; i++) {
+        ret.push(fn(arr[i], i, arr));
+    }
+    return ret;
+  };
+
+function contains(arr, item) {
+  return util.indexOf(arr, item) > -1
+}
+
+function map(id) {
+  id = id.replace('#', '');
+
+  var parts = id.split('/');
+  var len = parts.length;
+  var root, name;
+
+  // id = root/name/x.y.z/name
+  if (len === 4) {
+    root = parts[0];
+    name = parts[1];
+
+    // gallery 或 alipay 开头的没有问题
+    if (root === 'alipay' || root === 'gallery') {
+      return id;
+    }
+
+    // arale 开头的
+    if (root === 'arale') {
+      // 处理 arale/handlebars 的情况
+      if (contains(GALLERY_MODULES, name)) {
+        return id.replace('arale/', 'gallery/');
+      } else {
+        return id;
+      }
+    }
+  }
+  // id = name/x.y.z/name
+  else if (len === 3) {
+    name = parts[0]
+
+    // 开头在 GALLERY_MODULES 或 ARALE_MODULES
+    if (contains(GALLERY_MODULES, name)) {
+      return 'gallery/' + id;
+    } else if (contains(ARALE_MODULES, name)) {
+      return 'arale/' + id;
+    }
+  }
+
+  return id;
+}
+
+var _use = seajs.use;
+
+seajs.use = function(ids, callback) {
+  if (typeof ids === 'string') {
+    ids = [ids];
+  }
+
+  ids = util.map(ids, function(id) {
+    return map(id);
+  });
+
+  return _use(ids, callback);
+}
+
+})();
+</script><style>
+ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button {
+margin: 0;
+padding: 0;
+}
+body, button, input, select, textarea {
+font: 12px/1.5 tahoma,arial,\5b8b\4f53;
+}
+img{border:0;}
+ul,li{ list-style:none;}
+.fn-clear:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+.fn-clear {
+zoom: 1;
+}
+fieldset, img, a img {
+	vertical-align:top;
+}
+a{ text-decoration: none;}
+body{background:#fff;}
+#main-packet{width:590px;height: 240px; overflow: hidden;}
+.packet-grid{padding:27px 0 0 32px;padding-left:0\9;}
+.packet-pad{padding-left:40px\9;}
+.packet-pic,.packet-data,.packet-pic2, .packet-data2,.packet-data3,.packet-pic4{float: left;display:inline;}
+.packet-pic{width:106px;}
+.packet-pic2{width:85px;}
+.packet-pic4{width:295px;}  
+.packet-data{padding:0 0 0 20px;font-family: "微软雅黑"; width:220px;}
+.packet-data2{padding:0 0 0 20px;font-family: "微软雅黑"; width:185px;}
+.packet-data3{padding:0 0 0 20px;font-family: "微软雅黑"; width:240px;}
+.packet-text{font-size: 18px;color: #010101; height:64px; margin-top:6px;}
+.packet-text span{color:#ff572a}
+.packet-text2{font-size: 18px;color: #000000; height:32px; margin-top:10px;}
+.packet-text3{font-size: 18px;color: #000000; height:55px; margin-top:20px;}  
+.packet-btn{display: block;width: 100px;height: 32px; text-align: center; line-height: 32px; color: #fff;font-size: 16px;  background: #dc2430;}
+.packet-btn2{display: block;width:100px;height:32px; text-align: center; line-height:32px; color: #fff;font-size:16px;  background: #dc242e;}
+</style> </head> <body> <div id="main-packet"> <div class="packet-grid packet-pad" style=""> <div class="packet-pic"> <img src="4F7qCJOomb.png"> </div> <div class="packet-data"> <p class="packet-text">一分钱快捷支付体验，<br>送<span>退货保障卡</span></p> <a href="http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.8p9FC4&id=37454746265" target="_blank" class="packet-btn">立即领取</a> </div> </div> <div class="packet-grid packet-pad" style="display:none;"> <div class="packet-pic2"> <img src="4F7qCJOomb.png"> </div> <div class="packet-data2"> <p class="packet-text">一分钱快捷支付体验，<br>送<span>退货保障卡</span></p> <a href="http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.8p9FC4&id=37454746265" target="_blank" class="packet-btn">立即领取</a> </div> </div> <div class="packet-grid packet-pad" style="display:none;"> <div class="packet-pic2"> <img src="4F7qCJOomb.png"> </div> <div class="packet-data3"> <p class="packet-text">一分钱快捷支付体验，<br>送<span>退货保障卡</span></p> <a href="http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.8p9FC4&id=37454746265" target="_blank" class="packet-btn">立即领取</a> </div> </div> <div class="packet-grid packet-pad" style="padding: 0px; display: none;"> <div class="packet-pic4"> <img src="4F7qBSqYIP.png"> </div> </div> </div> <script>
+    seajs.use(["$"], function(JQ){
+    var param = window.location.search.substr(1);
+    var paramObj = {};
+    var packetItem=JQ(".packet-grid");
+    var free=packetItem.eq(0);//跳过快捷支付体验
+    var prize=packetItem.eq(1);//符合条件送账户安全险
+    var noPrize=packetItem.eq(2);//不符合条件未中安全险
+    var moRen=packetItem.eq(3);//在请求过程中显示的图片
+    var tryTimes = 0;
+    var loginState = function() {
+       tryTimes++;
+      JQ.ajax({
+       url:"https://promoprod.alipay.com/query/prizeDrawnInCampaign.json?campCode=JzeSccfngjAYMczeAw7kPOt0Je1hPVJeoMMHR7ygI1o%3D",
+            //线上https://promoprod.alipay.com/query/prizeDrawnInCampaign.json?campFlag=活动唯一标识加密串campFlag
+            //测试https://promoprod.test.alipay.net/query/prizeDrawnInCampaign.json?campFlag=WLW%2Bbui3H6FYQl1u8FgkpmuVMOBMumwioUzzEllqb5Q%3D活动唯一标识加密串campFlag
+        type:"get",
+        dataType: "jsonp",
+        jsonp: "_callback",
+        success:function(data){
+              if(data.stat == "ok"){
+				if(data.prizeIds != ""){
+					prize.show();
+                	moRen.hide();
+              	}else{
+				  if(tryTimes >= 4) {
+					  noPrize.show();
+                  	  moRen.hide();
+					} else {
+					  setTimeout(function() {
+						loginState();
+					  }, 500)
+					}
+				  }
+              }else{
+                moRen.hide();
+              }
+        	}
+      })
+    };
+    
+    JQ.each(param.split('&'), function(key, el){
+        var pa = el.split('=');
+        paramObj[pa[0]] = pa[1];
+    })
+        
+    if(paramObj['skip'] == "true"){
+        free.show();
+      	moRen.hide();
+    } else {
+      /*setTimeout(function() {
+         loginState();
+       }, 500)*/
+      free.show();
+      	moRen.hide();
+    }
+  })
+</script>   </body></html>

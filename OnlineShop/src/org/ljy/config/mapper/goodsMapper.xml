@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.ljy.domain.Goods">
+	<sql id="totalColumn">goods_id,goods_type,goods_name,price,discount,goods_image,shop_id</sql>
+	
+	<sql id="totalVar">#{goodsID},#{goodsType},#{goodsName},#{price},#{diiscount},#{image},#{shopID}</sql>
+	
+	<insert id="addGoods" parameterType="org.ljy.domain.Goods">
+		insert into goods(
+		<include refid="totalColumn"/>
+		) values(
+		<include refid="totalVar"/>
+		)
+	</insert>
+	
+	<delete id="deleteGoods" parameterType="org.ljy.domain.Goods">delete from goods where goods_id=#{goodsID} and shop_id=#{shopID}</delete>
+	
+	<update id="updateGoods" parameterType="org.ljy.domain.Goods">
+		update goods
+		<set>
+			<if test="goods.goodsID!=null">goods_id=#{goodsID},</if>
+			<if test="goods.goodsType!=null">goods_type=#{goodsType},</if>
+			<if test="goods.goodsName!=null">goods_name=#{goodsName},</if>
+			<if test="goods.price!=null">price=#{price},</if>
+			<if test="goods.discount!=null">discount=#{discount},</if>
+			<if test="goods.goods_image!=null">goods_image=#{image},</if>
+			<if test="goods.shopID!=null">shop_id=#{shopID},</if>
+		</set>
+		where goods_id-#{goodsID} and shop_id=#{shopID}
+	</update>
+	
+	<select id="queryGoodsByGoodsName" parameterType="map" resultType="org.ljy.domain.Goods">select * from goods where goods_name=#{goodsName} and shop_id=#{shopID}</select>
+	
+	<select id="queryGoodsByGoodsID" parameterType="map" resultType="org.ljy.domain.Goods">select * from goods where goods_id=#{goodsID} and shop_id=#{shopID}</select>
+	
+	<select id="listAllGoods" parameterType="String" resultType="org.ljy.domain.Goods">select * from goods where shop_id=#{shopID}</select>
+</mapper>
